@@ -1,7 +1,7 @@
 // pages/aboutUs/page.tsx
 import Image from "next/image";
 
-export default function Home() {
+export default function order() {
   return (
     <div className="relative w-full h-screen">
       {/* Background Image */}
@@ -15,7 +15,7 @@ export default function Home() {
       {/* Centered Title */}
       <div className="absolute inset-0 flex items-center justify-center">
         <h1 className="text-white text-5xl md:text-7xl font-bold drop-shadow-lg">
-          HOME PAGE
+         ORDER-NOW
         </h1>
       </div>
     </div>
