@@ -15,7 +15,7 @@ export default function privacy() {
       {/* Centered Title */}
       <div className="absolute inset-0 flex items-center justify-center">
         <h1 className="text-white text-5xl md:text-7xl font-bold drop-shadow-lg">
-         PRIVACY POLICY
+         PRIVACY POLICY PAGE
         </h1>
       </div>
     </div>
