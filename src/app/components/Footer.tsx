@@ -20,14 +20,7 @@ export default function Footer() {
 
           {/* Contact Form */}
           <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4 w-full md:w-auto hover:scale:105">
-            <label htmlFor="email-input" className="sr-only">Enter your email</label>
-            <input 
-              type="email"
-              id="email-input"
-              placeholder="Enter your email"
-              className="w-full sm:w-auto  rounded-lg px-4 py-2 bg-gray-700 text-gray-300 placeholder-gray-500  focus:outline-none focus:ring-2 focus:ring-purple-400 text-center"
-              aria-label="Email input"
-            />
+           
 
             <Link href="/contactUs">
               <button className="bg-gradient-to-r from-green-300 to-green-600 text-white font-semibold py-3 px-6 rounded-full hover:bg-gradient-to-r hover:from-green-600 hover:to-green-700 transition hover:scale-105">
