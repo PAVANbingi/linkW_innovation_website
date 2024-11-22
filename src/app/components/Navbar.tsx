@@ -77,7 +77,7 @@ const Navbar = () => {
         <div className="md:hidden flex items-center">
           <button
             onClick={toggleMenu}
-            className="bg-gradient-to-r from-purple-500 to-blue-600 text-white p-2 rounded-full focus:outline-none transition-transform duration-300 hover:bg-gradient-to-r hover:from-purple-400 hover:to-blue-500"
+            className="bg-gradient-to-r from-gray-700 to-gray-800 text-white p-2 rounded-full focus:outline-none transition-transform duration-300 hover:bg-gradient-to-r hover:from-gray-400 hover:to-gray-500"
           >
             {isOpen ? (
               <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
