@@ -34,7 +34,7 @@ const Navbar = () => {
         <Link href="/">
           <div className="flex items-center cursor-pointer">
             <Image
-              src="/linkWlogo.png"
+              src="/linkW.png"
               alt="linkWlogo"
               height={60}
               width={150}

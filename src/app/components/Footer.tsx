@@ -11,7 +11,7 @@ export default function Footer() {
           {/* Logo */}
           <div className="flex items-center justify-center md:justify-start p-4 md:p-0">
             <Image
-              src="/linkWlogo.png" // path 
+              src="/linkW.png" // path 
               alt="linkWlogo"
               height={80}
             width={170}
