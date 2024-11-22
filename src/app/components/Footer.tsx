@@ -23,7 +23,7 @@ export default function Footer() {
            
 
             <Link href="/contactUs">
-              <button className="bg-gradient-to-r from-green-300 to-green-600 text-white font-semibold py-3 px-6 rounded-full hover:bg-gradient-to-r hover:from-green-600 hover:to-green-700 transition hover:scale-105">
+              <button className="bg-gradient-to-r from-gray-300 to-gray-600 text-white font-semibold py-3 px-6 rounded-full hover:bg-gradient-to-r hover:from-gray-600 hover:to-gray-700 transition hover:scale-105">
                 Get in Touch 
               </button>
             </Link>

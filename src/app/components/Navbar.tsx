@@ -104,13 +104,16 @@ const Navbar = () => {
           <Link href="/features" className="text-white hover:bg-gradient-to-r from-purple-400 to-blue-500 transition duration-300 p-2 rounded-lg">
             Features
           </Link>
+          <Link href="/gallery" className="text-white hover:bg-gradient-to-r from-purple-400 to-blue-500 transition duration-300 p-2 rounded-lg">
+            Gallery
+          </Link>
           <Link href="/contactUs" className="text-white hover:bg-gradient-to-r from-purple-400 to-blue-500 transition duration-300 p-2 rounded-lg">
             Contact Us
           </Link>
 
           {/* Call to Action Button (Mobile Menu) */}
           <Link href="/order">
-            <button className="bg-gradient-to-r from-green-500 to-green-700 text-white px-6 py-2 rounded-full font-medium transition duration-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-green-500">
+            <button className="bg-gradient-to-r from-purple-500 to-blue-700 text-white px-6 py-2 rounded-full font-medium transition duration-300 hover:bg-gradient-to-r hover:from-purple-400 hover:to-blue-500">
             Order-Now  
             </button>
           </Link>
