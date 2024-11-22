@@ -3,6 +3,9 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import LeftFloatingActionButtons from "./components/LeftFloatingActionButtons";
+import RightFloatingActionButtons from "./components/RightFloatingActionButtons";
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -37,7 +40,8 @@ export default function RootLayout({
         </header>
 
         <main className="min-h-screen">{children}</main> {/* Main content area */}
-
+        <LeftFloatingActionButtons />
+				<RightFloatingActionButtons />
         <Footer /> {/* Footer component */}
       </body>
     </html>
