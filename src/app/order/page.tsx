@@ -2,11 +2,12 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import { useSwipeable } from "react-swipeable";
 
-export default function Order() {
+const Order: React.FC = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const images = [
+  const images: string[] = [
     "/1.jpg",
     "/3.jpg",
     "/5.jpg",
@@ -27,6 +28,13 @@ export default function Order() {
     );
   };
 
+  const swipeHandlers = useSwipeable({
+    onSwipedLeft: handleNext,
+    onSwipedRight: handlePrevious,
+    preventScrollOnSwipe: true,
+    trackMouse: true, // Enables swipe on desktops via mouse drag
+  });
+
   useEffect(() => {
     const interval = setInterval(() => {
       handleNext();
@@ -37,7 +45,10 @@ export default function Order() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-slate-800 px-4 py-10 md:py-20">
-      <div className="relative w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl">
+      <div
+        className="relative w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl"
+        {...swipeHandlers} // Attach swipe handlers here
+      >
         {/* Image Section */}
         <div className="relative overflow-hidden rounded-lg shadow-md border border-gray-300 bg-white">
           <Image
@@ -90,4 +101,6 @@ export default function Order() {
       </div>
     </div>
   );
-}
+};
+
+export default Order;

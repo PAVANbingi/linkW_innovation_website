@@ -6,24 +6,24 @@
 // import { IoMdArrowUp } from "react-icons/io";
 
 
-function CallActionButton() {
-    return (
-      <div>
-        <a href="tel:+91 6300681972">
-          {/* Replace with the GIF */}
-          <div >
-            <img
-              src="/contact.gif" // Replace with the actual path to your GIF
-              alt="Call"
-              width={100} // Adjust the size of the GIF as needed
-              height={100} // Adjust the size of the GIF as needed
-              className="rounded-full" // Optional: Add a class to maintain rounded corners
-            />
-          </div>
-        </a>
-      </div>
-    );
-  }
+// function CallActionButton() {
+//     return (
+//       <div>
+//         <a href="tel:+91 6300681972">
+//           {/* Replace with the GIF */}
+//           <div >
+//             <img
+//               src="/contact.gif" // Replace with the actual path to your GIF
+//               alt="Call"
+//               width={100} // Adjust the size of the GIF as needed
+//               height={100} // Adjust the size of the GIF as needed
+//               className="rounded-full" // Optional: Add a class to maintain rounded corners
+//             />
+//           </div>
+//         </a>
+//       </div>
+//     );
+//   }
 
 function WhatsAppActionButton() {
     return (
@@ -53,7 +53,7 @@ function FloatingActionButtons() {
 	return (
 		<div className="fixed left-2 bottom-5">
 			<div className="flex flex-col items-center gap-y-3">
-				<CallActionButton />
+				{/* <CallActionButton /> */}
 				<WhatsAppActionButton />
 			</div>
 		</div>

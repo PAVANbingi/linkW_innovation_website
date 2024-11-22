@@ -65,7 +65,7 @@ const Navbar = () => {
         {/* Call to Action Button (Desktop Only) */}
         <div className="hidden md:flex">
           <Link href="/order">
-            <button className="bg-gradient-to-r from-green-300 to-green-600 text-white font-semibold py-3 px-6 rounded-full hover:bg-gradient-to-r hover:from-green-600 hover:to-green-700 transition hover:scale-105">
+            <button className="bg-gradient-to-r from-gray-300 to-gray-600 text-white font-semibold py-3 px-6 rounded-full hover:bg-gradient-to-r hover:from-gray-600 hover:to-gray-700 transition hover:scale-105">
               
                {/* hover:bg-gradient-to-r from-purple-400 via-pink-500 to-blue-500 rounded-lg text-white font-semibold text-lg transition-transform hover:scale-105 transition duration-300 */}
                Order-Now
@@ -113,7 +113,7 @@ const Navbar = () => {
 
           {/* Call to Action Button (Mobile Menu) */}
           <Link href="/order">
-            <button className="bg-gradient-to-r from-purple-500 to-blue-700 text-white px-6 py-2 rounded-full font-medium transition duration-300 hover:bg-gradient-to-r hover:from-purple-400 hover:to-blue-500">
+            <button className="bg-gradient-to-r from-gray-500 to-gray-700 text-white px-6 py-2 rounded-full font-medium transition duration-300 hover:bg-gradient-to-r hover:from-gray-400 hover:to-gray-500">
             Order-Now  
             </button>
           </Link>

@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { IoMdArrowUp } from "react-icons/io";
 
 const ScrollToTopActionButton: React.FC = () => {
   const [show, setShow] = useState(false);
@@ -24,11 +23,19 @@ const ScrollToTopActionButton: React.FC = () => {
   return (
     <div>
       {show && (
-        <IoMdArrowUp
-          size={40}
-          className="text-white bg-primary rounded-full p-1 cursor-pointer ml-1"
+        <div
+          className="rounded-full bg-primary p-1 cursor-pointer ml-1"
           onClick={scrollToTop}
-        />
+        >
+          {/* Replace the icon with a GIF */}
+          <img
+            src="top.gif" // Replace with the actual path to your GIF
+            alt="Scroll to Top"
+            width={50} // Adjust size as needed
+            height={50} // Adjust size as needed
+            className="rounded-full"
+          />
+        </div>
       )}
     </div>
   );
