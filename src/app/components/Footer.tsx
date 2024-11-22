@@ -70,7 +70,7 @@ export default function Footer() {
         {/* this privacy stuff Links */}
         
         <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 text-gray-400 mt-6">
-          <Link href="#privacy" className="text-white hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-purple-400 hover:to-blue-500 ">Privacy Policy</Link>
+          <Link href="/privacy" className="text-white hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-purple-400 hover:to-blue-500 ">Privacy Policy</Link>
           <Link href="#terms" className="text-white hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-purple-400 hover:to-blue-500 ">Terms of Service</Link>
           <Link href="#cookies" className="text-white hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-purple-400 hover:to-blue-500 ">Cookies Settings</Link>
         </div>
