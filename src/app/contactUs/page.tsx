@@ -1,35 +1,176 @@
-// pages/aboutUs/page.tsx
-export default function AboutUs() {
+"use client";
+import React, { useState } from "react";
+import Link from "next/link";
+
+export default function App() {
+  const [status, setStatus] = useState<string>("");
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setStatus("loading");
+
+    const formElement = e.currentTarget;
+    const formData = new FormData(formElement);
+
+    fetch(
+      "https://script.google.com/macros/s/AKfycbwY3kLBSPgMU003Mt2iG4pSdDkyQ01rTJFN6kvaQFy_dKak5o1bVOikrfpkfoEDwrAI/exec",
+      {
+        method: "POST",
+        body: formData,
+      }
+    )
+      .then((response) => {
+        if (response.ok) {
+          setStatus("success");
+          formElement.reset();
+          setTimeout(() => setStatus(""), 5000);
+          return response.text();
+        } else {
+          throw new Error("Submission failed");
+        }
+      })
+      .catch(() => setStatus("error"));
+  };
+
   return (
-    <div className="relative w-full h-screen">
-      {/* Background Video */}
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute inset-0 w-full h-full object-cover"
-      >
-        <source src="/about.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+    <div className="bg-black text-white min-h-screen flex flex-col items-center">
+      {/* Main Container */}
+      <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-24">
+        {/* Content Section */}
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
+          {/* Left Content */}
+          <div>
+            <h1 className="text-4xl lg:text-6xl font-bold">
+              Welcome to LinkW Innovations
+            </h1>
+            <p className="mt-4 text-gray-300">
+              Got a question or need assistance with our smart IoT products?
+              Complete the form, and our team will reach out to you shortly.
+              Together, let’s create innovative solutions for a sustainable
+              future!
+            </p>
+            <Link href="/features">
+              <button className="mt-6 bg-gradient-to-r from-gray-500 to-gray-600 text-white py-3 px-6 rounded-lg font-medium hover:scale-105 transition">
+                Learn More About Our Products
+              </button>
+            </Link>
+            <div className="mt-4 text-gray-400 space-y-1">
+              <p>
+                Hate contact forms? Email us at{" "}
+                <a
+                  href="mailto:bingipavankumar63@gmail.com"
+                  className="text-blue-500 underline"
+                >
+                  bingipavankumar63@gmail.com
+                </a>
+              </p>
+              <p>
+                Or call us at{" "}
+                <a
+                  href="tel:+916300681972"
+                  className="text-blue-500 underline"
+                >
+                  +91 6300681972
+                </a>
+              </p>
+            </div>
+          </div>
 
-      {/* Overlay Content */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4 bg-black bg-opacity-50">
-        <h1 className="text-white text-5xl md:text-7xl font-bold drop-shadow-lg mb-4">
-          CONTACT US
-        </h1>
-        
-        <p className="text-white text-xl md:text-2xl font-semibold mb-6 drop-shadow-md">
-          We&apos;re currently working on new content and exciting updates for this page!
-        </p>
-        
-        <p className="text-white text-lg md:text-xl font-medium mb-6 opacity-80 drop-shadow-md">
-          Stay tuned, amazing things are coming soon.
-        </p>
+          {/* Right Content: Form */}
+          <div>
+            <form className="space-y-4" onSubmit={handleSubmit}>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <input
+                  type="text"
+                  name="Name"
+                  placeholder="Full Name"
+                  required
+                  className="w-full p-3 rounded-lg bg-gray-800 text-gray-300 placeholder-gray-500 focus:ring-2 focus:ring-purple-500"
+                />
+                <input
+                  type="email"
+                  name="Email"
+                  placeholder="Email Address"
+                  required
+                  className="w-full p-3 rounded-lg bg-gray-800 text-gray-300 placeholder-gray-500 focus:ring-2 focus:ring-purple-500"
+                />
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <input
+                  type="tel"
+                  name="Phone"
+                  placeholder="Phone (WhatsApp)"
+                  className="w-full p-3 rounded-lg bg-gray-800 text-gray-300 placeholder-gray-500 focus:ring-2 focus:ring-purple-500"
+                />
+                <select
+                  name="Purpose_of_Inquiry"
+                  required
+                  className="w-full p-3 rounded-lg bg-gray-800 text-gray-300 focus:ring-2 focus:ring-purple-500"
+                >
+                  <option value="">Purpose of Inquiry</option>
+                  <option value="Product Inquiry">Product Inquiry</option>
+                  <option value="Technical Support">Technical Support</option>
+                  <option value="Sales & Distribution">
+                    Sales & Distribution
+                  </option>
+                  <option value="Partnership/Collaboration">
+                    Partnership/Collaboration
+                  </option>
+                  <option value="Others">Others</option>
+                </select>
+              </div>
+              <textarea
+                name="Client_Message"
+                rows={4}
+                required
+                placeholder="Your Message or Inquiry"
+                className="w-full p-3 rounded-lg bg-gray-800 text-gray-300 placeholder-gray-500 focus:ring-2 focus:ring-purple-500"
+              ></textarea>
+              <div className="flex items-center">
+                <input
+                  type="checkbox"
+                  name="subscribe"
+                  id="subscribe"
+                  className="form-checkbox h-5 w-5 text-purple-500 rounded focus:ring-purple-500"
+                />
+                <label htmlFor="subscribe" className="ml-2 text-gray-400">
+                  Subscribe to our newsletter for the latest updates!
+                </label>
+              </div>
+              <button
+                type="submit"
+                disabled={status === "loading"}
+                className={`w-full bg-gradient-to-r from-gray-500 to-gray-600 text-white font-semibold py-3 px-6 rounded-lg hover:scale-105 transition ${
+                  status === "loading" ? "opacity-50 cursor-not-allowed" : ""
+                }`}
+              >
+                {status === "loading" ? "Submitting..." : "Submit"}
+              </button>
+            </form>
 
-        {/* Optional: Rotating Spinner */}
-        <div className="animate-spin border-t-4 border-white rounded-full w-12 h-12 mt-6"></div>
+            {/* Status Messages */}
+            {status === "success" && (
+              <p className="mt-4 text-green-500 text-center">
+                Successfully submitted! We&apos;ll contact you soon.
+              </p>
+            )}
+            {status === "error" && (
+              <p className="mt-4 text-red-500 text-center">
+                Error submitting the form. Please try again.
+              </p>
+            )}
+          </div>
+        </div>
+
+        {/* Map Section */}
+        <div className="mt-12 w-full rounded-lg overflow-hidden shadow-lg">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15231.661261440002!2d78.5304683!3d17.3678075!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99e8cfaa30b5%3A0xd8fab637dbcb4b7b!2sLinkW%20Innovation%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1732360807795!5m2!1sen!2sin"
+            loading="lazy"
+            title="LinkW Innovations Location"
+            className="w-full h-[50vh] border-0"
+          />
+        </div>
       </div>
     </div>
   );
