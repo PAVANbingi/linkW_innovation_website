@@ -4,9 +4,42 @@ import Link from "next/link";
 
 export default function App() {
   const [status, setStatus] = useState<string>("");
+  const [errors, setErrors] = useState<{ name: string; phone: string }>({
+    name: "",
+    phone: "",
+  });
+
+  const handleValidation = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+
+    if (name === "Name") {
+      // Check if the value contains only letters and spaces
+      const isValid = /^[a-zA-Z\s]+$/.test(value);
+      setErrors((prev) => ({
+        ...prev,
+        name: isValid || value === "" ? "" : "Name should contain only letters.",
+      }));
+    }
+
+    if (name === "Phone") {
+      // Check if the value contains only numbers
+      const isValid = /^\d*$/.test(value);
+      setErrors((prev) => ({
+        ...prev,
+        phone: isValid || value === "" ? "" : "Phone should contain only numbers.",
+      }));
+    }
+  };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    // Prevent form submission if there are errors
+    if (errors.name || errors.phone) {
+      alert("Please fix the errors before submitting.");
+      return;
+    }
+
     setStatus("loading");
 
     const formElement = e.currentTarget;
@@ -34,10 +67,9 @@ export default function App() {
 
   return (
     <div className="bg-black text-white min-h-screen flex flex-col items-center">
-      {/* Main Container */}
       <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-24">
-        {/* Content Section */}
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+            {/* Content Section */}
+            <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Left Content */}
           <div>
             <h1 className="text-4xl lg:text-6xl font-bold">
@@ -76,17 +108,24 @@ export default function App() {
             </div>
           </div>
 
-          {/* Right Content: Form */}
           <div>
             <form className="space-y-4" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <input
-                  type="text"
-                  name="Name"
-                  placeholder="Full Name"
-                  required
-                  className="w-full p-3 rounded-lg bg-gray-800 text-gray-300 placeholder-gray-500 focus:ring-2 focus:ring-purple-500"
-                />
+                <div>
+                  <input
+                    type="text"
+                    name="Name"
+                    placeholder="Full Name"
+                    required
+                    onChange={handleValidation}
+                    className={`w-full p-3 rounded-lg bg-gray-800 text-gray-300 placeholder-gray-500 focus:ring-2 focus:ring-purple-500 ${
+                      errors.name ? "border-red-500 border-2" : ""
+                    }`}
+                  />
+                  {errors.name && (
+                    <p className="text-red-500 text-sm mt-1">{errors.name}</p>
+                  )}
+                </div>
                 <input
                   type="email"
                   name="Email"
@@ -96,12 +135,20 @@ export default function App() {
                 />
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <input
-                  type="tel"
-                  name="Phone"
-                  placeholder="Phone (WhatsApp)"
-                  className="w-full p-3 rounded-lg bg-gray-800 text-gray-300 placeholder-gray-500 focus:ring-2 focus:ring-purple-500"
-                />
+                <div>
+                  <input
+                    type="tel"
+                    name="Phone"
+                    placeholder="Phone (WhatsApp)"
+                    onChange={handleValidation}
+                    className={`w-full p-3 rounded-lg bg-gray-800 text-gray-300 placeholder-gray-500 focus:ring-2 focus:ring-purple-500 ${
+                      errors.phone ? "border-red-500 border-2" : ""
+                    }`}
+                  />
+                  {errors.phone && (
+                    <p className="text-red-500 text-sm mt-1">{errors.phone}</p>
+                  )}
+                </div>
                 <select
                   name="Purpose_of_Inquiry"
                   required
@@ -148,7 +195,6 @@ export default function App() {
               </button>
             </form>
 
-            {/* Status Messages */}
             {status === "success" && (
               <p className="mt-4 text-green-500 text-center">
                 Successfully submitted! We&apos;ll contact you soon.
@@ -161,7 +207,6 @@ export default function App() {
             )}
           </div>
         </div>
-
         {/* Map Section */}
         <div className="mt-12 w-full rounded-lg overflow-hidden shadow-lg">
           <iframe
