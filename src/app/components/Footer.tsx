@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Footer() {
   
   return (
-    <footer className="bg-gray-900 text-black py-12 px-4 md:px-20">
+    <footer className="bg-blue-700 text-black py-12 px-4 md:px-20">
       <div className="container mx-auto px-6 text-center md:text-left">
         {/* Logo and Contact Form */}
         <div className="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0 mb-8">
@@ -65,7 +65,7 @@ export default function Footer() {
         <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 text-gray-400 mt-6">
           <Link href="/privacy" className="text-white hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-purple-400 hover:to-blue-500 ">Privacy Policy</Link>
           <Link href="/conditions" className="text-white hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-purple-400 hover:to-blue-500 ">Terms of Service</Link>
-          <Link href="#cookies" className="text-white hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-purple-400 hover:to-blue-500 ">Cookies Settings</Link>
+          
         </div>
       </div>
     </footer>

@@ -44,7 +44,8 @@ const Order: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-slate-800 px-4 py-10 md:py-20">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-black-800 px-4 py-10 md:py-20">
+      
       <div
         className="relative w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl"
         {...swipeHandlers} // Attach swipe handlers here
