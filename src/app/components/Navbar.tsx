@@ -45,19 +45,19 @@ const Navbar = () => {
 
         {/* Desktop Links */}
         <div className="hidden md:flex space-x-10">
-          <Link href="/" className="text-white text-lg font-medium  hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-purple-400 hover:to-blue-500 hover:scale-105 ">
+          <Link href="/" className="text-black text-lg font-medium  hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-purple-400 hover:to-blue-500 hover:scale-105 ">
             Home
           </Link>
-          <Link href="/aboutUs" className="text-white text-lg font-medium  hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-purple-400 hover:to-blue-500 hover:scale-105">
+          <Link href="/aboutUs" className="text-black text-lg font-medium  hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-purple-400 hover:to-blue-500 hover:scale-105">
             About Us
           </Link>
-          <Link href="/features" className="text-white text-lg font-medium  hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-purple-400 hover:to-blue-500 hover:scale-105">
+          <Link href="/features" className="text-black text-lg font-medium  hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-purple-400 hover:to-blue-500 hover:scale-105">
             Features
           </Link>
-          <Link href="/gallery" className="text-white text-lg font-medium  hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-purple-400 hover:to-blue-500 hover:scale-105">
+          <Link href="/gallery" className="text-black text-lg font-medium  hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-purple-400 hover:to-blue-500 hover:scale-105">
             Gallery
           </Link>
-          <Link href="/contactUs" className="text-white text-lg font-medium  hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-purple-400 hover:to-blue-500 hover:scale-105">
+          <Link href="/contactUs" className="text-black text-lg font-medium  hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-purple-400 hover:to-blue-500 hover:scale-105">
             Contact Us
           </Link>
         </div>
@@ -65,7 +65,7 @@ const Navbar = () => {
         {/* Call to Action Button (Desktop Only) */}
         <div className="hidden md:flex">
           <Link href="/order">
-            <button className="bg-gradient-to-r from-gray-300 to-gray-600 text-white font-semibold py-3 px-6 rounded-full hover:bg-gradient-to-r hover:from-gray-600 hover:to-gray-700 transition hover:scale-105">
+            <button className="bg-gradient-to-r from-gray-300 to-gray-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-gradient-to-r hover:from-gray-600 hover:to-gray-700 transition hover:scale-105">
               
                {/* hover:bg-gradient-to-r from-purple-400 via-pink-500 to-blue-500 rounded-lg text-white font-semibold text-lg transition-transform hover:scale-105 transition duration-300 */}
                Order-Now
