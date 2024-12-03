@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Footer() {
   
   return (
-    <footer className="bg-blue-700 text-black py-12 px-4 md:px-20">
+    <footer className="bg-blue-600 text-black py-12 px-4 md:px-20">
       <div className="container mx-auto px-6 text-center md:text-left">
         {/* Logo and Contact Form */}
         <div className="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0 mb-8">

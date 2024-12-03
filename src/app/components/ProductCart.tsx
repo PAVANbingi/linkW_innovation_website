@@ -33,7 +33,7 @@ export default function ProductCart() {
 
   return (
     <section
-      className="product-section bg-gray-100 text-gray-800 py-10 px-5 lg:px-20"
+      className="product-section bg-white text-gray-800 py-10 px-5 lg:px-20"
       {...handlers}
     >
       <div className="flex flex-col lg:flex-row items-center max-w-7xl mx-auto">

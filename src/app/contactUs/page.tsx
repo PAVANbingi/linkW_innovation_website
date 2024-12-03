@@ -66,7 +66,7 @@ export default function App() {
   };
 
   return (
-    <div className="bg-black text-white min-h-screen flex flex-col items-center">
+    <div className="relative w-full overflow-hidden mt-[calc(4rem+10px)] bg-white text-black min-h-screen flex flex-col items-center">
       <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-24">
             {/* Content Section */}
             <div className="grid lg:grid-cols-2 gap-12 items-start">
@@ -75,18 +75,18 @@ export default function App() {
             <h1 className="text-4xl lg:text-6xl font-bold">
               Welcome to LinkW Innovations
             </h1>
-            <p className="mt-4 text-gray-300">
+            <p className="mt-4 text-black">
               Got a question or need assistance with our smart IoT products?
               Complete the form, and our team will reach out to you shortly.
               Together, let’s create innovative solutions for a sustainable
               future!
             </p>
             <Link href="/features">
-              <button className="mt-6 bg-gradient-to-r from-gray-500 to-gray-600 text-white py-3 px-6 rounded-lg font-medium hover:scale-105 transition">
+              <button className="mt-6 bg-gradient-to-r from-blue-500 to-blue-600 text-white py-3 px-6 rounded-lg font-medium hover:scale-105 transition">
                 Learn More About Our Products
               </button>
             </Link>
-            <div className="mt-4 text-gray-400 space-y-1">
+            <div className="mt-4 text-black space-y-1">
               <p>
                 Hate contact forms? Email us at{" "}
                 <a
@@ -118,7 +118,7 @@ export default function App() {
                     placeholder="Full Name"
                     required
                     onChange={handleValidation}
-                    className={`w-full p-3 rounded-lg bg-gray-800 text-gray-300 placeholder-gray-500 focus:ring-2 focus:ring-purple-500 ${
+                    className={`w-full p-3 rounded-lg bg-blue-100 text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-purple-500 ${
                       errors.name ? "border-red-500 border-2" : ""
                     }`}
                   />
@@ -131,7 +131,7 @@ export default function App() {
                   name="Email"
                   placeholder="Email Address"
                   required
-                  className="w-full p-3 rounded-lg bg-gray-800 text-gray-300 placeholder-gray-500 focus:ring-2 focus:ring-purple-500"
+                  className="w-full p-3 rounded-lg bg-blue-100 text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-purple-500"
                 />
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -141,7 +141,7 @@ export default function App() {
                     name="Phone"
                     placeholder="Phone (WhatsApp)"
                     onChange={handleValidation}
-                    className={`w-full p-3 rounded-lg bg-gray-800 text-gray-300 placeholder-gray-500 focus:ring-2 focus:ring-purple-500 ${
+                    className={`w-full p-3 rounded-lg bg-blue-100 text-gray-900 placeholder-gray-200 focus:ring-2 focus:ring-purple-500 ${
                       errors.phone ? "border-red-500 border-2" : ""
                     }`}
                   />
@@ -152,7 +152,7 @@ export default function App() {
                 <select
                   name="Purpose_of_Inquiry"
                   required
-                  className="w-full p-3 rounded-lg bg-gray-800 text-gray-300 focus:ring-2 focus:ring-purple-500"
+                  className="w-full p-3 rounded-lg bg-blue-100 text-gray-900 focus:ring-2 focus:ring-purple-500"
                 >
                   <option value="">Purpose of Inquiry</option>
                   <option value="Product Inquiry">Product Inquiry</option>
@@ -171,7 +171,7 @@ export default function App() {
                 rows={4}
                 required
                 placeholder="Your Message or Inquiry"
-                className="w-full p-3 rounded-lg bg-gray-800 text-gray-300 placeholder-gray-500 focus:ring-2 focus:ring-purple-500"
+                className="w-full p-3 rounded-lg bg-blue-100 text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-purple-500"
               ></textarea>
               <div className="flex items-center">
                 <input
@@ -180,14 +180,14 @@ export default function App() {
                   id="subscribe"
                   className="form-checkbox h-5 w-5 text-purple-500 rounded focus:ring-purple-500"
                 />
-                <label htmlFor="subscribe" className="ml-2 text-gray-400">
+                <label htmlFor="subscribe" className="ml-2 text-gray-900">
                   Subscribe to our newsletter for the latest updates!
                 </label>
               </div>
               <button
                 type="submit"
                 disabled={status === "loading"}
-                className={`w-full bg-gradient-to-r from-gray-500 to-gray-600 text-white font-semibold py-3 px-6 rounded-lg hover:scale-105 transition ${
+                className={`w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:scale-105 transition ${
                   status === "loading" ? "opacity-50 cursor-not-allowed" : ""
                 }`}
               >
@@ -196,7 +196,7 @@ export default function App() {
             </form>
 
             {status === "success" && (
-              <p className="mt-4 text-green-500 text-center">
+              <p className="mt-4 text-green-600 text-center">
                 Successfully submitted! We&apos;ll contact you soon.
               </p>
             )}

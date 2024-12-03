@@ -1,35 +1,70 @@
-// pages/aboutUs/page.tsx
+'use client'
+import Image from 'next/image';
+import { useState } from 'react';
+
+const images = [
+  { id: 1, src: '/p1.jpg', alt: 'Photo 1', info: 'Occasion: Installation at Village A' },
+  { id: 2, src: '/p3.jpg', alt: 'Photo 2', info: 'Occasion: Testing at Site B' },
+  { id: 3, src: '/a3.jpg', alt: 'Photo 1', info: 'Occasion: Installation at Village A' },
+  { id: 4, src: '/bn2.jpg', alt: 'Photo 2', info: 'Occasion: Testing at Site B' },
+  { id: 5, src: '/bn1.png', alt: 'Photo 1', info: 'Occasion: Installation at Village A' },
+  { id: 6, src: '/a5.webp', alt: 'Photo 2', info: 'Occasion: Testing at Site B' },
+  { id: 7, src: '/a1.webp', alt: 'Photo 1', info: 'Occasion: Installation at Village A' },
+  { id: 8, src: '/p1.jpg', alt: 'Photo 1', info: 'Occasion: Installation at Village A' },
+  { id: 9, src: '/bn1.png', alt: 'Photo 2', info: 'Occasion: Testing at Site B' },
+  { id: 10, src: '/a3.jpg', alt: 'Photo 1', info: 'Occasion: Installation at Village A' },
+  { id: 11, src: '/bn2.jpg', alt: 'Photo 2', info: 'Occasion: Testing at Site B' },
+  { id: 12, src: '/1.jpg', alt: 'Photo 1', info: 'Occasion: Installation at Village A' },
+  { id: 13, src: '/a6.webp', alt: 'Photo 2', info: 'Occasion: Testing at Site B' },
+  { id: 14, src: '/a2.jpg', alt: 'Photo 1', info: 'Occasion: Installation at Village A' },
+
+  { id: 15, src: '/p1.jpg', alt: 'Photo 1', info: 'Occasion: Installation at Village A' },
+  { id: 16, src: '/p2.jpg', alt: 'Photo 2', info: 'Occasion: Testing at Site B' },
+  { id: 17, src: '/a3.jpg', alt: 'Photo 1', info: 'Occasion: Installation at Village A' },
+  { id: 18, src: '/bn2.jpg', alt: 'Photo 2', info: 'Occasion: Testing at Site B' },
+  { id: 19, src: '/bn1.png', alt: 'Photo 1', info: 'Occasion: Installation at Village A' },
+  { id: 20, src: '/a5.webp', alt: 'Photo 2', info: 'Occasion: Testing at Site B' },
+  { id: 21, src: '/a1.webp', alt: 'Photo 1', info: 'Occasion: Installation at Village A' },
+  { id: 22, src: '/p1.jpg', alt: 'Photo 1', info: 'Occasion: Installation at Village A' },
+  { id: 23, src: '/bn1.png', alt: 'Photo 2', info: 'Occasion: Testing at Site B' },
+  { id: 24, src: '/a3.jpg', alt: 'Photo 1', info: 'Occasion: Installation at Village A' },
+  { id: 25, src: '/bn2.jpg', alt: 'Photo 2', info: 'Occasion: Testing at Site B' },
+  { id: 26, src: '/1.jpg', alt: 'Photo 1', info: 'Occasion: Installation at Village A' },
+  { id: 27, src: '/a6.webp', alt: 'Photo 2', info: 'Occasion: Testing at Site B' },
+  { id: 28, src: '/a2.jpg', alt: 'Photo 1', info: 'Occasion: Installation at Village A' },
+];
+
 export default function Gallery() {
+  const [hoveredImage, setHoveredImage] = useState<number | null>(null);
+
   return (
-    <div className="relative w-full h-screen">
-      {/* Background Video */}
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute inset-0 w-full h-full object-cover"
-      >
-        <source src="/bgp.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-
-      {/* Overlay Content */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4 bg-black bg-opacity-50">
-        <h1 className="text-white text-5xl md:text-7xl font-bold drop-shadow-lg mb-4">
-        GALLERY-PAGE
-        </h1>
-        
-        <p className="text-white text-xl md:text-2xl font-semibold mb-6 drop-shadow-md">
-          We&apos;re currently working on new content and exciting updates for this page!
-        </p>
-        
-        <p className="text-white text-lg md:text-xl font-medium mb-6 opacity-80 drop-shadow-md">
-          Stay tuned, amazing things are coming soon.
-        </p>
-
-        {/* Optional: Rotating Spinner */}
-        <div className="animate-spin border-t-4 border-white rounded-full w-12 h-12 mt-6"></div>
+    <div className="relative w-full overflow-hidden mt-[calc(4rem+10px)] py-10 bg-gray-50">
+      <h1 className="text-4xl md:text-5xl font-bold text-center mb-8 text-black">Our Gallery</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4 md:px-8 lg:px-16">
+        {images.map((image) => (
+          <div
+            key={image.id}
+            className="relative group overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:scale-105 hover:translate-y-[-10px] transition-all duration-300 ease-in-out"
+            onMouseEnter={() => setHoveredImage(image.id)}
+            onMouseLeave={() => setHoveredImage(null)}
+          >
+            <div className="relative w-full h-0 pb-[75%]">
+              <Image
+                src={image.src}
+                alt={image.alt}
+                layout="fill"
+                objectFit="cover"
+                className="rounded-lg"
+              />
+            </div>
+            {/* Hover Info Overlay */}
+            <div
+              className={`absolute inset-0 bg-black bg-opacity-60 text-white flex items-center justify-center text-center px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${hoveredImage === image.id ? 'opacity-100' : ''}`}
+            >
+              <p className="text-sm md:text-base font-medium">{image.info}</p>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

@@ -34,7 +34,7 @@ export default function ProductIntro() {
           </p>
           <Link href="/features">
             <button
-              className="px-8 py-3 text-white bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 rounded-lg font-semibold shadow-lg transform hover:-translate-y-1 transition-all duration-300"
+              className="px-8 py-3 text-white bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 rounded-lg font-semibold shadow-lg transform hover:-translate-y-1 transition-all duration-300"
             >
               Read More
             </button>

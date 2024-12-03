@@ -1,7 +1,7 @@
 // pages/aboutUs/page.tsx
 //import Image from "next/image";
-
-export default function privacy() {
+import Link from "next/link";
+export default function HeroSection() {
   return (
     <div className="relative w-full h-screen">
       {/* Background Video */}
@@ -13,7 +13,7 @@ export default function privacy() {
         className="absolute inset-0 w-full h-full object-cover"
       >
         <source src="/bgp.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
+        LinkW innovation product 
       </video>
 
       {/* Overlay Content */}
@@ -22,13 +22,11 @@ export default function privacy() {
           PRIVACY & POLICY
         </h1>
         
-        <p className="text-white text-xl md:text-2xl font-semibold mb-6 drop-shadow-md">
-          We&apos;re currently working on new content and exciting updates for this page!
-        </p>
-        
-        <p className="text-white text-lg md:text-xl font-medium mb-6 opacity-80 drop-shadow-md">
-          Stay tuned, amazing things are coming soon.
-        </p>
+        <Link href="/features">
+                  <button className="inline-block px-7 py-3 font-semibold bg-white text-[#444] border-2 border-white rounded-lg shadow-lg hover:bg-transparent hover:text-white transition-all duration-500">
+                    Explore Now
+                  </button>
+                </Link>
 
         {/* Optional: Rotating Spinner */}
         <div className="animate-spin border-t-4 border-white rounded-full w-12 h-12 mt-6"></div>

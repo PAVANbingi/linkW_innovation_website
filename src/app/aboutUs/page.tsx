@@ -7,7 +7,7 @@ import LinkW_FAQs from '../components/LinkW_FAQs';
 export default function aboutUs() {
   return (
     
-    <div className="pt-10"> {/* Padding top to prevent content overlap */}
+    <div className="pt-10 relative w-full overflow-hidden mt-[calc(4rem+10px)]"> {/* Padding top to prevent content overlap */}
         <AboutLinW />
 
        
