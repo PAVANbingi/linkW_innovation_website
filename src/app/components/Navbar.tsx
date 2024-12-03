@@ -39,7 +39,7 @@ const Navbar = () => {
       timer = setTimeout(() => {
         console.log("Timer finished, closing menu.");
         setIsOpen(false);
-      }, 5000);
+      }, 3000);
     }
     return () => {
       clearTimeout(timer); // Cleanup the timer on component unmount or when isOpen changes

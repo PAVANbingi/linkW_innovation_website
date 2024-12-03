@@ -5,20 +5,10 @@ import Link from "next/link";
 
 export default function ProductIntro() {
   return (
-    <section className="bg-white text-gray-800 py-12">
+    <section className="bg-white text-gray-800 py-12 mt-0">
       <div className="container mx-auto px-6 lg:px-16 flex flex-col lg:flex-row items-center gap-16">
         {/* Left Side: Image */}
-        <div className="lg:w-1/2 flex justify-center">
-          <Image
-            src="/platform.gif" // Replace with your actual image path
-            alt="Our Platform"
-            width={500}
-            height={500}
-            className="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"
-          />
-        </div>
-
-        {/* Right Side: Content */}
+        
         <div className="lg:w-1/2 text-center lg:text-left">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
             Pioneering Sustainable Farming Solutions
@@ -39,6 +29,18 @@ export default function ProductIntro() {
               Read More
             </button>
           </Link>
+        </div>
+        
+
+        {/* Right Side: Content */}
+        <div className="lg:w-1/2 flex justify-center">
+          <Image
+            src="/platform.gif" // Replace with your actual image path
+            alt="Our Platform"
+            width={500}
+            height={500}
+            className="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"
+          />
         </div>
       </div>
     </section>
