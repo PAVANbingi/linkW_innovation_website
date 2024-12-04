@@ -13,15 +13,17 @@ export default function HeroSection() {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="/herobg.mp4" type="video/mp4" />
+          <source src="/finalherobg.mp4" type="video/mp4" />
           {/* Fallback text for unsupported browsers */}
           Your browser does not support the video tag.
         </video>
 
         {/* Overlay Content */}
         <div className="absolute inset-0 flex items-end justify-center text-white px-4 pb-10"> {/* Moved button to the bottom */}
-          <Link href="/features">
-            <button className="px-7 py-3 font-semibold bg-white text-[#444] border-2 border-white rounded-lg shadow-lg hover:bg-transparent hover:text-white transition-all duration-500">
+        <Link href="/features">
+            <button
+              className="px-8 py-3 text-black border-2 border-black rounded-lg bg-transparent hover:bg-black hover:text-white font-semibold shadow-lg transform hover:-translate-y-1 transition-all duration-300"
+            >
               Explore Now
             </button>
           </Link>
@@ -31,6 +33,7 @@ export default function HeroSection() {
       {/* Mobile Hero Section */}
       <div className="relative w-full overflow-hidden mt-[calc(4rem+20px)] h-[30vh] sm:hidden mb-0"> {/* Visible only on mobile */}
         {/* Background Video */}
+        
         <video
           autoPlay
           loop
@@ -38,14 +41,16 @@ export default function HeroSection() {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="/herobg.mp4" type="video/mp4" />
+          <source src="/finalherobg.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
         {/* Overlay Content */}
-        <div className="absolute inset-0 flex items-end justify-center text-white px-4 pb-6"> {/* Moved button to the bottom */}
-          <Link href="/features">
-            <button className="px-5 py-2 text-sm font-semibold bg-white text-[#444] border-2 border-white rounded-md shadow-md hover:bg-transparent hover:text-white transition-all duration-500">
+        <div className="absolute inset-0 flex items-end justify-center text-white px-4 pb-6 "> {/* Moved button to the bottom */}
+        <Link href="/features">
+            <button
+              className="px-8 py-3 text-black border-2 border-black rounded-lg bg-transparent hover:bg-black hover:text-white font-semibold shadow-lg transform hover:-translate-y-1 transition-all duration-300"
+            >
               Explore Now
             </button>
           </Link>

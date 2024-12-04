@@ -17,16 +17,16 @@ const warrantyItems = [
 
 export default function Warranty() {
   return (
-    <section className="bg-blue-600 py-10">
+    <section className="bg-black py-10">
       <div className="container mx-auto px-6 lg:px-16">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
           {warrantyItems.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col items-center justify-center text-white"
+              className="flex flex-col items-center justify-center text-gray-400"
             >
               {/* Icon */}
-              <div className="w-16 h-16 mb-4 flex items-center justify-center ">
+              <div className="w-16 h-16 mb-4 flex items-center justify-center">
                 <Image
                   src={item.icon}
                   alt={item.title}
@@ -37,7 +37,7 @@ export default function Warranty() {
               </div>
 
               {/* Title */}
-              <h3 className="text-lg font-semibold">{item.title}</h3>
+              <h3 className="text-lg font-semibold text-white">{item.title}</h3>
             </div>
           ))}
         </div>

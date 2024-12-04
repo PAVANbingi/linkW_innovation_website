@@ -82,10 +82,10 @@ export default function Testimonials() {
   });
 
   return (
-    <section className="bg-white py-12">
+    <section className="bg-black py-12">
       <div className="container mx-auto px-6 lg:px-16 flex flex-col items-center">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-gray-800">
-          Testimonials
+        <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-white">
+          TESTIMONIALS
         </h2>
 
         {/* Testimonial Content */}
@@ -94,13 +94,13 @@ export default function Testimonials() {
           className="flex flex-col lg:flex-row items-center gap-10 transition-transform duration-500"
         >
           <div className="lg:w-1/2 text-center lg:text-left">
-            <blockquote className="text-xl italic text-gray-700 leading-relaxed mb-4">
+            <blockquote className="text-xl italic text-gray-400 leading-relaxed mb-4">
               {testimonials[currentIndex].text}
             </blockquote>
-            <p className="text-lg text-gray-800 font-semibold">
+            <p className="text-lg text-white font-semibold">
               {testimonials[currentIndex].author}
             </p>
-            <p className="text-gray-800">
+            <p className="text-gray-200">
               {testimonials[currentIndex].designation}
             </p>
           </div>

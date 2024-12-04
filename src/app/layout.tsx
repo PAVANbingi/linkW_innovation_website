@@ -33,7 +33,7 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
-      <body className={`bg-blue-600 ${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`bg-black ${geistSans.variable} ${geistMono.variable} antialiased`}>
     
         <header>
           <Navbar /> {/* Navbar component */}
