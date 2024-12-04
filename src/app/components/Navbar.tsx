@@ -9,7 +9,7 @@ const Navbar = () => {
   const menuRef = useRef<HTMLDivElement>(null); // Reference to the menu container
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    setIsOpen((prev) => !prev); // Toggle menu state
   };
 
   // Close the menu when clicking outside of it
@@ -31,21 +31,10 @@ const Navbar = () => {
     };
   }, [isOpen]);
 
-  // Close the menu after 5 seconds if it's open
-  useEffect(() => {
-    let timer: ReturnType<typeof setTimeout>; // Explicitly typing the timer variable
-    if (isOpen) {
-      console.log("Menu opened, starting timer...");
-      timer = setTimeout(() => {
-        console.log("Timer finished, closing menu.");
-        setIsOpen(false);
-      }, 3000);
-    }
-    return () => {
-      clearTimeout(timer); // Cleanup the timer on component unmount or when isOpen changes
-      console.log("Timer cleared.");
-    };
-  }, [isOpen]);
+  // Close the menu after clicking any link in mobile view
+  const handleLinkClick = () => {
+    setIsOpen(false);
+  };
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 py-4 px-6 bg-white/5 backdrop-blur-lg border-b border-gray-500/20 transition-all duration-500 hover:bg-white/10 hover:border-gray-300/30 shadow-lg">
@@ -113,24 +102,24 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div ref={menuRef} className="md:hidden flex flex-col items-center space-y-6 p-6 bg-gray-900 bg-opacity-90 backdrop-blur-md rounded-lg">
-          <Link href="/" className="text-white hover:bg-gradient-to-r from-purple-400 to-blue-500 transition duration-300 p-2 rounded-lg">
+          <Link href="/" onClick={handleLinkClick} className="text-white hover:bg-gradient-to-r from-purple-400 to-blue-500 transition duration-300 p-2 rounded-lg">
             Home
           </Link>
-          <Link href="/aboutUs" className="text-white hover:bg-gradient-to-r from-purple-400 to-blue-500 transition duration-300 p-2 rounded-lg">
+          <Link href="/aboutUs" onClick={handleLinkClick} className="text-white hover:bg-gradient-to-r from-purple-400 to-blue-500 transition duration-300 p-2 rounded-lg">
             About Us
           </Link>
-          <Link href="/features" className="text-white hover:bg-gradient-to-r from-purple-400 to-blue-500 transition duration-300 p-2 rounded-lg">
+          <Link href="/features" onClick={handleLinkClick} className="text-white hover:bg-gradient-to-r from-purple-400 to-blue-500 transition duration-300 p-2 rounded-lg">
             Features
           </Link>
-          <Link href="/gallery" className="text-white hover:bg-gradient-to-r from-purple-400 to-blue-500 transition duration-300 p-2 rounded-lg">
+          <Link href="/gallery" onClick={handleLinkClick} className="text-white hover:bg-gradient-to-r from-purple-400 to-blue-500 transition duration-300 p-2 rounded-lg">
             Gallery
           </Link>
-          <Link href="/contactUs" className="text-white hover:bg-gradient-to-r from-purple-400 to-blue-500 transition duration-300 p-2 rounded-lg">
+          <Link href="/contactUs" onClick={handleLinkClick} className="text-white hover:bg-gradient-to-r from-purple-400 to-blue-500 transition duration-300 p-2 rounded-lg">
             Contact Us
           </Link>
 
           {/* Call to Action Button (Mobile Menu) */}
-          <Link href="/order">
+          <Link href="/order" onClick={handleLinkClick}>
             <button className="bg-gradient-to-r from-gray-500 to-gray-700 text-white px-6 py-2 rounded-full font-medium transition duration-300 hover:bg-gradient-to-r hover:from-gray-400 hover:to-gray-500">
               Order-Now
             </button>
