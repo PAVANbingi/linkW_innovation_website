@@ -35,7 +35,7 @@ export default function ProductSoled() {
   return (
     <section
       id="product-sales"
-      className="bg-white py-12 text-black text-center"
+      className="bg-black py-12 text-white text-center"
     >
       <div className="container mx-auto px-6 lg:px-16">
         <h2 className="text-3xl sm:text-4xl font-bold mb-12">

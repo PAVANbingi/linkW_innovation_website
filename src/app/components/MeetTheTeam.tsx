@@ -6,77 +6,42 @@ import { FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa";
 export default function MeetTheTeam() {
   const teamMembers = [
     {
-        name: "Pavan Kumar",
-        role: "Founder, CEO",
-        image: "/pk.jpg",
-        linkedin: "https://www.linkedin.com/in/pavan-kumar-bingi-7a7a7a2a6/recent-activity/all/",
-        instagram: "https://www.instagram.com/pavan_kumar_bingi_/",
-        email: "mailto:bingipavankumar63@gmail.com",
-      },
-      {
-        name: "Pavan Kumar",
-        role: "Founder, CEO",
-        image: "/pk.jpg",
-        linkedin: "https://www.linkedin.com/in/pavan-kumar-bingi-7a7a7a2a6/recent-activity/all/",
-        instagram: "https://www.instagram.com/pavan_kumar_bingi_/",
-        email: "mailto:bingipavankumar63@gmail.com",
-      },
-      {
-        name: "Pavan Kumar",
-        role: "Founder, CEO",
-        image: "/pk.jpg",
-        linkedin: "https://www.linkedin.com/in/pavan-kumar-bingi-7a7a7a2a6/recent-activity/all/",
-        instagram: "https://www.instagram.com/pavan_kumar_bingi_/",
-        email: "mailto:bingipavankumar63@gmail.com",
-      },
-      {
-        name: "Pavan Kumar",
-        role: "Founder, CEO",
-        image: "/pk.jpg",
-        linkedin: "https://www.linkedin.com/in/pavan-kumar-bingi-7a7a7a2a6/recent-activity/all/",
-        instagram: "https://www.instagram.com/pavan_kumar_bingi_/",
-        email: "mailto:bingipavankumar63@gmail.com",
-      },
-      {
-        name: "Pavan Kumar",
-        role: "Founder, CEO",
-        image: "/pk.jpg",
-        linkedin: "https://www.linkedin.com/in/pavan-kumar-bingi-7a7a7a2a6/recent-activity/all/",
-        instagram: "https://www.instagram.com/pavan_kumar_bingi_/",
-        email: "mailto:bingipavankumar63@gmail.com",
-      },
-      {
-        name: "Pavan Kumar",
-        role: "Founder, CEO",
-        image: "/pk.jpg",
-        linkedin: "https://www.linkedin.com/in/pavan-kumar-bingi-7a7a7a2a6/recent-activity/all/",
-        instagram: "https://www.instagram.com/pavan_kumar_bingi_/",
-        email: "mailto:bingipavankumar63@gmail.com",
-      },
-      {
-        name: "Pavan Kumar",
-        role: "Founder, CEO",
-        image: "/pk.jpg",
-        linkedin: "https://www.linkedin.com/in/pavan-kumar-bingi-7a7a7a2a6/recent-activity/all/",
-        instagram: "https://www.instagram.com/pavan_kumar_bingi_/",
-        email: "mailto:bingipavankumar63@gmail.com",
-      },
-      {
-        name: "Pavan Kumar",
-        role: "Founder, CEO",
-        image: "/pk.jpg",
-        linkedin: "https://www.linkedin.com/in/pavan-kumar-bingi-7a7a7a2a6/recent-activity/all/",
-        instagram: "https://www.instagram.com/pavan_kumar_bingi_/",
-        email: "mailto:bingipavankumar63@gmail.com",
-      },
+      name: "Pavan Kumar",
+      role: "Founder, CEO",
+      image: "/BPK.png",
+      linkedin: "https://www.linkedin.com/in/pavan-kumar-bingi-7a7a7a2a6/recent-activity/all/",
+      instagram: "https://www.instagram.com/pavan_kumar_bingi_/",
+      email: "mailto:bingipavankumar63@gmail.com",
+    },{
+      name: "Pavan Kumar",
+      role: "Founder, CEO",
+      image: "/BPK2.png",
+      linkedin: "https://www.linkedin.com/in/pavan-kumar-bingi-7a7a7a2a6/recent-activity/all/",
+      instagram: "https://www.instagram.com/pavan_kumar_bingi_/",
+      email: "mailto:bingipavankumar63@gmail.com",
+    },{
+      name: "Pavan Kumar",
+      role: "Founder, CEO",
+      image: "/BPK3.png",
+      linkedin: "https://www.linkedin.com/in/pavan-kumar-bingi-7a7a7a2a6/recent-activity/all/",
+      instagram: "https://www.instagram.com/pavan_kumar_bingi_/",
+      email: "mailto:bingipavankumar63@gmail.com",
+    },{
+      name: "Pavan Kumar",
+      role: "Founder, CEO",
+      image: "/pk.jpg",
+      linkedin: "https://www.linkedin.com/in/pavan-kumar-bingi-7a7a7a2a6/recent-activity/all/",
+      instagram: "https://www.instagram.com/pavan_kumar_bingi_/",
+      email: "mailto:bingipavankumar63@gmail.com",
+    },
     // Add the rest of your team members similarly
   ];
 
   return (
-    <section className="bg-white text-black py-16">
+    <section className="bg-black text-gray-300 py-16">
       <div className="container mx-auto px-6 lg:px-20">
-        <h2 className="text-4xl font-bold mb-6 text-center">Our Team</h2>
-        <p className="text-center text-lg mb-12">
+        <h2 className="text-4xl font-bold mb-6 text-center text-white">Our Team</h2>
+        <p className="text-center text-lg mb-12 text-gray-400">
           Meet the extraordinary individuals driving LinkW Innovations forward. 
           Our team is committed to revolutionizing the agricultural and industrial 
           sectors with passion, innovation, and expertise.
@@ -87,7 +52,7 @@ export default function MeetTheTeam() {
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-lg shadow-lg"
+              className="group relative overflow-hidden rounded-lg shadow-lg bg-gray-800"
             >
               {/* Team Member Image */}
               <Image
@@ -99,7 +64,7 @@ export default function MeetTheTeam() {
               />
 
               {/* Overlay with Social Icons */}
-              <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                 <div className="flex space-x-4">
                   <a
                     href={member.linkedin}
@@ -128,7 +93,7 @@ export default function MeetTheTeam() {
 
               {/* Team Member Info */}
               <div className="text-center mt-4">
-                <h3 className="text-xl font-semibold">{member.name}</h3>
+                <h3 className="text-xl font-semibold text-white">{member.name}</h3>
                 <p className="text-gray-400">{member.role}</p>
               </div>
             </div>

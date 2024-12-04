@@ -55,7 +55,7 @@ export default function AboutLinW() {
   };
 
   return (
-    <section className="bg-white text-gray-800 py-12 px-6 lg:px-20">
+    <section className="bg-black text-gray-400 py-12 px-6 lg:px-20">
       <div className="flex flex-col lg:flex-row items-center max-w-7xl mx-auto">
         {/* Left: Image Slider Section */}
         <div
@@ -95,16 +95,16 @@ export default function AboutLinW() {
 
         {/* Right: Text Content Section */}
         <div className="lg:w-1/2 mt-8 lg:mt-0 lg:ml-12">
-          <h2 className="text-4xl font-bold mb-6">About LinkW Innovations</h2>
+          <h2 className="text-4xl font-bold mb-6 text-white">About LinkW Innovations</h2>
           <p className="text-lg mb-4">
-            <strong>Mission:</strong> To empower farmers and industrialists by
+            <strong className="text-white">Mission:</strong> To empower farmers and industrialists by
             providing cutting-edge, sustainable, and cost-effective solutions
             that enhance productivity and reduce environmental impact. We
             strive to bridge the gap between technology and agriculture, making
             smart innovations accessible to everyone.
           </p>
           <p className="text-lg mb-4">
-            <strong>Vision:</strong> To revolutionize the agricultural and
+            <strong className="text-white">Vision:</strong> To revolutionize the agricultural and
             industrial sectors with technology-driven solutions, ensuring a
             greener, more efficient, and economically sustainable future. LinkW
             Innovations is committed to becoming a global leader in smart
@@ -112,7 +112,7 @@ export default function AboutLinW() {
           </p>
           
           <p className="text-lg">
-            At LinkW Innovations, we believe in the power of technology to
+            At <strong className="text-white">LinkW Innovations,</strong> we believe in the power of technology to
             transform lives. Together, let’s shape a smarter and more connected
             future for all.
           </p>

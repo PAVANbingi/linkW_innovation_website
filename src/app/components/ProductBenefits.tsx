@@ -48,9 +48,9 @@ export default function ProductBenefits() {
   }, []);
 
   return (
-    <section className="bg-white py-12">
+    <section className="bg-black py-12">
       <div className="container mx-auto px-6 lg:px-16">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-gray-800 text-center">
+        <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-white text-center">
           Product Benefits
         </h2>
 
@@ -58,10 +58,10 @@ export default function ProductBenefits() {
         <div className="flex flex-col lg:flex-row items-center gap-10 transition-transform duration-500">
           {/* Text Section */}
           <div className="lg:w-1/2 text-left">
-            <h3 className="text-2xl font-bold text-gray-800 mb-4">
+            <h3 className="text-2xl font-bold text-white mb-4">
               {benefits[currentIndex].title}
             </h3>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-gray-400 leading-relaxed">
               {benefits[currentIndex].description}
             </p>
           </div>

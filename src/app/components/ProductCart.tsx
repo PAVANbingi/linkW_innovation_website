@@ -33,7 +33,7 @@ export default function ProductCart() {
 
   return (
     <section
-      className="product-section bg-white text-gray-800 py-10 px-5 lg:px-20"
+      className="product-section bg-black text-gray-400 py-10 px-5 lg:px-20"
       {...handlers}
     >
       <div className="flex flex-col lg:flex-row items-center max-w-7xl mx-auto">
@@ -95,10 +95,9 @@ export default function ProductCart() {
 
         {/* Product Details Section */}
         <div className="lg:w-1/2 mt-10 lg:mt-0 lg:pl-10 text-left">
-          <h2 className="text-3xl font-bold mb-4">LINK-W Mobile Auto Starter</h2>
+          <h2 className="text-3xl font-bold mb-4 text-white">LINK-W Mobile Auto Starter</h2>
           <ul className="list-disc list-inside text-lg mb-4">
-            <li>Remote motor control via mobile/SMS
-            </li>
+            <li>Remote motor control via mobile/SMS</li>
             <li>Dry run protection with auto-restart</li>
             <li>Timer modes: Clock, cyclic, and multi-slot schedules</li>
             <li>Voltage, overload, and drain settings</li>
@@ -108,7 +107,7 @@ export default function ProductCart() {
             <li>Battery backup for power outages</li>
            <li>1-year replacement guarantee</li>
           </ul>
-          <p className="text-xl font-semibold mb-6">
+          <p className="text-xl font-semibold mb-6 text-white">
             MRP: ₹9,999.00 (INCL. OF ALL TAXES)
           </p>
           <div className="flex items-center gap-4 mb-6">

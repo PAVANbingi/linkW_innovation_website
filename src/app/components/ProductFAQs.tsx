@@ -1,9 +1,11 @@
+
+
 'use client';
 
 import { useState } from "react";
 import Link from "next/link";
 
-export default function LinkW_FAQs() {
+export default function ProductFAQs() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const faqs = [
@@ -88,36 +90,36 @@ export default function LinkW_FAQs() {
       answer: "The Kisan Mithraa Mobile Auto Starter is a cutting-edge solution that meets the growing demand for smart farming technology. Its ability to automate farm operations, reduce costs, and provide real-time insights makes it a valuable tool in the agriculture sector. Investors can benefit from the product’s scalability and its potential to revolutionize farming practices, presenting significant growth opportunities."
     }
   ];
-  
 
   const toggleAnswer = (index: number) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
   return (
-    <section className="bg-white py-16">
+    <section className="bg-black text-gray-300 py-16">
       <div className="container mx-auto px-6 lg:px-20">
         {/* Heading */}
-        <h2 className="text-4xl font-bold text-center text-gray-800 mb-8">
-        Explore Kisan Mithraa: FAQs & Insights
-
+        <h2 className="text-4xl font-bold text-center text-white mb-8">
+          Explore Kisan Mithraa: FAQs & Insights
         </h2>
 
         {/* FAQs */}
         <div className="space-y-4">
           {faqs.map((faq, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-md p-4">
+            <div key={index} className="bg-gray-800 rounded-lg shadow-md p-4">
               <div
                 className="flex justify-between items-center cursor-pointer"
                 onClick={() => toggleAnswer(index)}
               >
-                <span className="text-lg font-semibold text-gray-800">{faq.question}</span>
-                <span className="text-xl text-gray-600">
+                <span className="text-lg font-semibold text-gray-200">
+                  {faq.question}
+                </span>
+                <span className="text-xl text-gray-400">
                   {activeIndex === index ? "-" : "+"}
                 </span>
               </div>
               {activeIndex === index && (
-                <div className="mt-3 text-gray-700 whitespace-pre-line transition-all duration-300">
+                <div className="mt-3 text-gray-400 whitespace-pre-line transition-all duration-300">
                   {faq.answer}
                 </div>
               )}
@@ -126,17 +128,16 @@ export default function LinkW_FAQs() {
         </div>
 
         {/* Footer Section */}
-        <div className="mt-16 flex flex-col lg:flex-row items-center justify-between bg-white rounded-lg shadow-lg py-6 px-8">
-          
-       
-          <p className="text-lg text-gray-800">
-          Still Having any questions? We’re here to help you ! Reach out to us anytime.</p>
+        <div className="mt-16 flex flex-col lg:flex-row items-center justify-between bg-gray-800 rounded-lg shadow-lg py-6 px-8">
+          <p className="text-lg text-gray-300">
+            Still having questions? We’re here to help you! Reach out to us
+            anytime.
+          </p>
           <Link href="/contactUs">
             <button className="mt-4 lg:mt-0 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg shadow">
               Ask Now
             </button>
           </Link>
-          
         </div>
       </div>
     </section>

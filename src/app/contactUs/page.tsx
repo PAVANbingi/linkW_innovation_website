@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState } from "react";
 import Link from "next/link";
 
@@ -13,7 +14,7 @@ export default function App() {
     const { name, value } = e.target;
 
     if (name === "Name") {
-      // Check if the value contains only letters and spaces
+      // Validate Name: Letters and spaces only
       const isValid = /^[a-zA-Z\s]+$/.test(value);
       setErrors((prev) => ({
         ...prev,
@@ -22,7 +23,7 @@ export default function App() {
     }
 
     if (name === "Phone") {
-      // Check if the value contains only numbers
+      // Validate Phone: Numbers only
       const isValid = /^\d*$/.test(value);
       setErrors((prev) => ({
         ...prev,
@@ -34,7 +35,7 @@ export default function App() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    // Prevent form submission if there are errors
+    // Block submission if there are validation errors
     if (errors.name || errors.phone) {
       alert("Please fix the errors before submitting.");
       return;
@@ -66,16 +67,16 @@ export default function App() {
   };
 
   return (
-    <div className="relative w-full overflow-hidden mt-[calc(4rem+10px)] bg-white text-black min-h-screen flex flex-col items-center">
+    <div className="relative w-full overflow-hidden mt-[calc(4rem+10px)] bg-black text-white min-h-screen flex flex-col items-center">
       <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-24">
-            {/* Content Section */}
-            <div className="grid lg:grid-cols-2 gap-12 items-start">
+        {/* Intro Section */}
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Left Content */}
           <div>
             <h1 className="text-4xl lg:text-6xl font-bold">
               Welcome to LinkW Innovations
             </h1>
-            <p className="mt-4 text-black">
+            <p className="mt-4 text-gray-300">
               Got a question or need assistance with our smart IoT products?
               Complete the form, and our team will reach out to you shortly.
               Together, let’s create innovative solutions for a sustainable
@@ -86,7 +87,7 @@ export default function App() {
                 Learn More About Our Products
               </button>
             </Link>
-            <div className="mt-4 text-black space-y-1">
+            <div className="mt-4 text-gray-300 space-y-1">
               <p>
                 Hate contact forms? Email us at{" "}
                 <a
@@ -98,18 +99,17 @@ export default function App() {
               </p>
               <p>
                 Or call us at{" "}
-                <a
-                  href="tel:+916300681972"
-                  className="text-blue-500 underline"
-                >
+                <a href="tel:+916300681972" className="text-blue-500 underline">
                   +91 6300681972
                 </a>
               </p>
             </div>
           </div>
 
+          {/* Right Content (Form) */}
           <div>
             <form className="space-y-4" onSubmit={handleSubmit}>
+              {/* Name and Email Fields */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <input
@@ -118,7 +118,7 @@ export default function App() {
                     placeholder="Full Name"
                     required
                     onChange={handleValidation}
-                    className={`w-full p-3 rounded-lg bg-blue-100 text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-purple-500 ${
+                    className={`w-full p-3 rounded-lg bg-gray-700 text-white placeholder-gray-400 focus:ring-2 focus:ring-purple-500 ${
                       errors.name ? "border-red-500 border-2" : ""
                     }`}
                   />
@@ -131,9 +131,11 @@ export default function App() {
                   name="Email"
                   placeholder="Email Address"
                   required
-                  className="w-full p-3 rounded-lg bg-blue-100 text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-purple-500"
+                  className="w-full p-3 rounded-lg bg-gray-700 text-white placeholder-gray-400 focus:ring-2 focus:ring-purple-500"
                 />
               </div>
+
+              {/* Phone and Inquiry Purpose */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <input
@@ -141,7 +143,7 @@ export default function App() {
                     name="Phone"
                     placeholder="Phone (WhatsApp)"
                     onChange={handleValidation}
-                    className={`w-full p-3 rounded-lg bg-blue-100 text-gray-900 placeholder-gray-200 focus:ring-2 focus:ring-purple-500 ${
+                    className={`w-full p-3 rounded-lg bg-gray-700 text-white placeholder-gray-400 focus:ring-2 focus:ring-purple-500 ${
                       errors.phone ? "border-red-500 border-2" : ""
                     }`}
                   />
@@ -152,7 +154,7 @@ export default function App() {
                 <select
                   name="Purpose_of_Inquiry"
                   required
-                  className="w-full p-3 rounded-lg bg-blue-100 text-gray-900 focus:ring-2 focus:ring-purple-500"
+                  className="w-full p-3 rounded-lg bg-gray-700 text-white focus:ring-2 focus:ring-purple-500"
                 >
                   <option value="">Purpose of Inquiry</option>
                   <option value="Product Inquiry">Product Inquiry</option>
@@ -166,13 +168,17 @@ export default function App() {
                   <option value="Others">Others</option>
                 </select>
               </div>
+
+              {/* Message Field */}
               <textarea
                 name="Client_Message"
                 rows={4}
                 required
                 placeholder="Your Message or Inquiry"
-                className="w-full p-3 rounded-lg bg-blue-100 text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-purple-500"
+                className="w-full p-3 rounded-lg bg-gray-700 text-white placeholder-gray-400 focus:ring-2 focus:ring-purple-500"
               ></textarea>
+
+              {/* Subscription Checkbox */}
               <div className="flex items-center">
                 <input
                   type="checkbox"
@@ -180,10 +186,12 @@ export default function App() {
                   id="subscribe"
                   className="form-checkbox h-5 w-5 text-purple-500 rounded focus:ring-purple-500"
                 />
-                <label htmlFor="subscribe" className="ml-2 text-gray-900">
+                <label htmlFor="subscribe" className="ml-2 text-gray-300">
                   Subscribe to our newsletter for the latest updates!
                 </label>
               </div>
+
+              {/* Submit Button */}
               <button
                 type="submit"
                 disabled={status === "loading"}
@@ -195,6 +203,7 @@ export default function App() {
               </button>
             </form>
 
+            {/* Submission Status Messages */}
             {status === "success" && (
               <p className="mt-4 text-green-600 text-center">
                 Successfully submitted! We&apos;ll contact you soon.
@@ -207,6 +216,7 @@ export default function App() {
             )}
           </div>
         </div>
+
         {/* Map Section */}
         <div className="mt-12 w-full rounded-lg overflow-hidden shadow-lg">
           <iframe

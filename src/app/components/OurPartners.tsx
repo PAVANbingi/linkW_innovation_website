@@ -4,8 +4,7 @@ const images = [
   "/pr1.svg",
   "/pr2.svg",
   "/pr3.svg",
-  "/pr4.svg",
-  "/pr5.svg",
+  
   "/pr6.svg",
   "/pr7.svg",
   "/pr8.svg",
@@ -13,7 +12,7 @@ const images = [
 
 const OurPartners: React.FC = () => {
   return (
-    <div className="w-full bg-white py-12 text-black">
+    <div className="w-full bg-black py-8 text-black">
       <h2 className="text-center text-4xl font-bold text-black mb-8">
         Our Partners
       </h2>
@@ -24,7 +23,7 @@ const OurPartners: React.FC = () => {
           {images.map((image, index) => (
             <div
               key={`partner-${index}`}
-              className="flex-shrink-0 w-36 sm:w-48 h-36 sm:h-48 bg-white hover:bg-blue-300 flex items-center justify-center rounded-lg shadow-lg transform hover:scale-110 transition-transform duration-300"
+              className="flex-shrink-0 w-36 sm:w-48 h-36 sm:h-48 bg-black hover:bg-black flex items-center justify-center rounded-lg shadow-lg transform hover:scale-110 transition-transform duration-300"
             >
               <img
                 src={image}
@@ -37,7 +36,7 @@ const OurPartners: React.FC = () => {
           {images.map((image, index) => (
             <div
               key={`partner-duplicate-${index}`}
-              className="flex-shrink-0 w-36 sm:w-48 h-36 sm:h-48 bg-white hover:bg-blue-300 flex items-center justify-center rounded-lg shadow-lg transform hover:scale-110 transition-transform duration-300"
+              className="flex-shrink-0 w-36 sm:w-48 h-36 sm:h-48 bg-black hover:bg-black flex items-center justify-center rounded-lg shadow-lg transform hover:scale-110 transition-transform duration-300"
             >
               <img
                 src={image}

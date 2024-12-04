@@ -34,7 +34,7 @@ export default function Order() {
 
   return (
     <section
-      className="relative w-full overflow-hidden mt-[calc(4rem+10px)]  product-section bg-white text-gray-800 py-10 px-5 lg:px-20"
+      className="relative w-full overflow-hidden mt-[calc(4rem+10px)]  product-section bg-black text-gray-400 py-10 px-5 lg:px-20"
       {...handlers}
     >
       <div className="flex flex-col lg:flex-row items-center max-w-7xl mx-auto">
@@ -96,7 +96,7 @@ export default function Order() {
 
         {/* Product Details Section */}
         <div className="lg:w-1/2 mt-10 lg:mt-0 lg:pl-10 text-left">
-          <h1 className="text-4xl font-bold mb-4">Kisan Mithraa Mobile Starter</h1>
+          <h1 className="text-4xl font-bold mb-4 text-white">Kisan Mithraa Mobile Starter</h1>
           <ul className="list-disc list-inside text-lg mb-4">
             <li>Remote motor control via mobile/SMS
             </li>
@@ -109,7 +109,7 @@ export default function Order() {
             <li>Battery backup for power outages</li>
            <li>1-year replacement guarantee</li>
           </ul>
-          <p className="text-xl font-semibold mb-6">
+          <p className="text-xl font-semibold mb-6 text-white">
             MRP: ₹9,999.00 (INCL. OF ALL TAXES)
           </p>
           <div className="flex items-center gap-4 mb-6">
