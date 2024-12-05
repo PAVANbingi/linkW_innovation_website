@@ -55,11 +55,11 @@ export default function AboutLinW() {
   };
 
   return (
-    <section className="bg-black text-gray-400 py-12 px-6 lg:px-20">
-      <div className="flex flex-col lg:flex-row items-center max-w-7xl mx-auto">
-        {/* Left: Image Slider Section */}
+    <section className="bg-slate-950 text-gray-400 py-12 px-6 lg:px-20">
+      <div className="flex flex-col lg:flex-row-reverse items-center max-w-7xl mx-auto">
+        {/* Right: Image Slider Section */}
         <div
-          className="lg:w-1/2 flex flex-col items-center"
+          className="lg:w-1/2 flex flex-col items-center transform transition-transform duration-700 ease-in-out mt-8 lg:mt-0"
           onTouchStart={handleTouchStart}
           onTouchMove={handleTouchMove}
         >
@@ -70,7 +70,7 @@ export default function AboutLinW() {
                 alt={`Slide ${currentImageIndex + 1}`}
                 width={800}
                 height={600}
-                className="w-full h-auto object-cover"
+                className="w-full h-auto object-cover transition-opacity duration-700 ease-in-out"
                 loading="lazy"
               />
             </div>
@@ -82,9 +82,9 @@ export default function AboutLinW() {
                   key={index}
                   className={`w-3 h-3 rounded-full mx-1 ${
                     currentImageIndex === index
-                      ? "bg-blue-500"
-                      : "bg-gray-300"
-                  }`}
+                      ? "bg-rose-700"
+                      : "bg-gray-800"
+                  } transition-colors duration-300`}
                   onClick={() => setCurrentImageIndex(index)}
                   style={{ cursor: "pointer" }}
                 ></div>
@@ -93,26 +93,28 @@ export default function AboutLinW() {
           </div>
         </div>
 
-        {/* Right: Text Content Section */}
-        <div className="lg:w-1/2 mt-8 lg:mt-0 lg:ml-12">
-          <h2 className="text-4xl font-bold mb-6 text-white">About LinkW Innovations</h2>
-          <p className="text-lg mb-4">
-            <strong className="text-white">Mission:</strong> To empower farmers and industrialists by
+        {/* Left: Text Content Section */}
+        <div className="lg:w-1/2 mt-8 lg:mt-0 lg:mr-12 transform transition-transform duration-700 ease-in-out">
+          <h2 className="text-4xl sm:text-6xl font-bold mb-6 text-white hover:text-rose-600 transition-colors duration-300">
+            About LinkW Innovations
+          </h2>
+          <p className="text-lg mb-4 transition-opacity duration-700 ease-in-out">
+            <strong className="text-white hover:text-rose-600">Mission:</strong> To empower farmers and industrialists by
             providing cutting-edge, sustainable, and cost-effective solutions
             that enhance productivity and reduce environmental impact. We
             strive to bridge the gap between technology and agriculture, making
             smart innovations accessible to everyone.
           </p>
-          <p className="text-lg mb-4">
-            <strong className="text-white">Vision:</strong> To revolutionize the agricultural and
+          <p className="text-lg mb-4 transition-opacity duration-700 ease-in-out">
+            <strong className="text-white hover:text-rose-600">Vision:</strong> To revolutionize the agricultural and
             industrial sectors with technology-driven solutions, ensuring a
             greener, more efficient, and economically sustainable future. LinkW
             Innovations is committed to becoming a global leader in smart
             agricultural tools and industrial innovations.
           </p>
-          
-          <p className="text-lg">
-            At <strong className="text-white">LinkW Innovations,</strong> we believe in the power of technology to
+
+          <p className="text-lg transition-opacity duration-700 ease-in-out">
+            At <strong className="text-white hover:text-rose-600">LinkW Innovations,</strong> we believe in the power of technology to
             transform lives. Together, let’s shape a smarter and more connected
             future for all.
           </p>

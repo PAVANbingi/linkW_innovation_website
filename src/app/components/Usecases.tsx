@@ -45,27 +45,33 @@ const useCases = [
 
 export default function UseCases() {
   return (
-    <section className="bg-black py-12">
+    <section className="bg-slate-950 py-12">
       <div className="container mx-auto px-6 lg:px-16 flex flex-col lg:flex-row items-center gap-16">
         {/* Left Side: Use Cases List */}
         <div className="lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-6">
           {useCases.map((useCase, index) => (
             <div
               key={index}
-              className="flex items-start gap-4 p-5 bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="group flex items-start gap-4 p-5 bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 hover:bg-gray-700"
             >
-              <div className="w-12 h-12 flex-shrink-0">
+              <div className="w-12 h-12 flex-shrink-0 relative">
+                {/* Icon Animation */}
+                <div className="absolute inset-0 bg-rose-600 rounded-full opacity-0 blur-lg group-hover:opacity-50 group-hover:scale-110 transition-all duration-300"></div>
                 <Image
                   src={useCase.icon}
                   alt={useCase.title}
                   width={48}
                   height={48}
-                  className="object-contain"
+                  className="object-contain transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110"
                 />
               </div>
-              <p className="text-gray-400 text-base font-medium leading-relaxed">
-                {useCase.title}
-              </p>
+
+              {/* Title with Animation */}
+              <div className="flex flex-col justify-center">
+                <p className="text-gray-400 text-base font-medium leading-relaxed group-hover:text-rose-400 group-hover:translate-x-1 group-hover:transition-all group-hover:duration-300">
+                  {useCase.title}
+                </p>
+              </div>
             </div>
           ))}
         </div>

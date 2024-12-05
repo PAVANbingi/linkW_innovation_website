@@ -18,7 +18,7 @@ export default function Footer() {
               
             /></Link>
           
-          <h2 className="text-white font-semibold text-lg mb-4">About Us</h2>
+          <h2 className="text-rose-600 font-semibold text-lg mb-4">About Us</h2>
           {/* Logo */}
           
           
@@ -32,7 +32,7 @@ export default function Footer() {
 
         {/* Corporate Office Section */}
         <div>
-          <h2 className="text-white font-semibold text-lg mb-4">
+          <h2 className="text-rose-600 font-semibold text-lg mb-4">
             Corporate Office and R&D
           </h2>
           <p className="text-sm leading-6">
@@ -41,7 +41,7 @@ H No: 17-112, Road No-3,
 Kamalanagar, Dilsuknagar,
 Hyderabad,  Telangana-500060, India.
           </p>
-          <h2 className="text-white font-semibold text-lg mt-6 mb-4">
+          <h2 className="text-rose-600 font-semibold text-lg mt-6 mb-4">
             Manufacturing Facility
           </h2>
           <p className="text-sm leading-6">
@@ -53,12 +53,12 @@ Hyderabad,  Telangana-500060, India.
 
         {/* Learn More Section */}
         <div>
-          <h2 className="text-white font-semibold text-lg mb-4">Learn More</h2>
+          <h2 className="text-rose-600 font-semibold text-lg mb-4">Learn More</h2>
           <ul className="space-y-2">
           <li>
               <Link
                 href="/"
-                className="hover:text-white transition duration-200"
+                className="hover:text-rose-600 transition duration-200"
               >
                 Home
               </Link>
@@ -66,7 +66,7 @@ Hyderabad,  Telangana-500060, India.
             <li>
               <Link
                 href="/aboutUs"
-                className="hover:text-white transition duration-200"
+                className="hover:text-rose-600 transition duration-200"
               >
                 About Us
               </Link>
@@ -74,7 +74,7 @@ Hyderabad,  Telangana-500060, India.
             <li>
               <Link
                 href="/features"
-                className="hover:text-white transition duration-200"
+                className="hover:text-rose-600 transition duration-200"
               >
                 Features
               </Link>
@@ -82,7 +82,7 @@ Hyderabad,  Telangana-500060, India.
             <li>
               <Link
                 href="/gallery"
-                className="hover:text-white transition duration-200"
+                className="hover:text-rose-600 transition duration-200"
               >
                 Gallery
               </Link>
@@ -90,7 +90,7 @@ Hyderabad,  Telangana-500060, India.
             <li>
               <Link
                 href="/contactUs"
-                className="hover:text-white transition duration-200"
+                className="hover:text-rose-600 transition duration-200"
               >
                 Contact Us
               </Link>
@@ -98,7 +98,7 @@ Hyderabad,  Telangana-500060, India.
             <li>
               <Link
                 href="/order"
-                className="hover:text-white transition duration-200"
+                className="hover:text-rose-600 transition duration-200"
               >
                 Order Now
               </Link>
@@ -106,7 +106,7 @@ Hyderabad,  Telangana-500060, India.
             <li>
               <Link
                 href="/privacy"
-                className="hover:text-white transition duration-200"
+                className="hover:text-rose-600 transition duration-200"
               >
                 Privacy Policy
               </Link>
@@ -114,7 +114,7 @@ Hyderabad,  Telangana-500060, India.
             <li>
               <Link
                 href="/conditions"
-                className="hover:text-white transition duration-200"
+                className="hover:text-rose-600 transition duration-200"
               >
                 Terms and Conditions
               </Link>
@@ -124,12 +124,12 @@ Hyderabad,  Telangana-500060, India.
 
         {/* Contact Section */}
         <div>
-          <h2 className="text-white font-semibold text-lg mb-4">Contact</h2>
+          <h2 className="text-rose-600 font-semibold text-lg mb-4">Contact</h2>
           <p className="text-sm leading-6 mt-4">
             <strong>Contact Number:</strong>{" "}
             <a
               href="tel:+91 9032747058"
-              className="hover:text-white transition duration-200"
+              className="hover:text-blue-600 transition duration-200"
             >
              +91-90327 47058
             </a>
@@ -139,7 +139,7 @@ Hyderabad,  Telangana-500060, India.
             <strong>Product Queries:</strong>{" "}
             <a
               href="mailto:team@linkwinnovation.com"
-              className="hover:text-white transition duration-200"
+              className="hover:text-blue-600 transition duration-200"
             >
               team@linkwinnovation.com
             </a>
@@ -148,7 +148,7 @@ Hyderabad,  Telangana-500060, India.
             <strong>Sales Enquiries:</strong>{" "}
             <a
               href="mailto:team@linkwinnovation.com"
-              className="hover:text-white transition duration-200"
+              className="hover:text-blue-600 transition duration-200"
             >
               team@linkwinnovation.com
             </a>
@@ -157,66 +157,46 @@ Hyderabad,  Telangana-500060, India.
             <strong>Other Queries:</strong>{" "}
             <a
               href="mailto:team@linkwinnovation.como"
-              className="hover:text-white transition duration-200"
+              className="hover:text-blue-600 transition duration-200"
             >
               team@linkwinnovation.com
             </a>
           </p>
 
           {/* Social Media Links */}
-          <div className="flex space-x-4 mt-6">
-            <a
-              href="https://x.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Twitter"
-              className="hover:text-white transition duration-200"
-            >
-              <Image src="/brand-x.svg" alt="Twitter" width={24} height={24} />
-            </a>
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-              className="hover:text-white transition duration-200"
-            >
-              <Image
-                src="/brand-instagram.svg"
-                alt="Instagram"
-                width={24}
-                height={24}
-              />
-            </a>
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Facebook"
-              className="hover:text-white transition duration-200"
-            >
-              <Image
-                src="/brand-facebook.svg"
-                alt="Facebook"
-                width={24}
-                height={24}
-              />
-            </a>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn"
-              className="hover:text-white transition duration-200"
-            >
-              <Image
-                src="/brand-linkedin.svg"
-                alt="LinkedIn"
-                width={24}
-                height={24}
-              />
-            </a>
-          </div>
+          {/* Social Media Links */}
+<div className="flex space-x-4 mt-6">
+  {[
+    { href: "https://x.com", label: "Twitter", src: "/brand-x.svg" },
+    { href: "https://instagram.com", label: "Instagram", src: "/brand-instagram.svg" },
+    { href: "https://facebook.com", label: "Facebook", src: "/brand-facebook.svg" },
+    { href: "https://linkedin.com", label: "LinkedIn", src: "/brand-linkedin.svg" },
+  ].map((item) => (
+    <a
+      key={item.href}
+      href={item.href}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={item.label}
+      className="group relative inline-block"
+    >
+      {/* Image */}
+      <Image
+        src={item.src}
+        alt={item.label}
+        width={24}
+        height={24}
+        className="transition-transform duration-300 group-hover:scale-110"
+      />
+
+      {/* Hover Effect */}
+      <span
+        className="absolute inset-0 rounded-lg bg-rose-600 opacity-0 transition-opacity duration-100 group-hover:opacity-100 group-hover:blur-lg"
+      />
+    </a>
+  ))}
+</div>
+
         </div>
       </div>
 
@@ -225,7 +205,7 @@ Hyderabad,  Telangana-500060, India.
         <p>
           2025 &copy;{" "}
         <Link href="/contactUs">
-          <span className="text-blue-500">LinkW Innovation</span></Link> - All Rights Reserved
+          <span className="text-rose-600">LinkW Innovation</span></Link> - All Rights Reserved
         </p>
       </div>
     </footer>

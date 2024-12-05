@@ -43,7 +43,7 @@ const Navbar = () => {
         <Link href="/">
           <div className="flex items-center cursor-pointer">
             <Image
-              src="/linkW.png"
+              src="/nav1.png"
               alt="linkWlogo"
               height={60}
               width={150}
@@ -54,19 +54,19 @@ const Navbar = () => {
 
         {/* Desktop Links */}
         <div className="hidden md:flex space-x-10">
-          <Link href="/" className="text-white text-lg font-medium hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-purple-400 hover:to-blue-500 hover:scale-105">
+          <Link href="/" className="text-white text-lg font-medium hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover: from-rose-700 to-rose-600 hover:scale-105">
             Home
           </Link>
-          <Link href="/aboutUs" className="text-white text-lg font-medium hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-purple-400 hover:to-blue-500 hover:scale-105">
+          <Link href="/aboutUs" className="text-white text-lg font-medium hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover: from-rose-700 to-rose-600 hover:scale-105">
             About Us
           </Link>
-          <Link href="/features" className="text-white text-lg font-medium hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-purple-400 hover:to-blue-500 hover:scale-105">
+          <Link href="/features" className="text-white text-lg font-medium hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover: from-rose-700 to-rose-600 hover:scale-105">
             Features
           </Link>
-          <Link href="/gallery" className="text-white text-lg font-medium hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-purple-400 hover:to-blue-500 hover:scale-105">
+          <Link href="/gallery" className="text-white text-lg font-medium hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover: from-rose-700 to-rose-600 hover:scale-105">
             Gallery
           </Link>
-          <Link href="/contactUs" className="text-white text-lg font-medium hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-purple-400 hover:to-blue-500 hover:scale-105">
+          <Link href="/contactUs" className="text-white text-lg font-medium hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-rose-700 to-rose-600 hover:scale-105">
             Contact Us
           </Link>
         </div>
@@ -75,8 +75,7 @@ const Navbar = () => {
         <div className="hidden md:flex">
           <Link href="/order">
             <button
-              className="px-6 py-2 text-white border-2 border-white rounded-lg bg-transparent hover:bg-white hover:text-black font-semibold shadow-lg transform hover:-translate-y-1 transition-all duration-300"
-            >
+               className="px-6 py-2 text-rose-600 border-2 border-rose-600 rounded-lg bg-transparent hover:bg-rose-600 hover:text-white font-semibold shadow-lg transform hover:-translate-y-1 transition-all duration-300" >
               Order-Now
             </button>
           </Link>
@@ -86,7 +85,7 @@ const Navbar = () => {
         <div className="md:hidden flex items-center">
           <button
             onClick={toggleMenu}
-            className="bg-gradient-to-r from-gray-700 to-gray-800 text-white p-2 rounded-full focus:outline-none transition-transform duration-300 hover:bg-gradient-to-r hover:from-gray-400 hover:to-gray-500"
+            className="bg-gradient-to-r  from-rose-700 to-rose-600 text-white p-2 rounded-full focus:outline-none transition-transform duration-300 hover:bg-gradient-to-r hover:from-gray-400 hover:to-gray-500"
           >
             {isOpen ? (
               <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -104,27 +103,26 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div ref={menuRef} className="md:hidden flex flex-col items-center space-y-6 p-6 bg-gray-900 bg-opacity-90 backdrop-blur-md rounded-lg">
-          <Link href="/" onClick={handleLinkClick} className="text-white hover:bg-gradient-to-r from-purple-400 to-blue-500 transition duration-300 p-2 rounded-lg">
+          <Link href="/" onClick={handleLinkClick} className="text-white hover:bg-gradient-to-r  from-rose-700 to-rose-600 transition duration-300 p-2 rounded-lg">
             Home
           </Link>
-          <Link href="/aboutUs" onClick={handleLinkClick} className="text-white hover:bg-gradient-to-r from-purple-400 to-blue-500 transition duration-300 p-2 rounded-lg">
+          <Link href="/aboutUs" onClick={handleLinkClick} className="text-white hover:bg-gradient-to-r  from-rose-700 to-rose-600 transition duration-300 p-2 rounded-lg">
             About Us
           </Link>
-          <Link href="/features" onClick={handleLinkClick} className="text-white hover:bg-gradient-to-r from-purple-400 to-blue-500 transition duration-300 p-2 rounded-lg">
+          <Link href="/features" onClick={handleLinkClick} className="text-white hover:bg-gradient-to-r  from-rose-700 to-rose-600 transition duration-300 p-2 rounded-lg">
             Features
           </Link>
-          <Link href="/gallery" onClick={handleLinkClick} className="text-white hover:bg-gradient-to-r from-purple-400 to-blue-500 transition duration-300 p-2 rounded-lg">
+          <Link href="/gallery" onClick={handleLinkClick} className="text-white hover:bg-gradient-to-r  from-rose-700 to-rose-600 transition duration-300 p-2 rounded-lg">
             Gallery
           </Link>
-          <Link href="/contactUs" onClick={handleLinkClick} className="text-white hover:bg-gradient-to-r from-purple-400 to-blue-500 transition duration-300 p-2 rounded-lg">
+          <Link href="/contactUs" onClick={handleLinkClick} className="text-white hover:bg-gradient-to-r from-rose-700 to-rose-600 transition duration-300 p-2 rounded-lg">
             Contact Us
           </Link>
 
           {/* Call to Action Button (Mobile Menu) */}
                     <Link href="/order" onClick={handleLinkClick}>
             <button
-              className="px-6 py-2 text-white border-2 border-white rounded-lg bg-transparent hover:bg-white hover:text-black font-semibold shadow-lg transform hover:-translate-y-1 transition-all duration-300"
-            >
+               className="px-6 py-2 text-rose-600 border-2 border-rose-600 rounded-lg bg-transparent hover:bg-rose-600 hover:text-white font-semibold shadow-lg transform hover:-translate-y-1 transition-all duration-300">
               Order-Now
             </button>
           </Link>

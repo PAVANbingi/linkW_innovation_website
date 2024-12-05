@@ -35,16 +35,16 @@ export default function ProductSoled() {
   return (
     <section
       id="product-sales"
-      className="bg-black py-12 text-white text-center"
+      className="bg-slate-950 py-12 text-white text-center"
     >
       <div className="container mx-auto px-6 lg:px-16">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-12">
+        <h2 className="text-4xl sm:text-6xl font-bold mb-12 hover:text-rose-600">
           Numbers Speak
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {salesData.map((data, index) => (
             <div key={index} className="space-y-4">
-              <div className="text-6xl font-bold text-blue-500">
+              <div className="text-6xl font-bold text-rose-600">
                 {view && (
                   <CountUp
                     start={0}

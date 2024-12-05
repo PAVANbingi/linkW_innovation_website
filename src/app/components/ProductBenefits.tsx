@@ -48,9 +48,9 @@ export default function ProductBenefits() {
   }, []);
 
   return (
-    <section className="bg-black py-12">
+    <section className="bg-slate-950 py-12">
       <div className="container mx-auto px-6 lg:px-16">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-white text-center">
+        <h2 className="text-4xl sm:text-6xl font-bold mb-6 text-white text-center hover:text-rose-600">
           Product Benefits
         </h2>
 
@@ -84,8 +84,8 @@ export default function ProductBenefits() {
               onClick={() => setCurrentIndex(index)}
               className={`w-3 h-3 rounded-full transition-all duration-300 ${
                 index === currentIndex
-                  ? "bg-blue-600"
-                  : "bg-gray-400 hover:bg-gray-600"
+                  ? "bg-rose-700"
+                  : "bg-gray-800 hover:bg-gray-600"
               }`}
             ></button>
           ))}

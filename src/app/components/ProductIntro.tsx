@@ -5,11 +5,11 @@ import Link from "next/link";
 
 export default function ProductIntro() {
   return (
-    <section className="bg-black text-gray-400 py-5 mt-0">
+    <section className="bg-slate-950 text-gray-400 py-5 mt-0">
       <div className="container mx-auto px-6 lg:px-16 flex flex-col lg:flex-row items-center gap-16">
         {/* Left Side: Image */}
         <div className="lg:w-1/2 text-center lg:text-left">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-white">
+          <h2 className="text-4xl sm:text-6xl lg:text-5xl font-bold mb-6 leading-tight text-white hover:text-rose-600">
           SMART SOLUTIONS FOR SMARTER FARMING 
           </h2>
           <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-gray-400 mb-8">
@@ -24,7 +24,7 @@ export default function ProductIntro() {
           
           <Link href="/features">
             <button
-              className="px-8 py-3 text-white border-2 border-white rounded-lg bg-transparent hover:bg-white hover:text-black font-semibold shadow-lg transform hover:-translate-y-1 transition-all duration-300"
+              className="px-6 py-2 text-rose-600 border-2 border-rose-600 rounded-lg bg-transparent hover:bg-rose-600 hover:text-white font-semibold shadow-lg transform hover:-translate-y-1 transition-all duration-300"
             >
               Read More...
             </button>

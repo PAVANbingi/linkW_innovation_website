@@ -82,10 +82,10 @@ export default function Testimonials() {
   });
 
   return (
-    <section className="bg-black py-12">
+    <section className="bg-slate-950 py-12">
       <div className="container mx-auto px-6 lg:px-16 flex flex-col items-center">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-white">
-          TESTIMONIALS
+        <h2 className="text-4xl sm:text-6xl font-bold mb-6 text-white hover:text-rose-600">
+          Testimonials
         </h2>
 
         {/* Testimonial Content */}
@@ -127,7 +127,7 @@ export default function Testimonials() {
               onClick={() => setCurrentIndex(index)}
               className={`w-3 h-3 rounded-full transition-all duration-300 ${
                 index === currentIndex
-                  ? "bg-gradient-to-r from-blue-400 to-blue-600 scale-125"
+                  ? "bg-gradient-to-r from-rose-700 to-rose-600 scale-125"
                   : "bg-gray-400"
               }`}
             ></button>
@@ -138,14 +138,14 @@ export default function Testimonials() {
         <div className="flex items-center gap-4 mt-8">
           <button
             onClick={handlePrev}
-            className="px-4 py-2 bg-gradient-to-r from-blue-400 to-blue-600 text-white rounded-full shadow-md hover:opacity-80 transition-all"
+           className="px-6 py-2 text-rose-600 border-2 border-rose-600 rounded-lg bg-transparent hover:bg-rose-600 hover:text-white font-semibold shadow-lg transform hover:-translate-y-1 transition-all duration-300"
           >
             Previous
           </button>
           <button
             onClick={handleNext}
-            className="px-4 py-2 bg-gradient-to-r from-blue-400 to-blue-600 text-white rounded-full shadow-md hover:opacity-80 transition-all"
-          >
+            className="px-6 py-2 text-rose-600 border-2 border-rose-600 rounded-lg bg-transparent hover:bg-rose-600 hover:text-white font-semibold shadow-lg transform hover:-translate-y-1 transition-all duration-300"
+           >
             Next
           </button>
         </div>

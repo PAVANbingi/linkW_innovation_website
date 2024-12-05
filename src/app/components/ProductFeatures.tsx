@@ -26,9 +26,9 @@ const productFeatures = [
 
 export default function ProductFeatures() {
   return (
-    <section className="bg-black py-8">
+    <section className="bg-slate-950 py-8">
       <div className="container mx-auto px-6 lg:px-16 space-y-12">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-white text-center">
+        <h2 className="text-4xl sm:text-6xl hover:text-rose-600 font-bold mb-6 text-white text-center">
         Unlock Smarter Farming with Kisan Mithraa
         </h2>
         {productFeatures.map((feature, index) => (
@@ -40,7 +40,7 @@ export default function ProductFeatures() {
           >
             {/* Left Side - Text Content */}
             <div className="lg:w-1/2 text-center lg:text-left">
-              <h3 className="text-2xl font-semibold text-white mb-4">
+              <h3 className="text-2xl font-semibold text-white mb-4 hover:text-rose-600">
                 {feature.title}
               </h3>
               <p className="text-gray-400 leading-relaxed mb-6">

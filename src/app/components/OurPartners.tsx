@@ -12,10 +12,17 @@ const images = [
 
 const OurPartners: React.FC = () => {
   return (
-    <div className="w-full bg-black py-8 text-gray-400">
-      <h2 className="text-center text-4xl font-bold text-white mb-8">
+    <div className="w-full bg-slate-950 py-8 text-gray-400">
+      <h2 className="text-center text-4xl sm:text-6xl hover:text-rose-600 text-6xl font-bold text-white mb-8">
         Our Partners
       </h2>
+       {/* Optional CTA or Message */}
+       <div className="mt-8 text-center">
+        <p className="text-lg text-gray-400">
+          Together with our partners, we create impactful solutions to drive
+          innovation and growth.
+        </p>
+      </div>
       <section className="relative overflow-hidden">
         {/* Scrolling Row */}
         <div className="flex items-center space-x-4 animate-scroll">
@@ -23,7 +30,7 @@ const OurPartners: React.FC = () => {
           {images.map((image, index) => (
             <div
               key={`partner-${index}`}
-              className="flex-shrink-0 w-36 sm:w-48 h-36 sm:h-48 bg-black hover:bg-black flex items-center justify-center rounded-lg shadow-lg transform hover:scale-110 transition-transform duration-300"
+              className="flex-shrink-0 w-36 sm:w-48 h-36 sm:h-48 bg-slate-950 hover:bg-slate-950 flex items-center justify-center rounded-lg shadow-lg transform hover:scale-110 transition-transform duration-300"
             >
               <img
                 src={image}
@@ -36,7 +43,7 @@ const OurPartners: React.FC = () => {
           {images.map((image, index) => (
             <div
               key={`partner-duplicate-${index}`}
-              className="flex-shrink-0 w-36 sm:w-48 h-36 sm:h-48 bg-black hover:bg-black flex items-center justify-center rounded-lg shadow-lg transform hover:scale-110 transition-transform duration-300"
+              className="flex-shrink-0 w-36 sm:w-48 h-36 sm:h-48 bg-slate-950 hover:bg-slate-950 flex items-center justify-center rounded-lg shadow-lg transform hover:scale-110 transition-transform duration-300"
             >
               <img
                 src={image}
@@ -47,13 +54,7 @@ const OurPartners: React.FC = () => {
           ))}
         </div>
       </section>
-      {/* Optional CTA or Message */}
-      <div className="mt-8 text-center">
-        <p className="text-lg text-black">
-          Together with our partners, we create impactful solutions to drive
-          innovation and growth.
-        </p>
-      </div>
+     
     </div>
   );
 };
