@@ -39,8 +39,8 @@ export default function Gallery() {
   const [hoveredImage, setHoveredImage] = useState<number | null>(null);
 
   return (
-    <div className="relative w-full overflow-hidden mt-[calc(4rem+10px)] py-10 bg-black">
-      <h1 className="text-4xl md:text-5xl font-bold text-center mb-8 text-white">Our Gallery</h1>
+    <div className="relative w-full overflow-hidden mt-[calc(4rem+10px)] py-10 bg-slate-950">
+      <h1 className="text-4xl sm:text-6xl md:text-5xl font-bold text-center mb-8 text-white hover:text-rose-600">Our Gallery</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4 md:px-8 lg:px-16">
         {images.map((image) => (
           <div

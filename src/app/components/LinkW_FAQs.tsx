@@ -1,8 +1,3 @@
-
-
-
-
-
 'use client';
 
 import { useState } from "react";
@@ -69,30 +64,37 @@ export default function LinkW_FAQs() {
   };
 
   return (
-    <section className="bg-black text-gray-300 py-16">
+    <section className="bg-slate-950 text-gray-300 py-16">
       <div className="container mx-auto px-6 lg:px-20">
         {/* Heading */}
-        <h2 className="text-4xl font-bold text-center text-white mb-8">
-        Frequently Asked Questions
+        <h2 className="text-4xl sm:text-6xl hover:text-rose-600 font-bold text-center text-white mb-8 transition-all duration-300">
+        Discover LinkW Innovations: FAQs & Expert Insights
         </h2>
 
         {/* FAQs */}
         <div className="space-y-4">
           {faqs.map((faq, index) => (
-            <div key={index} className="bg-gray-800 rounded-lg shadow-md p-4">
+            <div
+              key={index}
+              className="bg-gray-800 rounded-lg shadow-md p-4 transition-transform duration-300 hover:scale-[1.02]"
+            >
               <div
                 className="flex justify-between items-center cursor-pointer"
                 onClick={() => toggleAnswer(index)}
               >
-                <span className="text-lg font-semibold text-gray-200">
+                <span className="text-lg font-semibold text-gray-200 transition-all hover:text-rose-600">
                   {faq.question}
                 </span>
-                <span className="text-xl text-gray-400">
+                <span
+                  className={`text-xl transition-transform duration-300 ${
+                    activeIndex === index ? "rotate-180 text-rose-600" : "rotate-0 text-gray-400"
+                  }`}
+                >
                   {activeIndex === index ? "-" : "+"}
                 </span>
               </div>
               {activeIndex === index && (
-                <div className="mt-3 text-gray-400 whitespace-pre-line transition-all duration-300">
+                <div className="mt-3 text-gray-400 whitespace-pre-line transition-opacity duration-500 ease-in-out opacity-100">
                   {faq.answer}
                 </div>
               )}
@@ -103,11 +105,10 @@ export default function LinkW_FAQs() {
         {/* Footer Section */}
         <div className="mt-16 flex flex-col lg:flex-row items-center justify-between bg-gray-800 rounded-lg shadow-lg py-6 px-8">
           <p className="text-lg text-gray-300">
-            Still having questions? We’re here to help you! Reach out to us
-            anytime.
+            Still having questions? We’re here to help you! Reach out to us anytime.
           </p>
           <Link href="/contactUs">
-            <button className="mt-4 lg:mt-0 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg shadow">
+            <button className="px-6 py-2 text-rose-600 border-2 border-rose-600 rounded-lg bg-transparent hover:bg-rose-600 hover:text-white font-semibold shadow-lg transform hover:-translate-y-1 transition-all duration-300">
               Ask Now
             </button>
           </Link>

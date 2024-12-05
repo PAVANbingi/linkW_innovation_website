@@ -38,9 +38,9 @@ export default function MeetTheTeam() {
   ];
 
   return (
-    <section className="bg-black text-gray-300 py-16">
+    <section className="bg-slate-950 text-gray-300 py-16">
       <div className="container mx-auto px-6 lg:px-20">
-        <h2 className="text-4xl font-bold mb-6 text-center text-white">Our Team</h2>
+        <h2 className="text-4xl sm:text-6xl font-bold mb-6 text-center text-white hover:text-rose-600">Meet Our Team</h2>
         <p className="text-center text-lg mb-12 text-gray-400">
           Meet the extraordinary individuals driving LinkW Innovations forward. 
           Our team is committed to revolutionizing the agricultural and industrial 
@@ -103,3 +103,4 @@ export default function MeetTheTeam() {
     </section>
   );
 }
+
