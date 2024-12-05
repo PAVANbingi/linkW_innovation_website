@@ -26,7 +26,7 @@ const productFeatures = [
 
 export default function ProductFeatures() {
   return (
-    <section className="bg-black py-12 relative w-full overflow-hidden mt-[calc(4rem+10px)]">
+    <section className="bg-black py-8">
       <div className="container mx-auto px-6 lg:px-16 space-y-12">
         <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-white text-center">
         Unlock Smarter Farming with Kisan Mithraa

@@ -28,18 +28,21 @@ export default function Home() {
 <MeetTheTeam/>
 
         <OurPartners/>
+       
 
         <ProductFeatures/>
-
-        <ProductIntro/>
-
         <Usecases />
+
+        
+
+       
 
           <ProductBenefits/>
 
           <ProductSoled/>
 
           <ProductUseCases/>
+          <ProductIntro/>
 
 
           <Order/>
