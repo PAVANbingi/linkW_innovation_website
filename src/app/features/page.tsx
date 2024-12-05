@@ -5,13 +5,17 @@ import ProductBenefits from '../components/ProductBenefits';
 import ProductFeatures from '../components/ProductFeatures';
 import ProductSoled from '../components/ProductSoled';
 import ProductFAQs from '../components/ProductFAQs';
+import ProductFeaturesIntro from '../components/ProductFeaturesIntro';
+import UseCases from '../components/Usecases';
 
 export default function features() {
   return (
     
     <div className="pt-10"> {/* Padding top to prevent content overlap */}
         <ProductBannerSlider />
+        <UseCases/>
         <ProductFeatures />
+        <ProductFeaturesIntro/>
         <ProductBenefits />
         <ProductCart/>
         <ProductSoled /> 

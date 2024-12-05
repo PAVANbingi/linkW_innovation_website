@@ -12,8 +12,8 @@ const images = [
 
 const OurPartners: React.FC = () => {
   return (
-    <div className="w-full bg-black py-8 text-black">
-      <h2 className="text-center text-4xl font-bold text-black mb-8">
+    <div className="w-full bg-black py-8 text-gray-400">
+      <h2 className="text-center text-4xl font-bold text-white mb-8">
         Our Partners
       </h2>
       <section className="relative overflow-hidden">
