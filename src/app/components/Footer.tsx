@@ -10,7 +10,7 @@ export default function Footer() {
 
       <Link href="/">
         <Image
-              src="/linkW.png"
+              src="/nav1.png"
               alt="Company Logo"
               height={20}
               width={120}

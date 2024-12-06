@@ -3,43 +3,43 @@ import Image from "next/image";
 
 const useCases = [
   {
-    icon: "/m1.png",
+    icon: "/motor_icon.png",
     title: "Smart Motor Control",
     description: "Remotely operate your motor via (IVRS, SMS & Mobile App.)",
   },
   {
-    icon: "/m2.png",
+    icon: "/motors_icon.png",
     title: "Multi-Motor Management",
     description: "Easily control multiple motors nearby in your field.",
   },
   {
-    icon: "/m3.png",
+    icon: "/valve.png",
     title: "Efficient Valve Control",
     description: "Manage multiple valves seamlessly using the same device.",
   },
   {
-    icon: "/m4.png",
+    icon: "/lightIcon.png",
     title: "Farm Lighting Control",
     description: "Turn farm bulbs on/off remotely for better visibility.",
   },
   {
-    icon: "/m5.png",
+    icon: "/sensor_log.png",
     title: "Advanced Sensor Data",
     description: "Monitor critical farm metrics like soil moisture, pH, and salinity.",
   },
   {
-    icon: "/m6.png",
+    icon: "/speakerIcon.png",
     title: "Animal Protection",
     description: "Deter animals with customized sounds to safeguard your crops.",
   },
   {
-    icon: "/m7.png",
+    icon: "/water.png",
     title: "AWLC Technique",
     description:
       "Adopt water-efficient farming for lowland rice with less water.",
   },
   {
-    icon: "/m8.png",
+    icon: "/coinCost.png",
     title: "Cost-Efficient Farming",
     description: "Save time, labor, and resources with automated operations.",
   },
@@ -62,7 +62,7 @@ const ProductUseCases = () => {
           >
             {/* Icon */}
             <div className="relative w-16 h-16 mb-4">
-              <div className="absolute inset-0 bg-rose-600 rounded-full opacity-0 blur-lg transition-opacity duration-500 group-hover:opacity-50"></div>
+              <div className="absolute inset-0 bg-rose-600 rounded-full opacity-0 blur-lg transition-opacity duration-500 group-hover:opacity-70"></div>
               <Image
                 src={useCase.icon}
                 alt={useCase.title}
@@ -73,7 +73,7 @@ const ProductUseCases = () => {
             </div>
 
             {/* Title */}
-            <h3 className="text-lg font-semibold text-white mb-2 text-center transition-all duration-500 group-hover:text-rose-500 group-hover:translate-y-1">
+            <h3 className="text-lg font-semibold text-white mb-2 text-center transition-all duration-500 group-hover:text-rose-600 group-hover:translate-y-1">
               {useCase.title}
             </h3>
 
