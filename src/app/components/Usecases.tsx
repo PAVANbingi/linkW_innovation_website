@@ -22,7 +22,7 @@ const useCases = [
     title: "Control Lighting Easily Through the Mobile App",
   },
   {
-    icon: "/safety.png",
+    icon: "/safetyIcon.png",
     title: "Ensures Safety by Preventing Electric Shocks",
   },
   {
