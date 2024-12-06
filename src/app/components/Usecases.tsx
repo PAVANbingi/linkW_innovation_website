@@ -10,7 +10,7 @@ const useCases = [
     title: "Real-Time Theft Alerts for Enhanced Security",
   },
   {
-    icon: "/verified_icon.png",
+    icon: "/verified_Icon.png",
     title: "Protects Motors from Voltage Fluctuations & Dry Runs",
   },
   {
