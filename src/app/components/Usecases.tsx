@@ -2,43 +2,43 @@ import Image from "next/image";
 
 const useCases = [
   {
-    icon: "/mobile_app.png",
+    icon: "/mobileTrack.png",
     title: "Track Utilization & Access Detailed Reports via Mobile App",
   },
   {
-    icon: "/theft_alert.png",
+    icon: "/msg_alert.png",
     title: "Real-Time Theft Alerts for Enhanced Security",
   },
   {
-    icon: "/verified.png",
+    icon: "/verified_icon.png",
     title: "Protects Motors from Voltage Fluctuations & Dry Runs",
   },
   {
-    icon: "/support.png",
+    icon: "/serviceIcon.png",
     title: "Available in Multiple Indian Languages",
   },
   {
-    icon: "/light.png",
+    icon: "/lightIcon.png",
     title: "Control Lighting Easily Through the Mobile App",
   },
   {
-    icon: "/electric-shocks.png",
+    icon: "/safety.png",
     title: "Ensures Safety by Preventing Electric Shocks",
   },
   {
-    icon: "/sim_cost.png",
+    icon: "/coinCost.png",
     title: "Reduces SIM Costs by Up to 60%",
   },
   {
-    icon: "/save_time.png",
+    icon: "/saveTime.png",
     title: "Optimized to Save Time and Effort",
   },
   {
-    icon: "/motor_control.png",
+    icon: "/mobileControl.png",
     title: "Control Motor via Call, SMS, or Mobile App",
   },
   {
-    icon: "/rank.png",
+    icon: "/warrentyIcon.png",
     title: "1-Year Warranty with Comprehensive Support Services",
   },
 ];
@@ -56,7 +56,7 @@ export default function UseCases() {
             >
               <div className="w-12 h-12 flex-shrink-0 relative">
                 {/* Icon Animation */}
-                <div className="absolute inset-0 bg-rose-600 rounded-full opacity-0 blur-lg group-hover:opacity-50 group-hover:scale-110 transition-all duration-300"></div>
+                <div className="absolute inset-0 bg-rose-600 rounded-full opacity-0 blur-lg group-hover:opacity-100 group-hover:scale-110 transition-all duration-300"></div>
                 <Image
                   src={useCase.icon}
                   alt={useCase.title}
@@ -68,7 +68,7 @@ export default function UseCases() {
 
               {/* Title with Animation */}
               <div className="flex flex-col justify-center">
-                <p className="text-gray-400 text-base font-medium leading-relaxed group-hover:text-rose-400 group-hover:translate-x-1 group-hover:transition-all group-hover:duration-300">
+                <p className="text-gray-400 text-base font-medium leading-relaxed group-hover:text-rose-600 group-hover:translate-x-1 group-hover:transition-all group-hover:duration-300">
                   {useCase.title}
                 </p>
               </div>

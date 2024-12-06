@@ -10,7 +10,7 @@ import { useSwipeable } from "react-swipeable";
 export default function Order() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const images = ["/20.png", "/pcart2.png", "/21.PNG", "/22.PNG"];
+  const images = ["/20.png", "/pcart2.png", "/21.png", "/22.png"];
 
   const handleNext = () => {
     setCurrentImageIndex((prevIndex) =>

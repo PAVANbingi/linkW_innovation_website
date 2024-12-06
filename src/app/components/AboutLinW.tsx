@@ -56,7 +56,7 @@ export default function AboutLinW() {
   };
 
   return (
-    <section className="bg-slate-950 text-gray-400 py-12 px-6 lg:px-20">
+    <section className="bg-slate-950 text-gray-400 py-4 px-6 lg:px-20">
       <h2 className="text-4xl sm:text-6xl text-center font-bold mb-6 text-white hover:text-rose-600 transition-colors duration-300">
         About LinkW Innovations
       </h2>
