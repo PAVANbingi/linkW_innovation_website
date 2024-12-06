@@ -3,12 +3,13 @@
 export default function OurIdentity() {
   return (
     <section className="bg-slate-950  py-12 px-6 lg:px-20">
+      <h2 className=" text-4xl sm:text-6xl font-bold mb-6 text-center text-white hover:text-rose-600">
+    Who We Are
+  </h2>
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center">
        {/* Left Side: Text Content */}
 <div className="lg:w-1/2 text-center lg:text-left">
-  <h2 className=" text-4xl sm:text-6xl font-bold mb-6 text-white hover:text-rose-600">
-    Who We Are
-  </h2>
+  
   <p className="text-lg text-gray-400 leading-relaxed mb-4">
     At <span className="font-semibold hover:text-rose-600">LinkW Innovations</span>, we are reshaping the future with a relentless commitment to innovation and sustainability. Guided by the visionary leadership of our CEO, <span className="font-semibold hover:text-rose-600">Mallesh Sunchu</span>, we strive to empower industries with groundbreaking solutions that inspire progress and make a global impact.
   </p>

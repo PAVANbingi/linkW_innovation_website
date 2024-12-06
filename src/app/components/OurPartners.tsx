@@ -13,14 +13,13 @@ const images = [
 const OurPartners: React.FC = () => {
   return (
     <div className="w-full bg-slate-950 py-8 text-gray-400">
-      <h2 className="text-center text-4xl sm:text-6xl hover:text-rose-600 text-6xl font-bold text-white mb-8">
-        Our Partners
+      <h2 className="text-center text-4xl sm:text-6xl hover:text-rose-600  font-bold text-white mb-8">
+      What We’ve Achieved
       </h2>
        {/* Optional CTA or Message */}
        <div className="mt-8 text-center">
         <p className="text-lg text-gray-400">
-          Together with our partners, we create impactful solutions to drive
-          innovation and growth.
+        Driving innovation and fostering growth through impactful solutions—together, we achieve greatness.
         </p>
       </div>
       <section className="relative overflow-hidden">

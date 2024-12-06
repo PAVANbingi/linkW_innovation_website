@@ -40,7 +40,7 @@ export default function ProductFeatures() {
           >
             {/* Left Side - Text Content */}
             <div className="lg:w-1/2 text-center lg:text-left">
-              <h3 className="text-2xl font-semibold text-white mb-4 hover:text-rose-600">
+              <h3 className="text-3xl font-semibold text-white mb-4 hover:text-rose-600 ">
                 {feature.title}
               </h3>
               <p className="text-gray-400 leading-relaxed mb-6">

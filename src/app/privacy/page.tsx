@@ -2,13 +2,13 @@ import React from "react";
 
 const PrivacyPolicy = () => {
   return (
-    <div className="relative w-full overflow-hidden mt-[calc(4rem+10px)] bg-gray-100 text-gray-800 px-6 py-12 md:px-16 lg:px-24 xl:px-32">
+    <div className="relative w-full overflow-hidden mt-[calc(4rem+10px)] text-gray-400 bg-slate-950 px-6 py-12 md:px-16 lg:px-24 xl:px-32">
       <div className="max-w-6xl mx-auto">
         {/* Title */}
-        <h1 className="text-3xl md:text-4xl font-bold text-center text-black mb-8">
+        <h1 className="text-3xl md:text-4xl font-bold text-center text-white hover:text-rose-600 mb-8 transition-all duration-300">
           Privacy Policy
         </h1>
-        <p className="text-center text-gray-600 mb-12 leading-relaxed">
+        <p className="text-center text-white mb-12 leading-relaxed opacity-80 hover:opacity-100 transition-all duration-300">
           At <span className="font-bold">LinkW Innovation Pvt. Ltd.</span> (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;), we are committed
           to protecting your personal information and providing you with
           transparency about how we handle your data.
@@ -16,11 +16,11 @@ const PrivacyPolicy = () => {
 
         {/* Content Sections */}
         {/* Section 1: Data Collection */}
-        <section className="mb-12">
-          <h2 className="text-xl md:text-2xl font-semibold text-black mb-4">
+        <section className="mb-2">
+          <h2 className="text-xl md:text-2xl font-semibold text-white hover:text-rose-600 mb-4 transition-all duration-300">
             1. Data Collection
           </h2>
-          <ul className="list-disc list-inside space-y-2">
+          <ul className="list-disc list-inside space-y-1">
             <li>
               <span className="font-semibold">Account Information:</span> Includes your name, phone number, email
               address, and other essential details required for account creation
@@ -41,8 +41,8 @@ const PrivacyPolicy = () => {
         </section>
 
         {/* Section 2: Data Usage */}
-        <section className="mb-12">
-          <h2 className="text-xl md:text-2xl font-semibold text-black mb-4">
+        <section className="mb-2">
+          <h2 className="text-xl md:text-2xl font-semibold text-white hover:text-rose-600 mb-4 transition-all duration-300">
             2. Data Usage
           </h2>
           <ul className="list-disc list-inside space-y-2">
@@ -65,7 +65,7 @@ const PrivacyPolicy = () => {
 
         {/* Section 3: Data Sharing */}
         <section className="mb-12">
-          <h2 className="text-xl md:text-2xl font-semibold text-black mb-4">
+          <h2 className="text-xl md:text-2xl font-semibold text-white hover:text-rose-600 mb-4 transition-all duration-300">
             3. Data Sharing
           </h2>
           <ul className="list-disc list-inside space-y-2">
@@ -88,7 +88,7 @@ const PrivacyPolicy = () => {
 
         {/* Section 4: Data Security */}
         <section className="mb-12">
-          <h2 className="text-xl md:text-2xl font-semibold text-black mb-4">
+          <h2 className="text-xl md:text-2xl font-semibold text-white hover:text-rose-600 mb-4 transition-all duration-300">
             4. Data Security
           </h2>
           <p className="leading-relaxed">
@@ -118,7 +118,7 @@ const PrivacyPolicy = () => {
 
         {/* Section 5: Data Retention */}
         <section className="mb-12">
-          <h2 className="text-xl md:text-2xl font-semibold text-black mb-4">
+          <h2 className="text-xl md:text-2xl font-semibold text-white hover:text-rose-600 mb-4 transition-all duration-300">
             5. Data Retention
           </h2>
           <p className="leading-relaxed">
@@ -131,7 +131,7 @@ const PrivacyPolicy = () => {
 
         {/* Section 6: User Rights */}
         <section className="mb-12">
-          <h2 className="text-xl md:text-2xl font-semibold text-black mb-4">
+          <h2 className="text-xl md:text-2xl font-semibold text-white hover:text-rose-600 mb-4 transition-all duration-300">
             6. User Rights
           </h2>
           <ul className="list-disc list-inside space-y-2">
@@ -150,27 +150,27 @@ const PrivacyPolicy = () => {
 
         {/* Contact Information */}
         <section>
-          <h2 className="text-xl md:text-2xl font-semibold text-black mb-4">
+          <h2 className="text-xl md:text-2xl font-semibold text-white hover:text-rose-600 mb-4 transition-all duration-300">
             Contact Information
           </h2>
           <p className="leading-relaxed">
             If you have any questions, concerns, or feedback about this Privacy
             Policy or our data practices, please feel free to contact us:
           </p>
-         
+
           <address className="mt-4 not-italic">
             <p><strong>LinkW Innovation Pvt. Ltd.</strong></p>
             <p>H No: 17-112, Road No-3, Kamalanagar,</p>
             <p>Dilsukhnagar, Hyderabad, Telangana - 500060, India</p>
             <p className="mt-2">
               <strong>Email:</strong>{" "}
-              <a href="mailto:team@linkwinnovation.com" className="text-blue-600 hover:underline">
+              <a href="mailto:team@linkwinnovation.com" className="text-blue-600 hover:underline transition-all duration-300">
                 team@linkwinnovation.com
               </a>
             </p>
             <p>
               <strong>Phone:</strong>{" "}
-              <a href="tel:+919032747058" className="text-blue-600 hover:underline">
+              <a href="tel:+919032747058" className="text-blue-600 hover:underline transition-all duration-300">
                 +91 90327 47058
               </a>
             </p>

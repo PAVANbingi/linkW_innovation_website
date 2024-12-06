@@ -10,7 +10,7 @@ import { useSwipeable } from "react-swipeable";
 export default function Order() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const images = ["/pcart1.png", "/pcart2.png", "/pcart3.jpg", "/pcart4.jpg"];
+  const images = ["/20.png", "/pcart2.png", "/21.PNG", "/22.PNG"];
 
   const handleNext = () => {
     setCurrentImageIndex((prevIndex) =>
@@ -132,7 +132,7 @@ export default function Order() {
               </button>
             </Link>
           </div>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 ">
             <a
               href="https://www.amazon.in"
               target="_blank"

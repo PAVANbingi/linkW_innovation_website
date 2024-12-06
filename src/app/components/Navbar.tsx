@@ -75,44 +75,58 @@ const Navbar = () => {
         <div className="hidden md:flex">
           <Link href="/order">
             <button
-               className="px-6 py-2 text-rose-600 border-2 border-rose-600 rounded-lg bg-transparent hover:bg-rose-600 hover:text-white font-semibold shadow-lg transform hover:-translate-y-1 transition-all duration-300" >
+              className="px-6 py-2 text-rose-600 border-2 border-rose-600 rounded-lg bg-transparent hover:bg-rose-600 hover:text-white font-semibold shadow-lg transform hover:-translate-y-1 transition-all duration-300" >
               Order-Now
             </button>
           </Link>
         </div>
 
-        {/* Mobile Menu Icon */}
-        <div className="md:hidden flex items-center">
-          <button
-            onClick={toggleMenu}
-            className="bg-gradient-to-r  from-rose-700 to-rose-600 text-white p-2 rounded-full focus:outline-none transition-transform duration-300 hover:bg-gradient-to-r hover:from-gray-400 hover:to-gray-500"
-          >
-            {isOpen ? (
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            ) : (
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
-              </svg>
-            )}
-          </button>
-        </div>
+       {/* Mobile Menu Icon */}
+<div className="md:hidden">
+  {isOpen ? (
+    // Close Icon (X) - Visible only when the menu is open
+    <button
+      onClick={toggleMenu}
+      className="fixed top-4 right-4 bg-gradient-to-r from-rose-700 to-rose-600 text-white p-2 rounded-full focus:outline-none transition-transform duration-300 hover:bg-gradient-to-r hover:from-gray-400 hover:to-gray-500 z-50"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+        <line x1="6" y1="6" x2="18" y2="18" strokeLinecap="round" strokeWidth="2" />
+        <line x1="6" y1="18" x2="18" y2="6" strokeLinecap="round" strokeWidth="2" />
+      </svg>
+    </button>
+  ) : (
+    // Hamburger Menu Icon - Visible only when the menu is closed
+    <button
+      onClick={toggleMenu}
+      className="fixed top-4 right-4 bg-gradient-to-r from-rose-700 to-rose-600 text-white p-2 rounded-full focus:outline-none transition-transform duration-300 hover:bg-gradient-to-r hover:from-gray-400 hover:to-gray-500 z-50"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M3 6h18M3 12h18M3 18h18"
+        />
+      </svg>
+    </button>
+  )}
+</div>
+
       </div>
 
       {/* Mobile Menu */}
       {isOpen && (
         <div ref={menuRef} className="md:hidden flex flex-col items-center space-y-6 p-6 bg-gray-900 bg-opacity-90 backdrop-blur-md rounded-lg">
-          <Link href="/" onClick={handleLinkClick} className="text-white hover:bg-gradient-to-r  from-rose-700 to-rose-600 transition duration-300 p-2 rounded-lg">
+          <Link href="/" onClick={handleLinkClick} className="text-white hover:bg-gradient-to-r from-rose-700 to-rose-600 transition duration-300 p-2 rounded-lg">
             Home
           </Link>
-          <Link href="/aboutUs" onClick={handleLinkClick} className="text-white hover:bg-gradient-to-r  from-rose-700 to-rose-600 transition duration-300 p-2 rounded-lg">
+          <Link href="/aboutUs" onClick={handleLinkClick} className="text-white hover:bg-gradient-to-r from-rose-700 to-rose-600 transition duration-300 p-2 rounded-lg">
             About Us
           </Link>
-          <Link href="/features" onClick={handleLinkClick} className="text-white hover:bg-gradient-to-r  from-rose-700 to-rose-600 transition duration-300 p-2 rounded-lg">
+          <Link href="/features" onClick={handleLinkClick} className="text-white hover:bg-gradient-to-r from-rose-700 to-rose-600 transition duration-300 p-2 rounded-lg">
             Features
           </Link>
-          <Link href="/gallery" onClick={handleLinkClick} className="text-white hover:bg-gradient-to-r  from-rose-700 to-rose-600 transition duration-300 p-2 rounded-lg">
+          <Link href="/gallery" onClick={handleLinkClick} className="text-white hover:bg-gradient-to-r from-rose-700 to-rose-600 transition duration-300 p-2 rounded-lg">
             Gallery
           </Link>
           <Link href="/contactUs" onClick={handleLinkClick} className="text-white hover:bg-gradient-to-r from-rose-700 to-rose-600 transition duration-300 p-2 rounded-lg">
@@ -120,9 +134,9 @@ const Navbar = () => {
           </Link>
 
           {/* Call to Action Button (Mobile Menu) */}
-                    <Link href="/order" onClick={handleLinkClick}>
+          <Link href="/order" onClick={handleLinkClick}>
             <button
-               className="px-6 py-2 text-rose-600 border-2 border-rose-600 rounded-lg bg-transparent hover:bg-rose-600 hover:text-white font-semibold shadow-lg transform hover:-translate-y-1 transition-all duration-300">
+              className="px-6 py-2 text-rose-600 border-2 border-rose-600 rounded-lg bg-transparent hover:bg-rose-600 hover:text-white font-semibold shadow-lg transform hover:-translate-y-1 transition-all duration-300">
               Order-Now
             </button>
           </Link>
