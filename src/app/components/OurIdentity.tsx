@@ -11,13 +11,13 @@ export default function OurIdentity() {
 <div className="lg:w-1/2 text-center lg:text-left">
   
   <p className="text-lg text-gray-400 leading-relaxed mb-4">
-    At <span className="font-semibold hover:text-rose-600">LinkW Innovations</span>, we are reshaping the future with a relentless commitment to innovation and sustainability. Guided by the visionary leadership of our CEO, <span className="font-semibold hover:text-rose-600">Mallesh Sunchu</span>, we strive to empower industries with groundbreaking solutions that inspire progress and make a global impact.
+    At <span className="font-semibold hover:text-rose-600">LinkW Innovation</span> we are pioneering a brighter, sustainable future through innovation and forward-thinking solutions. With a steadfast commitment to excellence and progress, we empower industries by creating transformative solutions that drive growth, inspire change, and leave a lasting global impact.
   </p>
   <p className="text-lg text-gray-400 leading-relaxed mb-4">
-  &quot;LinkW Innovations’ platform is not just about innovation; it is a beacon of sustainable progress, setting a new standard for others to follow. Together, we are building a smarter, greener future.&quot;
+  &quot;LinkW Innovation’ platform is not just about innovation; it&apos;s a symbol of sustainable advancement, setting new benchmarks for innovation and collaboration. Together, we are shaping a smarter, greener tomorrow. &quot;
   </p>
-  <p className="text-lg text-gray-200 font-semibold hover:text-rose-600 ">Mallesh Sunchu</p>
-  <p className="text-gray-200 hover:text-rose-600">CEO of LinkW Innovations</p>
+  {/* <p className="text-lg text-gray-200 font-semibold hover:text-rose-600 ">Mallesh Sunchu</p>
+  <p className="text-gray-200 hover:text-rose-600">CEO of LinkW Innovations</p> */}
 </div>
 
         {/* Right Side: YouTube Video */}

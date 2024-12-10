@@ -50,22 +50,22 @@ export default function ProductFAQs() {
     },
     {
       question: "Can I track the performance of my motors over time?",
-      answer: "Yes, the Kisan Mithraa Mobile Auto Starter generates monthly usage reports and allows you to track the performance of motors, including runtime, power consumption, and efficiency. These reports help you optimize operations and identify any areas for improvement."
+      answer: "Yes,Kisan Mithraa mobile starter  allows to track motor status and motor consumed current of each face."
     },
-    {
-      question: "How are software updates handled?",
-      answer: "The device receives automatic software updates over the internet, ensuring that it stays up-to-date with the latest features, performance improvements, and bug fixes. This process is seamless and doesn’t require any manual intervention."
-    },
+    // {
+    //   question: "How are software updates handled?",
+    //   answer: "The device receives automatic software updates over the internet, ensuring that it stays up-to-date with the latest features, performance improvements, and bug fixes. This process is seamless and doesn’t require any manual intervention."
+    // },
     {
       question: "Is customer support available for installation and troubleshooting?",
       answer: "Yes, our dedicated customer support team is available to assist you throughout the installation process and beyond. Whether you need help with setup, troubleshooting, or any other concerns, our team is ready to guide you with step-by-step instructions."
     },
     {
-      question: "Can I control the Kisan Mithraa Mobile Auto Starter from anywhere?",
+      question: "Can I control the Kisan Mithraa Mobile Starter from anywhere?",
       answer: "Absolutely! You can control and monitor your farm equipment from anywhere using the mobile app or via SMS. Whether you're at the farm, at home, or on the go, you can manage operations remotely, ensuring flexibility and convenience."
     },
     {
-      question: "Why is the Kisan Mithraa Mobile Auto Starter a good investment for farmers?",
+      question: "Why is the Kisan Mithraa Mobile  Starter a good investment for farmers?",
       answer: "The Kisan Mithraa Mobile Auto Starter helps farmers increase efficiency by automating critical tasks. With its ability to reduce resource wastage, prevent equipment damage, and provide real-time insights, it lowers operational costs and boosts productivity, making it a valuable investment for any farm."
     },
     {
@@ -73,17 +73,17 @@ export default function ProductFAQs() {
       answer: "Yes, the Kisan Mithraa Mobile Auto Starter is designed to integrate seamlessly with your existing farm equipment. Whether you're upgrading an older system or starting fresh, this device works with most farm setups without requiring major modifications."
     },
     {
-      question: "How does the Kisan Mithraa Mobile Auto Starter contribute to sustainable farming?",
+      question: "How does the Kisan Mithraa Mobile  Starter contribute to sustainable farming?",
       answer: "The device helps promote sustainability by optimizing the use of water, energy, and other resources. It reduces waste, improves irrigation efficiency, and protects equipment from wear and tear, contributing to more eco-friendly and cost-effective farming practices."
     },
-    {
-      question: "What kind of real-time data can I monitor through the app?",
-      answer: "Through the app, you can monitor data such as motor status (ON/OFF), power consumption, voltage levels, fuse status, and dry run conditions. These insights help you stay informed and make better decisions for your farm's operations."
-    },
-    {
-      question: "Can I get reports for specific time periods?",
-      answer: "Yes, the system allows you to generate detailed reports for any selected time period, whether it’s daily, weekly, or monthly. These reports offer insights into motor performance, energy consumption, and operational efficiency, helping you make informed decisions."
-    },
+    // {
+    //   question: "What kind of real-time data can I monitor through the app?",
+    //   answer: "Through the app, you can monitor data such as motor status (ON/OFF), power consumption, voltage levels, fuse status, and dry run conditions. These insights help you stay informed and make better decisions for your farm's operations."
+    // },
+    // {
+    //   question: "Can I get reports for specific time periods?",
+    //   answer: "Yes, the system allows you to generate detailed reports for any selected time period, whether it’s daily, weekly, or monthly. These reports offer insights into motor performance, energy consumption, and operational efficiency, helping you make informed decisions."
+    // },
     {
       question: "How does the Kisan Mithraa Mobile Auto Starter add value to investors?",
       answer: "The Kisan Mithraa Mobile Auto Starter is a cutting-edge solution that meets the growing demand for smart farming technology. Its ability to automate farm operations, reduce costs, and provide real-time insights makes it a valuable tool in the agriculture sector. Investors can benefit from the product’s scalability and its potential to revolutionize farming practices, presenting significant growth opportunities."

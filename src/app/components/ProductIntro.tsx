@@ -13,7 +13,7 @@ export default function ProductIntro() {
           SMART SOLUTIONS FOR SMARTER FARMING 
           </h2>
           <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-gray-400 mb-8">
-            At LinW Innovations, we specialize in developing and implementing 
+            At LinkW Innovation, we specialize in developing and implementing 
             cutting-edge solutions for precision farming. Our primary focus is 
             on creating efficient and effective irrigation systems that prioritize 
             sustainability. By conserving natural resources and optimizing water usage, 

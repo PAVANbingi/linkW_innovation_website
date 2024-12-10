@@ -3,15 +3,19 @@ import Image from "next/image";
 const warrantyItems = [
   {
     icon: "/w1.png", // Replace with the path to your "2 Years Warranty" icon
-    title: "1 Year Warranty",
+    title: "1 Year Guarantee ",
   },
   {
     icon: "/w2.png", // Replace with the path to your "Assurance of Safety" icon
     title: "Assurance of Safety",
   },
+  // {
+  //   icon: "/w3.png", // Replace with the path to your "Free Home Service" icon
+  //   title: "Free Home Service",
+  // },
   {
-    icon: "/w3.png", // Replace with the path to your "Free Home Service" icon
-    title: "Free Home Service",
+    icon: "/indian.png", // Replace with the path to your "Free Home Service" icon
+    title: "Made in india",
   },
 ];
 

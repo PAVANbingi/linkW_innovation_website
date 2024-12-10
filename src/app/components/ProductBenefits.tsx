@@ -22,9 +22,9 @@ const benefits = [
     image: "/bn3.jpg",
   },
   {
-    title: "Fuse Protection Notifications",
+    title: "Dry Run Protection",
     description:
-      "Kisan Mithraa’s fuse protection feature ensures your motors stay safe during operation. If a fuse blows, the system will immediately notify you so you can take quick action. This proactive notification helps you avoid prolonged downtime and enables you to troubleshoot problems without delay. Preventing fuse failure from going unnoticed is crucial for maintaining the operational efficiency of your motors. With the Kisan Mithraa Mobile Auto Starter, you can protect your investment by receiving real-time updates and acting quickly to resolve issues before they lead to larger problems. This ensures that your farming operations continue without unnecessary interruptions, reducing maintenance costs and increasing reliability.",
+      "Prevent unnecessary wear and damage with Kisan Mithraa's dry run protection. This advanced feature detects when the motor is running without water flow—a condition that can cause overheating and significant damage. Once detected, the system automatically halts motor operation to prevent further harm. This ensures that your equipment remains in optimal condition, extends its lifespan, and reduces maintenance costs. With dry run protection, you can focus on your farm's productivity without worrying about accidental damage to your motor, making it a smarter, more reliable solution for modern agricultural operations.",
     image: "/bn4.jpg",
   },
   {
@@ -33,8 +33,8 @@ const benefits = [
       "Protect your motor investment with Kisan Mithraa’s built-in voltage safeguards. This feature offers high and low voltage detection, automatically monitoring fluctuations in your farm’s power supply. If the voltage moves outside the safe range, you’ll be immediately notified, allowing you to avoid potential damage to your motors and other electrical equipment. Voltage fluctuations can cause serious long-term damage to motors, resulting in expensive repairs and downtime. With Kisan Mithraa, you can ensure smooth motor operation no matter what the power conditions are. The voltage protection keeps your equipment secure, saving you money on repairs and preventing unexpected shutdowns, so you can run your farm with confidence.",
     image: "/bn5.png",
   },
-  // Add the remaining benefits similarly
 ];
+
 
 export default function ProductBenefits() {
   const [currentIndex, setCurrentIndex] = useState(0);

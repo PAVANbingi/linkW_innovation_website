@@ -3,12 +3,12 @@ import Image from "next/image";
 const useCases = [
   {
     icon: "/mobileTrack.png",
-    title: "Track Utilization & Access Detailed Reports via Mobile App",
+    title: "Track Utilization of motor & Access Detailed Reports via Mobile Phone",
   },
-  {
-    icon: "/msg_alert.png",
-    title: "Real-Time Theft Alerts for Enhanced Security",
-  },
+  // {
+  //   icon: "/msg_alert.png",
+  //   title: "Real-Time Theft Alerts for Enhanced Security",
+  // },
   {
     icon: "/verified_Icon.png",
     title: "Protects Motors from Voltage Fluctuations & Dry Runs",
@@ -19,7 +19,7 @@ const useCases = [
   },
   {
     icon: "/lightIcon.png",
-    title: "Control Lighting Easily Through the Mobile App",
+    title: "Control Lighting Easily Through the Mobile Phone",
   },
   {
     icon: "/safetyIcon.png",
@@ -27,7 +27,7 @@ const useCases = [
   },
   {
     icon: "/coinCost.png",
-    title: "Reduces SIM Costs by Up to 60%",
+    title: "Cost-efficient and delivers exceptional value for money.",
   },
   {
     icon: "/saveTime.png",
@@ -35,7 +35,7 @@ const useCases = [
   },
   {
     icon: "/mobileControl.png",
-    title: "Control Motor via Call, SMS, or Mobile App",
+    title: "Control Motor via Call, SMS, or Mobile Phone",
   },
   {
     icon: "/warrentyIcon.png",

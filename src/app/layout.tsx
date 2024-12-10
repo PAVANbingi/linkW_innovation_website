@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import LeftFloatingActionButtons from "./components/LeftFloatingActionButtons";
 import RightFloatingActionButtons from "./components/RightFloatingActionButtons";
-import CustomCursor from "./components/CustomCursor";
+// import CustomCursor from "./components/CustomCursor";
 
 
 const geistSans = localFont({
@@ -39,7 +39,7 @@ export default function RootLayout({
         <header>
           <Navbar /> {/* Navbar component */}
         </header>
-        <CustomCursor/>
+        {/* <CustomCursor/> */}
 
         <main className="min-h-screen">{children}</main> {/* Main content area */}
         <LeftFloatingActionButtons />

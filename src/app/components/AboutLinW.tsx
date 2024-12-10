@@ -9,12 +9,12 @@ export default function AboutLinW() {
   const [touchStart, setTouchStart] = useState<number | null>(null);
 
   const images: string[] = [
-    "/a1.webp",
-    "/a2.jpg",
-    "/a6.webp",
-    "/a4.jpg",
-    "/a5.webp",
-    "/a6.webp",
+    "/a1.webp", "/a1.webp", "/a1.webp", "/a1.webp", "/a1.webp", "/a1.webp",
+    // "/a2.jpg",
+    // "/a6.webp",
+    // "/a4.jpg",
+    // "/a5.webp",
+    // "/a6.webp",
   ];
 
   const handleNext = () => {
@@ -131,7 +131,7 @@ export default function AboutLinW() {
           </p>
 
           <p className="text-lg transition-opacity duration-700 ease-in-out">
-            At <strong className="text-white hover:text-rose-600">LinkW Innovations,</strong> we believe in the power of technology to
+            At <strong className="text-white hover:text-rose-600">LinkW Innovation,</strong> we believe in the power of technology to
             transform lives. Together, let’s shape a smarter and more connected
             future for all.
           </p>

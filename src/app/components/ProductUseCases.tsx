@@ -22,16 +22,16 @@ const useCases = [
     title: "Farm Lighting Control",
     description: "Turn farm bulbs on/off remotely for better visibility.",
   },
-  {
-    icon: "/sensor_log.png",
-    title: "Advanced Sensor Data",
-    description: "Monitor critical farm metrics like soil moisture, pH, and salinity.",
-  },
-  {
-    icon: "/speakerIcon.png",
-    title: "Animal Protection",
-    description: "Deter animals with customized sounds to safeguard your crops.",
-  },
+  // {
+  //   icon: "/sensor_log.png",
+  //   title: "Advanced Sensor Data",
+  //   description: "Monitor critical farm metrics like soil moisture, pH, and salinity.",
+  // },
+  // {
+  //   icon: "/speakerIcon.png",
+  //   title: "Animal Protection",
+  //   description: "Deter animals with customized sounds to safeguard your crops.",
+  // },
   {
     icon: "/water.png",
     title: "AWLC Technique",
@@ -50,7 +50,7 @@ const ProductUseCases = () => {
     <section className="bg-slate-950 py-10 px-6 lg:px-20">
       {/* Title */}
       <h2 className="text-4xl sm:text-6xl font-bold text-center mb-10 text-white hover:text-rose-600 animate-fade-in">
-        Uses of Kisan Mithraa Mobile Auto Starter
+        Uses of Kisan Mithraa Mobile Starter
       </h2>
 
       {/* Cards */}

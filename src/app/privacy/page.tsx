@@ -26,12 +26,12 @@ const PrivacyPolicy = () => {
               address, and other essential details required for account creation
               and management.
             </li>
-            <li>
+            {/* <li>
               <span className="font-semibold">Device Data:</span> Collected from our smart motor control solutions
               when synced with the{" "}
               <span className="italic">KISAN MITHRAA</span> app, including
               performance metrics, usage patterns, and operational data.
-            </li>
+            </li> */}
             <li>
               <span className="font-semibold">Interaction Data:</span> Details provided through inquiries, customer
               support communications, surveys, or participation in promotional

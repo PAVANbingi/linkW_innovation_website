@@ -6,7 +6,7 @@ import Testimonials from './components/Testimonials';
 import AboutLinW from './components/AboutLinW';
 import OurIdentity from './components/OurIdentity';
 // import MeetTheTeam from './components/MeetTheTeam';
-import OurPartners from './components/OurPartners';
+// import OurPartners from './components/OurPartners';
 import ProductFeatures from './components/ProductFeatures';
 import ProductBenefits from './components/ProductBenefits';
 import ProductSoled from './components/ProductSoled';
@@ -27,7 +27,7 @@ export default function Home() {
 
           {/* <MeetTheTeam/> */}
 
-        <OurPartners/>
+        {/* <OurPartners/> */}
        
 
         <ProductFeatures/>

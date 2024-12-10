@@ -111,14 +111,14 @@ export default function Order() {
             <li>Timer modes: Clock, cyclic, and multi-slot schedules</li>
             <li>Voltage, overload, and drain settings</li>
             <li>Real-time alerts for ON/OFF, faults, and runtime</li>
-            <li>Anti-theft with location tracking and SIM alerts</li>
-            <li>Multi-language support & app control</li>
-            <li>External glass fuse for lightning protection</li>
+            {/* <li>Anti-theft with location tracking and SIM alerts</li> */}
+            <li>Multi-language support </li>
+            {/* <li>External glass fuse for lightning protection</li> */}
             <li>Battery backup for power outages</li>
             <li>1-year replacement guarantee</li>
           </ul>
           <p className="text-xl font-semibold mb-6 text-white hover:text-rose-600 transition-all duration-300">
-            MRP: ₹9,999.00 (INCL. OF ALL TAXES)
+            MRP: ₹5,499.00 (INCL. OF ALL TAXES)
           </p>
           <div className="flex items-center gap-4 mb-6">
             <Link href="https://api.whatsapp.com/send?phone=916300681972&text=Hello,%20LinkW%20Innovation!%20👋%20I%20would%20like%20to%20get%20more%20information%20about%20your%20product%20and%20the%20services%20you%20offer.%20Looking%20forward%20to%20your%20response!%20📱%20💬">
@@ -132,7 +132,7 @@ export default function Order() {
               </button>
             </Link>
           </div>
-          <div className="flex items-center gap-4 ">
+          {/* <div className="flex items-center gap-4 ">
             <a
               href="https://www.amazon.in"
               target="_blank"
@@ -161,7 +161,7 @@ export default function Order() {
                 className="object-contain"
               />
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
