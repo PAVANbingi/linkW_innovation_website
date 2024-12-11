@@ -91,16 +91,16 @@ export default function App() {
               <p>
                 Hate contact forms? Email us at{" "}
                 <a
-                  href="mailto:bingipavankumar63@gmail.com"
+                  href="mailto:team@linkwinnovation.com"
                   className="text-blue-500"
                 >
-                  bingipavankumar63@gmail.com
+                  team@linkwinnovation.com
                 </a>
               </p>
               <p>
                 Or call us at{" "}
-                <a href="tel:+916300681972" className="text-blue-500">
-                  +91 6300681972
+                <a href="tel:+919032747058" className="text-blue-500">
+                  +91 9032747058
                 </a>
               </p>
             </div>
