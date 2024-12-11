@@ -121,7 +121,7 @@ export default function Order() {
             MRP: ₹5,499.00 (INCL. OF ALL TAXES)
           </p>
           <div className="flex items-center gap-4 mb-6">
-            <Link href="https://api.whatsapp.com/send?phone=916300681972&text=Hello,%20LinkW%20Innovation!%20👋%20I%20would%20like%20to%20get%20more%20information%20about%20your%20product%20and%20the%20services%20you%20offer.%20Looking%20forward%20to%20your%20response!%20📱%20💬">
+            <Link href="https://api.whatsapp.com/send?phone=919032747058&text=Hello,%20LinkW%20Innovation!%20👋%20I%20would%20like%20to%20get%20more%20information%20about%20your%20product%20and%20the%20services%20you%20offer.%20Looking%20forward%20to%20your%20response!%20📱%20💬">
               <button className="px-6 py-2 text-green-600 border-2 border-green-600 rounded-lg bg-transparent hover:bg-green-600 hover:text-white font-semibold shadow-lg transform hover:-translate-y-1 hover:scale-110 transition-all duration-300">
                 Start Order Request
               </button>
