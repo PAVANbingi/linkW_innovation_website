@@ -13,25 +13,25 @@ const benefits = [
     title: "Instant Motor Status Updates",
     description:
       "Stay in complete control with real-time motor status updates. Kisan Mithraa keeps you informed about every ON/OFF action of your motor, providing instant notifications on your mobile app, via SMS, or through IVRS. Whether you're on-site or far away from your farm, you’ll know exactly what's happening with your motor in real time. This feature eliminates the uncertainty that comes with traditional motor management, giving you peace of mind that your operations are running smoothly. With these instant updates, you no longer need to physically check on motors, saving you time and allowing you to focus on more important tasks. Accurate and immediate updates help you make better, quicker decisions that keep your farm running efficiently.",
-    image: "/bn2.jpg",
+    image: "/20.png",
   },
   {
     title: "Transformer Power Alerts",
     description:
       "Never be caught off guard by power outages again. The Kisan Mithraa Mobile Auto Starter instantly notifies you when transformer power goes OFF or ON, ensuring you are always informed of your farm's power status. With real-time power alerts, you can proactively adjust operations to prevent unnecessary motor usage during power failures, thereby saving energy and reducing downtime. This feature also helps you avoid unexpected disruptions that could affect your crop management or other farm activities. With Kisan Mithraa, you can monitor your power supply from anywhere and ensure that your motors are only running when the power is stable, giving you control over potential power-related issues.",
-    image: "/bn3.jpg",
+    image: "/pcart2.png",
   },
   {
     title: "Dry Run Protection",
     description:
       "Prevent unnecessary wear and damage with Kisan Mithraa's dry run protection. This advanced feature detects when the motor is running without water flow—a condition that can cause overheating and significant damage. Once detected, the system automatically halts motor operation to prevent further harm. This ensures that your equipment remains in optimal condition, extends its lifespan, and reduces maintenance costs. With dry run protection, you can focus on your farm's productivity without worrying about accidental damage to your motor, making it a smarter, more reliable solution for modern agricultural operations.",
-    image: "/bn4.jpg",
+    image: "/21.png",
   },
   {
     title: "Voltage Safeguards",
     description:
       "Protect your motor investment with Kisan Mithraa’s built-in voltage safeguards. This feature offers high and low voltage detection, automatically monitoring fluctuations in your farm’s power supply. If the voltage moves outside the safe range, you’ll be immediately notified, allowing you to avoid potential damage to your motors and other electrical equipment. Voltage fluctuations can cause serious long-term damage to motors, resulting in expensive repairs and downtime. With Kisan Mithraa, you can ensure smooth motor operation no matter what the power conditions are. The voltage protection keeps your equipment secure, saving you money on repairs and preventing unexpected shutdowns, so you can run your farm with confidence.",
-    image: "/bn5.png",
+    image: "/22.png",
   },
 ];
 

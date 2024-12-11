@@ -5,15 +5,15 @@ import Image from "next/image";
 
 export default function ProductFeaturesIntro() {
   return (
-    <section className="bg-black text-gray-400 py-5 mt-0">
+    <section className="bg-slate-950 text-gray-400 py-5 mt-0">
       <div className="container mx-auto px-6 lg:px-16 flex flex-col lg:flex-row items-center gap-16">
         {/* Left Side: Image */}
         <div className="lg:w-1/2 text-center lg:text-left">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-white">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 leading-tight hover:text-rose-600 text-white">
           SMART SOLUTIONS FOR SMARTER FARMING 
           </h2>
           <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-gray-400 mb-8">
-            At LinW Innovations, we specialize in developing and implementing 
+            At LinkW Innovation, we specialize in developing and implementing 
             cutting-edge solutions for precision farming. Our primary focus is 
             on creating efficient and effective irrigation systems that prioritize 
             sustainability. By conserving natural resources and optimizing water usage, 
@@ -34,7 +34,7 @@ export default function ProductFeaturesIntro() {
         {/* Right Side: Content */}
         <div className="lg:w-1/2 flex justify-center">
           <Image
-            src="/platform.gif" // Replace with your actual image path
+            src="/kisangif.gif" // Replace with your actual image path
             alt="Our Platform"
             width={500}
             height={500}
