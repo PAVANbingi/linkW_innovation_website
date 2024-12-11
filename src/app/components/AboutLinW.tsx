@@ -9,7 +9,7 @@ export default function AboutLinW() {
   const [touchStart, setTouchStart] = useState<number | null>(null);
 
   const images: string[] = [
-    "/a1.webp", "/a1.webp", "/a1.webp", "/a1.webp", "/a1.webp", "/a1.webp",
+    "/t1.png", "/team_2.png","/team_3.png","/t1.png","/team_2.png","/team_3.png",
     // "/a2.jpg",
     // "/a6.webp",
     // "/a4.jpg",

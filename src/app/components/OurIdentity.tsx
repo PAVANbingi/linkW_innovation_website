@@ -24,7 +24,7 @@ export default function OurIdentity() {
         <div className="lg:w-1/2 flex justify-center mt-8 lg:mt-0">
           <div className="relative w-full max-w-md h-64">
             <iframe
-              src="https://www.youtube.com/embed/obsiirkdtaY?si=xWRWz4W6jia79fQn"
+              src="https://www.youtube.com/embed/iqHtS7Z1zEk?si=RIsK3fGgbLZVOHs7"
               title="Our Identity Video"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
