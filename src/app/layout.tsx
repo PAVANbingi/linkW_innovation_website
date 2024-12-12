@@ -43,6 +43,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+      <meta name="msvalidate.01" content="A995B2A976792E9856802B72220000A5" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="description"
