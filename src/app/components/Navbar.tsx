@@ -89,7 +89,7 @@ const Navbar = () => {
       onClick={toggleMenu}
       className="fixed top-4 right-4 bg-gradient-to-r from-rose-700 to-rose-600 text-white p-2 rounded-full focus:outline-none transition-transform duration-300 hover:bg-gradient-to-r hover:from-gray-400 hover:to-gray-500 z-50"
     >
-      <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+      <svg xmlns="http://www.w3.org/2000/svg" className="h-20 w-20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
         <line x1="6" y1="6" x2="18" y2="18" strokeLinecap="round" strokeWidth="2" />
         <line x1="6" y1="18" x2="18" y2="6" strokeLinecap="round" strokeWidth="2" />
       </svg>

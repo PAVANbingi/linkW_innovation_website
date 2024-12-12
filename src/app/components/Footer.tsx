@@ -167,10 +167,10 @@ Hyderabad,  Telangana-500060, India.
           {/* Social Media Links */}
 <div className="flex space-x-4 mt-6">
   {[
-    { href: "https://x.com", label: "Twitter", src: "/brand-x.svg" },
-    { href: "https://instagram.com", label: "Instagram", src: "/brand-instagram.svg" },
-    { href: "https://facebook.com", label: "Facebook", src: "/brand-facebook.svg" },
-    { href: "https://linkedin.com", label: "LinkedIn", src: "/brand-linkedin.svg" },
+    { href: "https://x.com/Linkwinnovation?t=j6Tq6aCHtk_ggIfRBK8w-Q&s=09", label: "Twitter", src: "/brand-x.svg" },
+    { href: "https://www.instagram.com/kisan_mithraa/", label: "Instagram", src: "/brand-instagram.svg" },
+    { href: "https://www.facebook.com/people/Linkw-Innovations/61563942219794/", label: "Facebook", src: "/brand-facebook.svg" },
+    { href: "https://www.linkedin.com/company/ams-technotronics/?originalSubdomain=in", label: "LinkedIn", src: "/brand-linkedin.svg" },
   ].map((item) => (
     <a
       key={item.href}
