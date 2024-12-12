@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.linkwinnovation.com
+
+# Sitemaps
+Sitemap: https://www.linkwinnovation.com/sitemap.xml
