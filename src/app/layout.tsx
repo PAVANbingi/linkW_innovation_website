@@ -134,7 +134,7 @@ export default function RootLayout({
         <meta name="twitter:site" content="@YourTwitterHandle" />
         <meta name="twitter:title" content="LinkW Innovation | Smart Solutions for Smarter Farming" />
         <meta name="twitter:description" content="Explore LinkW Innovation's Kisan Mithraa Mobile Starter." />
-        <meta name="twitter:image" content="/images/kisan-mithraa.jpg" />
+        <meta name="twitter:image" content="/ourlogo.png" />
       </head>
       <body
         className={`bg-slate-950 ${geistSans.variable} ${geistMono.variable} antialiased`}

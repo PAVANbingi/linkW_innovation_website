@@ -47,7 +47,7 @@ export default function App() {
     const formData = new FormData(formElement);
 
     fetch(
-      "https://script.google.com/macros/s/AKfycbzBGgVui16KDCzoTdvD_TVgS9GNJiC_zzQC23ImQJy91n_5B2c9BQIEADwRBHBjv0x3/exec",
+      "https://script.google.com/macros/s/AKfycbx6yW4_VuHptuKvjb1zvy0ZCjwstb_tFt5NyKlI-UnvMlj2m09Q-iLzqeKmf8n_IXyd/exec",
       {
         method: "POST",
         body: formData,
