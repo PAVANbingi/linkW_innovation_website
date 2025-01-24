@@ -36,7 +36,7 @@ export default function Order() {
 
   return (
     <section
-      className="relative w-full overflow-hidden mt-[calc(4rem+10px)] bg-slate-950 text-gray-400 py-10 px-5 lg:px-20"
+      className="relative w-full overflow-hidden mt-[calc(4rem+10px)] bg-white text-black py-10 px-5 lg:px-20"
       {...handlers}
     >
       <div className="flex flex-col lg:flex-row items-center max-w-7xl mx-auto">
@@ -102,7 +102,7 @@ export default function Order() {
 
         {/* Product Details Section */}
         <div className="lg:w-1/2 mt-10 lg:mt-0 lg:pl-10 text-left">
-          <h1 className="text-4xl sm:text-6xl font-bold mb-4 text-white hover:text-rose-600 transition-all duration-300">
+          <h1 className="text-4xl sm:text-6xl font-bold mb-4 text-black hover:text-rose-600 transition-all duration-300">
             Kisan Mithraa Mobile Starter
           </h1>
           <ul className="list-disc list-inside text-lg mb-4 space-y-2">

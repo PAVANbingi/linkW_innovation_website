@@ -22,16 +22,16 @@ const useCases = [
     title: "Farm Lighting Control",
     description: "Turn farm bulbs on/off remotely for better visibility.",
   },
-  // {
-  //   icon: "/sensor_log.png",
-  //   title: "Advanced Sensor Data",
-  //   description: "Monitor critical farm metrics like soil moisture, pH, and salinity.",
-  // },
-  // {
-  //   icon: "/speakerIcon.png",
-  //   title: "Animal Protection",
-  //   description: "Deter animals with customized sounds to safeguard your crops.",
-  // },
+  {
+    icon: "/sensor_log.png",
+    title: "Advanced Sensor Data",
+    description: "Monitor critical farm metrics like soil moisture, pH, and salinity.",
+  },
+  {
+    icon: "/speakerIcon.png",
+    title: "Animal Protection",
+    description: "Deter animals with customized sounds to safeguard your crops.",
+  },
   {
     icon: "/water.png",
     title: "AWLC Technique",
@@ -47,9 +47,9 @@ const useCases = [
 
 const ProductUseCases = () => {
   return (
-    <section className="bg-slate-950 py-10 px-6 lg:px-20">
+    <section className="bg-white py-10 px-6 lg:px-20">
       {/* Title */}
-      <h2 className="text-4xl sm:text-6xl font-bold text-center mb-10 text-white hover:text-rose-600 animate-fade-in">
+      <h2 className="text-4xl sm:text-6xl font-bold text-center mb-10 text-black hover:text-rose-600 animate-fade-in">
         Uses of Kisan Mithraa Mobile Starter
       </h2>
 
@@ -58,7 +58,7 @@ const ProductUseCases = () => {
         {useCases.map((useCase, index) => (
           <div
             key={index}
-            className="group flex flex-col items-center p-6 bg-gray-800 shadow-lg rounded-lg transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:bg-gray-700"
+            className="group flex flex-col items-center p-6 bg-white shadow-lg rounded-lg transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:bg-gray-700"
           >
             {/* Icon */}
             <div className="relative w-16 h-16 mb-4">
@@ -73,12 +73,12 @@ const ProductUseCases = () => {
             </div>
 
             {/* Title */}
-            <h3 className="text-lg font-semibold text-white mb-2 text-center transition-all duration-500 group-hover:text-rose-600 group-hover:translate-y-1">
+            <h3 className="text-lg font-semibold text-black mb-2 text-center transition-all duration-500 group-hover:text-rose-600 group-hover:translate-y-1">
               {useCase.title}
             </h3>
 
             {/* Description */}
-            <p className="text-sm text-gray-400 text-center transition-opacity duration-500 group-hover:text-gray-300 group-hover:opacity-90">
+            <p className="text-sm text-black text-center transition-opacity duration-500 group-hover:text-gray-300 group-hover:opacity-90">
               {useCase.description}
             </p>
           </div>

@@ -56,8 +56,8 @@ export default function AboutLinW() {
   };
 
   return (
-    <section className="bg-slate-950 text-gray-400 py-4 px-6 lg:px-20">
-      <h2 className="text-4xl sm:text-6xl text-center font-bold mb-6 text-white hover:text-rose-600 transition-colors duration-300">
+    <section className="bg-white text-black py-4 px-6 lg:px-20">
+      <h2 className="text-4xl sm:text-6xl text-center font-bold mb-6 text-black hover:text-yellow-700 transition-colors duration-300">
         About LinkW Innovations
       </h2>
       <div className="flex flex-col lg:flex-row-reverse items-center max-w-7xl mx-auto">
@@ -82,14 +82,14 @@ export default function AboutLinW() {
               <button
                 onClick={handlePrevious}
                 aria-label="Previous Slide"
-                className="absolute left-2 top-1/2 transform -translate-y-1/2 rounded-lg hover:bg-rose-600 hover:text-white bg-transparent text-rose-600 border border-rose-600 p-3 shadow-md hover:scale-110 transition-all duration-300 focus:outline-none"
+                className="absolute left-2 top-1/2 transform -translate-y-1/2 rounded-lg hover:bg-black hover:text-white bg-transparent text-black border border-black p-3 shadow-md hover:scale-110 transition-all duration-300 focus:outline-none"
               >
                 <FaChevronLeft className="text-xl" />
               </button>
               <button
                 onClick={handleNext}
                 aria-label="Next Slide"
-                className="absolute right-2 top-1/2 transform -translate-y-1/2 rounded-lg hover:bg-rose-600 hover:text-white bg-transparent text-rose-600 border border-rose-600 p-3 shadow-md hover:scale-110 transition-all duration-300 focus:outline-none"
+                className="absolute right-2 top-1/2 transform -translate-y-1/2 rounded-lg hover:bg-black hover:text-white bg-transparent  text-black border border-black p-3 shadow-md hover:scale-110 transition-all duration-300 focus:outline-none"
               >
                 <FaChevronRight className="text-xl" />
               </button>
@@ -102,8 +102,8 @@ export default function AboutLinW() {
                   key={index}
                   className={`w-3 h-3 rounded-full mx-1 ${
                     currentImageIndex === index
-                      ? "bg-rose-700"
-                      : "bg-gray-800"
+                      ? "bg-yellow-700"
+                      : "bg-yellow-950"
                   } transition-colors duration-300`}
                   onClick={() => setCurrentImageIndex(index)}
                   style={{ cursor: "pointer" }}
@@ -116,14 +116,14 @@ export default function AboutLinW() {
         {/* Left: Text Content Section */}
         <div className="lg:w-1/2 mt-8 lg:mt-0 lg:mr-12 transform transition-transform duration-700 ease-in-out">
           <p className="text-lg mb-4 transition-opacity duration-700 ease-in-out">
-            <strong className="text-white hover:text-rose-600">Mission:</strong> To empower farmers and industrialists by
+            <strong className="text-black hover:text-yellow-700">Mission:</strong> To empower farmers and industrialists by
             providing cutting-edge, sustainable, and cost-effective solutions
             that enhance productivity and reduce environmental impact. We
             strive to bridge the gap between technology and agriculture, making
             smart innovations accessible to everyone.
           </p>
           <p className="text-lg mb-4 transition-opacity duration-700 ease-in-out">
-            <strong className="text-white hover:text-rose-600">Vision:</strong> To revolutionize the agricultural and
+            <strong className="text-black hover:text-yellow-700">Vision:</strong> To revolutionize the agricultural and
             industrial sectors with technology-driven solutions, ensuring a
             greener, more efficient, and economically sustainable future. LinkW
             Innovations is committed to becoming a global leader in smart
@@ -131,7 +131,7 @@ export default function AboutLinW() {
           </p>
 
           <p className="text-lg transition-opacity duration-700 ease-in-out">
-            At <strong className="text-white hover:text-rose-600">LinkW Innovation,</strong> we believe in the power of technology to
+            At <strong className="text-black hover:text-yellow-700">LinkW Innovation,</strong> we believe in the power of technology to
             transform lives. Together, let’s shape a smarter and more connected
             future for all.
           </p>

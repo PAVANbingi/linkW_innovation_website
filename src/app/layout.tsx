@@ -137,7 +137,7 @@ export default function RootLayout({
         <meta name="twitter:image" content="/ourlogo.png" />
       </head>
       <body
-        className={`bg-slate-950 ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`bg-white ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <header>
           <Navbar />

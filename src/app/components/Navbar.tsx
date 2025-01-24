@@ -37,13 +37,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 py-4 px-6 bg-white/5 backdrop-blur-lg border-b border-gray-500/20 transition-all duration-500 hover:bg-white/10 hover:border-gray-300/30 shadow-lg">
+    <nav className="fixed top-0 left-0 w-full z-50 py-4 px-6 bg-white/10 backdrop-blur-lg border-b border-gray-500/20 transition-all duration-500 hover:bg-white/10 hover:border-gray-300/30 shadow-lg">
       <div className="max-w-[1240px] mx-auto flex justify-between items-center h-[64px]">
         {/* Logo Section */}
         <Link href="/">
           <div className="flex items-center cursor-pointer">
             <Image
-              src="/nav1.png"
+              src="/blackI.png"
               alt="linkWlogo"
               height={60}
               width={150}
@@ -54,19 +54,19 @@ const Navbar = () => {
 
         {/* Desktop Links */}
         <div className="hidden md:flex space-x-10">
-          <Link href="/" className="text-white text-lg font-medium hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover: from-rose-700 to-rose-600 hover:scale-105">
+          <Link href="/" className="px-6 py-2 text-black border-0 border-black rounded-lg bg-transparent hover:bg-black hover:text-white font-semibold shadow-lg transform hover:-translate-y-1 transition-all duration-300" >
             Home
           </Link>
-          <Link href="/aboutUs" className="text-white text-lg font-medium hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover: from-rose-700 to-rose-600 hover:scale-105">
+          <Link href="/aboutUs" className="px-6 py-2 text-black border-0 border-black rounded-lg bg-transparent hover:bg-black hover:text-white font-semibold shadow-lg transform hover:-translate-y-1 transition-all duration-300" >
             About Us
           </Link>
-          <Link href="/features" className="text-white text-lg font-medium hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover: from-rose-700 to-rose-600 hover:scale-105">
+          <Link href="/features" className="px-6 py-2 text-black border-0 border-black rounded-lg bg-transparent hover:bg-black hover:text-white font-semibold shadow-lg transform hover:-translate-y-1 transition-all duration-300" >
             Features
           </Link>
-          <Link href="/gallery" className="text-white text-lg font-medium hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover: from-rose-700 to-rose-600 hover:scale-105">
+          <Link href="/gallery" className="px-6 py-2 text-black border-0 border-black rounded-lg bg-transparent hover:bg-black hover:text-white font-semibold shadow-lg transform hover:-translate-y-1 transition-all duration-300" >
             Gallery
           </Link>
-          <Link href="/contactUs" className="text-white text-lg font-medium hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-rose-700 to-rose-600 hover:scale-105">
+          <Link href="/contactUs" className="px-6 py-2 text-black border-0 border-black rounded-lg bg-transparent hover:bg-black hover:text-white font-semibold shadow-lg transform hover:-translate-y-1 transition-all duration-300" >
             Contact Us
           </Link>
         </div>
@@ -75,7 +75,7 @@ const Navbar = () => {
         <div className="hidden md:flex">
           <Link href="/order">
             <button
-              className="px-6 py-2 text-rose-600 border-2 border-rose-600 rounded-lg bg-transparent hover:bg-rose-600 hover:text-white font-semibold shadow-lg transform hover:-translate-y-1 transition-all duration-300" >
+              className="px-6 py-2 text-black border-2 border-black rounded-lg bg-transparent hover:bg-black hover:text-white font-semibold shadow-lg transform hover:-translate-y-1 transition-all duration-300" >
               Order-Now
             </button>
           </Link>
@@ -136,7 +136,7 @@ const Navbar = () => {
           {/* Call to Action Button (Mobile Menu) */}
           <Link href="/order" onClick={handleLinkClick}>
             <button
-              className="px-6 py-2 text-rose-600 border-2 border-rose-600 rounded-lg bg-transparent hover:bg-rose-600 hover:text-white font-semibold shadow-lg transform hover:-translate-y-1 transition-all duration-300">
+              className="px-6 py-2 text-black border-2 border-black rounded-lg bg-transparent hover:bg-black hover:text-white font-semibold shadow-lg transform hover:-translate-y-1 transition-all duration-300" >
               Order-Now
             </button>
           </Link>

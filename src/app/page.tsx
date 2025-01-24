@@ -18,7 +18,7 @@ import ProductFAQs from './components/ProductFAQs';
 export default function Home() {
   return (
     <>
-      <div className=" min-h-screen mt-8">
+      <div className=" min-h-screen mt-4">
         <HeroSection />
 
         <div className="pt-8"> {/* Padding top to prevent content overlap */}

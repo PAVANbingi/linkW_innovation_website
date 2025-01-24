@@ -82,9 +82,9 @@ export default function Testimonials() {
   });
 
   return (
-    <section className="bg-slate-950 py-12">
+    <section className="bg-white py-12">
       <div className="container mx-auto px-6 lg:px-16 flex flex-col items-center">
-        <h2 className="text-4xl sm:text-6xl font-bold mb-6 text-white hover:text-rose-600">
+        <h2 className="text-4xl sm:text-6xl font-bold mb-6 text-black hover:text-rose-600">
           Testimonials
         </h2>
 
@@ -94,13 +94,13 @@ export default function Testimonials() {
           className="flex flex-col lg:flex-row items-center gap-10 transition-transform duration-500"
         >
           <div className="lg:w-1/2 text-center lg:text-left">
-            <blockquote className="text-xl italic text-gray-400 leading-relaxed mb-4">
+            <blockquote className="text-xl italic text-black leading-relaxed mb-4">
               {testimonials[currentIndex].text}
             </blockquote>
-            <p className="text-lg text-white font-semibold">
+            <p className="text-lg text-black font-semibold">
               {testimonials[currentIndex].author}
             </p>
-            <p className="text-gray-200">
+            <p className="text-black">
               {testimonials[currentIndex].designation}
             </p>
           </div>
@@ -138,13 +138,13 @@ export default function Testimonials() {
         <div className="flex items-center gap-4 mt-8">
           <button
             onClick={handlePrev}
-           className="px-6 py-2 text-rose-600 border-2 border-rose-600 rounded-lg bg-transparent hover:bg-rose-600 hover:text-white font-semibold shadow-lg transform hover:-translate-y-1 transition-all duration-300"
+           className="px-6 py-2 text-black border-2 border-black rounded-lg bg-transparent hover:bg-rose-600 hover:text-white font-semibold shadow-lg transform hover:-translate-y-1 transition-all duration-300"
           >
             Previous
           </button>
           <button
             onClick={handleNext}
-            className="px-6 py-2 text-rose-600 border-2 border-rose-600 rounded-lg bg-transparent hover:bg-rose-600 hover:text-white font-semibold shadow-lg transform hover:-translate-y-1 transition-all duration-300"
+            className="px-6 py-2 text-black border-2 border-black rounded-lg bg-transparent hover:bg-rose-600 hover:text-white font-semibold shadow-lg transform hover:-translate-y-1 transition-all duration-300"
            >
             Next
           </button>

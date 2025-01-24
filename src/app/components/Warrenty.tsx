@@ -21,7 +21,7 @@ const warrantyItems = [
 
 export default function Warranty() {
   return (
-    <section className="bg-slate-950 py-10">
+    <section className="bg-white py-10">
       <div className="container mx-auto px-6 lg:px-16">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
           {warrantyItems.map((item, index) => (
@@ -42,7 +42,7 @@ export default function Warranty() {
               </div>
 
               {/* Title */}
-              <h3 className="text-lg font-semibold text-white transition-colors duration-300 group-hover:text-rose-600">
+              <h3 className="text-lg font-semibold text-black transition-colors duration-300 group-hover:text-rose-600">
                 {item.title}
               </h3>
             </div>

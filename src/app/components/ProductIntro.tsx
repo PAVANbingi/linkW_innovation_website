@@ -5,14 +5,14 @@ import Link from "next/link";
 
 export default function ProductIntro() {
   return (
-    <section className="bg-slate-950 text-gray-400 py-5 mt-0">
+    <section className="bg-white text-black py-5 mt-0">
       <div className="container mx-auto px-6 lg:px-16 flex flex-col lg:flex-row items-center gap-16">
         {/* Left Side: Image */}
         <div className="lg:w-1/2 text-center lg:text-left">
-          <h2 className="text-4xl sm:text-6xl lg:text-5xl font-bold mb-6 leading-tight text-white hover:text-rose-600">
+          <h2 className="text-4xl sm:text-6xl lg:text-5xl font-bold mb-6 leading-tight text-black hover:text-rose-600">
           SMART SOLUTIONS FOR SMARTER FARMING 
           </h2>
-          <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-gray-400 mb-8">
+          <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-black mb-8">
             At LinkW Innovation, we specialize in developing and implementing 
             cutting-edge solutions for precision farming. Our primary focus is 
             on creating efficient and effective irrigation systems that prioritize 
