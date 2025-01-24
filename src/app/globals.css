@@ -55,12 +55,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #F43F5E; /* Scrollbar color */
+  background-color: #A16207; /* Scrollbar color */
   border-radius: 20px; /* Rounded corners for the scrollbar */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #E11D48; /* Darker shade when hovering */
+  background-color: #A16207; /* Darker shade when hovering */
 }
 
 ::-webkit-scrollbar-track {
@@ -71,12 +71,12 @@ body {
 /* For Firefox */
 * {
   scrollbar-width: thin; /* Makes scrollbar thinner */
-  scrollbar-color: #F43F5E #020617; /* Thumb color and track background */
+  scrollbar-color: #A16207 #020617; /* Thumb color and track background */
 }
 
 /* For Edge and Other Browsers */
 html {
-  scrollbar-color: #F43F5E #020617;
+  scrollbar-color: #A16207 #020617;
   scrollbar-width: thin;
 }
 

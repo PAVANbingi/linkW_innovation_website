@@ -87,7 +87,7 @@ const Navbar = () => {
     // Close Icon (X) - Visible only when the menu is open
     <button
       onClick={toggleMenu}
-      className="fixed top-4 right-4 bg-gradient-to-r from-rose-700 to-rose-600 text-white p-2 rounded-full focus:outline-none transition-transform duration-300 hover:bg-gradient-to-r hover:from-gray-400 hover:to-gray-500 z-50"
+      className="fixed top-4 right-4 bg-gradient-to-r from-yellow-700 to-yellow-900 text-white p-2 rounded-full focus:outline-none transition-transform duration-300 hover:bg-gradient-to-r hover:from-yellow-700 to-yellow-800 z-50"
     >
       <svg xmlns="http://www.w3.org/2000/svg" className="h-20 w-20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
         <line x1="6" y1="6" x2="18" y2="18" strokeLinecap="round" strokeWidth="2" />
@@ -98,7 +98,7 @@ const Navbar = () => {
     // Hamburger Menu Icon - Visible only when the menu is closed
     <button
       onClick={toggleMenu}
-      className="fixed top-4 right-4 bg-gradient-to-r from-rose-700 to-rose-600 text-white p-2 rounded-full focus:outline-none transition-transform duration-300 hover:bg-gradient-to-r hover:from-gray-400 hover:to-gray-500 z-50"
+      className="fixed top-4 right-4 bg-gradient-to-r from-yellow-700 to-yellow-900 text-white p-2 rounded-full focus:outline-none transition-transform duration-300 hover:bg-gradient-to-r hover:from-yellow-700 hover:to-yellow-900 z-50"
     >
       <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path
@@ -116,27 +116,27 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div ref={menuRef} className="md:hidden flex flex-col items-center space-y-6 p-6 bg-gray-900 bg-opacity-90 backdrop-blur-md rounded-lg">
-          <Link href="/" onClick={handleLinkClick} className="text-white hover:bg-gradient-to-r from-rose-700 to-rose-600 transition duration-300 p-2 rounded-lg">
+        <div ref={menuRef} className="md:hidden flex flex-col items-center space-y-6 p-6 bg-yellow-900 bg-opacity-20 backdrop-blur-md rounded-lg">
+          <Link href="/" onClick={handleLinkClick} className="text-black hover:bg-gradient-to-r from-yellow-700 to-yellow-900 transition duration-300 p-2 rounded-lg">
             Home
           </Link>
-          <Link href="/aboutUs" onClick={handleLinkClick} className="text-white hover:bg-gradient-to-r from-rose-700 to-rose-600 transition duration-300 p-2 rounded-lg">
+          <Link href="/aboutUs" onClick={handleLinkClick} className="text-black hover:bg-gradient-to-r from-yellow-700 to-yellow-900 transition duration-300 p-2 rounded-lg">
             About Us
           </Link>
-          <Link href="/features" onClick={handleLinkClick} className="text-white hover:bg-gradient-to-r from-rose-700 to-rose-600 transition duration-300 p-2 rounded-lg">
+          <Link href="/features" onClick={handleLinkClick} className="text-black hover:bg-gradient-to-r from-yellow-700 to-yellow-900 transition duration-300 p-2 rounded-lg">
             Features
           </Link>
-          <Link href="/gallery" onClick={handleLinkClick} className="text-white hover:bg-gradient-to-r from-rose-700 to-rose-600 transition duration-300 p-2 rounded-lg">
+          <Link href="/gallery" onClick={handleLinkClick} className="text-black hover:bg-gradient-to-r from-yellow-700 to-yellow-900 transition duration-300 p-2 rounded-lg">
             Gallery
           </Link>
-          <Link href="/contactUs" onClick={handleLinkClick} className="text-white hover:bg-gradient-to-r from-rose-700 to-rose-600 transition duration-300 p-2 rounded-lg">
+          <Link href="/contactUs" onClick={handleLinkClick} className="text-black hover:bg-gradient-to-r from-yellow-700 to-yellow-900 transition duration-300 p-2 rounded-lg">
             Contact Us
           </Link>
 
           {/* Call to Action Button (Mobile Menu) */}
           <Link href="/order" onClick={handleLinkClick}>
             <button
-              className="px-6 py-2 text-black border-2 border-black rounded-lg bg-transparent hover:bg-black hover:text-white font-semibold shadow-lg transform hover:-translate-y-1 transition-all duration-300" >
+              className="px-6 py-2 text-yellow-900 border-2 border-yellow-900 rounded-lg bg-transparent hover:bg-yellow-900 hover:text-white font-semibold shadow-lg transform hover:-translate-y-1 transition-all duration-300" >
               Order-Now
             </button>
           </Link>

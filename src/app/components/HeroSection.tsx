@@ -14,7 +14,7 @@ export default function HeroSection() {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="/Blue and Yellow Product Promo Sale Video (2).mp4" type="video/mp4" />
+          <source src="/bhd.mp4" type="video/mp4" />
           {/* Fallback text for unsupported browsers */}
           Your browser does not support the video tag.
         </video>
@@ -45,7 +45,7 @@ export default function HeroSection() {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="/phone.mp4" type="video/mp4" />
+          <source src="/bhd2.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
