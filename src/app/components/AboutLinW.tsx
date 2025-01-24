@@ -8,14 +8,14 @@ export default function AboutLinW() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [touchStart, setTouchStart] = useState<number | null>(null);
 
-  const images: string[] = [
-    "/t1.png", "/team_3.png","/team_3.png","/t1.png","/team_3.png","/team_3.png",
+  const images: string[] = ["/21a.png","/16a.png","/23a.png","/17b.png",
+    "/22a.png","/20a.png","/17c.png"];
     // "/a2.jpg",
     // "/a6.webp",
     // "/a4.jpg",
     // "/a5.webp",
     // "/a6.webp",
-  ];
+  
 
   const handleNext = () => {
     setCurrentImageIndex((prevIndex) =>
@@ -32,7 +32,7 @@ export default function AboutLinW() {
   useEffect(() => {
     const interval = setInterval(() => {
       handleNext();
-    }, 3000);
+    }, 10000);
 
     return () => clearInterval(interval);
   }, []);
