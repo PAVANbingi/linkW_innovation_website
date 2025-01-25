@@ -9,7 +9,7 @@ export default function ProductIntro() {
       <div className="container mx-auto px-6 lg:px-16 flex flex-col lg:flex-row items-center gap-16">
         {/* Left Side: Image */}
         <div className="lg:w-1/2 text-center lg:text-left">
-          <h2 className="text-4xl sm:text-6xl lg:text-5xl font-bold mb-6 leading-tight text-black hover:text-rose-600">
+          <h2 className="text-4xl sm:text-6xl lg:text-5xl font-bold mb-6 leading-tight text-black hover:text-yellow-600">
           SMART SOLUTIONS FOR SMARTER FARMING 
           </h2>
           <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-black mb-8">
@@ -24,7 +24,7 @@ export default function ProductIntro() {
           
           <Link href="/features">
             <button
-              className="px-6 py-2 text-rose-600 border-2 border-rose-600 rounded-lg bg-transparent hover:bg-rose-600 hover:text-white font-semibold shadow-lg transform hover:-translate-y-1 transition-all duration-300"
+              className="px-6 py-2 text-black border-2 border-black rounded-lg bg-transparent hover:bg-black hover:text-white font-semibold shadow-lg transform hover:-translate-y-1 transition-all duration-300"
             >
               Read More...
             </button>
@@ -34,11 +34,11 @@ export default function ProductIntro() {
         {/* Right Side: Content */}
         <div className="lg:w-1/2 flex justify-center">
           <Image
-            src="/kisangif.gif" // Replace with your actual image path
+            src="/FEATURES (3).gif" // Replace with your actual image path
             alt="Our Platform"
             width={500}
             height={500}
-            className="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"
+            className=" transform hover:scale-105 transition-transform duration-300"
           />
         </div>
       </div>

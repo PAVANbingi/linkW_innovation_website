@@ -4,60 +4,46 @@ import { useSwipeable } from "react-swipeable";
 
 const testimonials = [
   {
-    text: `"LinW Innovations has truly transformed the way we approach agriculture. Their IoT solutions make precision farming not just a concept but a daily reality. My farm has never been more productive!"`,
-    author: "Pavan Kumar",
-    designation: "Agricultural Specialist, Telangana",
+    text: `"As a farmer from Tankara village in Mahaboobnagar, I can confidently say that the Kisan Mithraa Mobile Starter is a game-changer for every farmer. It’s reliable, easy to use, and has become an essential part of my daily routine. Every farmer can trust this innovative solution to improve productivity and simplify farm management. Highly recommended!"`,
+    author: "Narayana ",
+    designation: "Farmer, village: Tankara,Mahaboobnagar, Andhra Pradesh",
     youtubeThumbnail: "/video-thumbnail2.png",
     youtubeUrl: "https://www.youtube.com/embed/iqHtS7Z1zEk?si=4jF13eZiA880vnJ0",
   },
   {
-    text: `"Thanks to LinW Innovations, managing our crops has become smarter and more efficient. Their platform empowers us to make better decisions with real-time insights."`,
-    author: "Mallesh Sunchu",
-    designation: "Farmer, Andhra Pradesh",
+    text: `"As a farmer from Renta Chithala village in Palnadu, Kisan Mithraa has truly transformed my harvest. The innovative features and reliable support have made my farming process more efficient and productive. I highly recommend Kisan Mithraa to every farmer looking to achieve better results and simplify their work. Subscribe and experience the difference!"`,
+    author: "Narendhra",
+    designation: "Farmer, village: Renta chithala Palnadu, Andhra Pradesh",
     youtubeThumbnail: "/video-thumbnail2.png",
     youtubeUrl: "https://www.youtube.com/embed/dyvm8nlcIKM?si=Y5v4p3XcLSI-cpOT",
   },
   {
-    text: `"The advanced tools provided by LinW Innovations have helped us reduce wastage and improve yield quality. Their support for sustainable farming is commendable!"`,
-    author: "Abilash Reddy",
-    designation: "IoT Enthusiast, Tamil Nadu",
+    text: `"As a farmer from Chirala, Andhra Pradesh, I can proudly say that Kisan Mithraa Mobile Starter delivers exactly what it promises. It's a dependable solution that has made my farming tasks much easier and more efficient. I wholeheartedly recommend it to all farmers looking for trustworthy and innovative tools. Subscribe and see the results yourself!"`,
+    author: "Ravindra ",
+    designation: "Farmer, village: chirala , Andhra Pradesh",
     youtubeThumbnail: "/video-thumbnail2.png",
     youtubeUrl: "https://www.youtube.com/embed/fnHj-Nd_ORI?si=sTlniwvgc8i7n6DS",
   },
   {
-    text: `"I am impressed by how LinW Innovations integrates technology with farming. Their IoT solutions are user-friendly and have simplified complex processes."`,
-    author: "Sai Kumar",
-    designation: "Horticulturist, Telangana",
+    text: `"From struggles to smiles, Kisan Mithraa Mobile Starter has truly been a blessing for me as a farmer in Proddatur, Andhra Pradesh. It has simplified my farming work, improved my productivity, and brought a positive change to my daily routine. I am grateful for this amazing tool and highly recommend it to fellow farmers. Watch now and experience the difference"`,
+    author: "Srinivas ",
+    designation: "Farmer, village: Proddatur, Andhra Pradesh",
     youtubeThumbnail: "/video-thumbnail2.png",
     youtubeUrl: "https://www.youtube.com/embed/LNE_SrZwsvc?si=_0E7aH-_0IwCtJl_",
   },
   {
-    text: `"LinW Innovations brings cutting-edge technology to our doorstep. Their IoT tools are not just gadgets but powerful enablers for a more sustainable future."`,
-    author: "Eshwar Rao",
-    designation: "Agriculture Entrepreneur, Andhra Pradesh",
+    text: `"Kisan Mithraa Mobile Starter has been the best investment for my farm in Peddapalli, Karim Nagar. It has significantly improved my farming efficiency and helped me achieve better results. I am extremely satisfied with its performance and recommend it to all farmers looking for a reliable solution. Subscribe now and see the benefits firsthand!"`,
+    author: "Sravan ",
+    designation: "Farmer, village: peddapalli Karim Nagar, Telangana",
     youtubeThumbnail: "/video-thumbnail2.png",
     youtubeUrl: "https://www.youtube.com/embed/N9mOgxyFVzY?si=vkUAdaI_4TY9z1i9",
   },
   {
-    text: `"The LinW platform is innovative and offers a unique approach to sustainable farming. This is groundbreaking and will set the stage for others to follow."`,
-    author: "Amitabh Kant",
-    designation: "CEO of NITI Ayog",
+    text: `"Kisan Mithraa has been a game-changer for agriculture in our village, Mutthulur, Nandyala. It has revolutionized the way I manage my farm, making processes more efficient and effective. I highly recommend Kisan Mithraa to all farmers looking to improve their farming practices. Subscribe now and watch the transformation."`,
+    author: "Babul Reddy",
+    designation: "Farmer, village: Mutthulur-Nandyala, Andhra Pradesh",
     youtubeThumbnail: "/video-thumbnail1.png",
     youtubeUrl: "https://www.youtube.com/embed/iqHtS7Z1zEk?si=YcCCXF_uqvVafCHI",
-  },
-  {
-    text: `"LinW Innovations is a game-changer in agricultural technology. Their IoT solutions are not only efficient but also accessible to everyone in the community."`,
-    author: "Ramesh Kumar",
-    designation: "Farming Advocate, Tamil Nadu",
-    youtubeThumbnail: "/video-thumbnail2.png",
-    youtubeUrl: "https://www.youtube.com/embed/YYZ-BJ7a1xY?si=a6E8WgavrMu0-1nO",
-  },
-  {
-    text: `"The commitment of LinW Innovations to empowering farmers through IoT and smart solutions is truly inspiring. They are setting the benchmark for the future of agriculture."`,
-    author: "Amitabh Rao",
-    designation: "IoT Expert, Tamil Nadu",
-    youtubeThumbnail: "/video-thumbnail1.png",
-    youtubeUrl: "https://www.youtube.com/embed/N9mOgxyFVzY?si=vkUAdaI_4TY9z1i9",
   },
 ];
 
@@ -138,13 +124,13 @@ export default function Testimonials() {
         <div className="flex items-center gap-4 mt-8">
           <button
             onClick={handlePrev}
-           className="px-6 py-2 text-black border-2 border-black rounded-lg bg-transparent hover:bg-rose-600 hover:text-white font-semibold shadow-lg transform hover:-translate-y-1 transition-all duration-300"
+           className="px-6 py-2 text-black border-2 border-black rounded-lg bg-transparent hover:bg-black hover:text-white font-semibold shadow-lg transform hover:-translate-y-1 transition-all duration-300"
           >
             Previous
           </button>
           <button
             onClick={handleNext}
-            className="px-6 py-2 text-black border-2 border-black rounded-lg bg-transparent hover:bg-rose-600 hover:text-white font-semibold shadow-lg transform hover:-translate-y-1 transition-all duration-300"
+            className="px-6 py-2 text-black border-2 border-black rounded-lg bg-transparent hover:bg-black hover:text-white font-semibold shadow-lg transform hover:-translate-y-1 transition-all duration-300"
            >
             Next
           </button>

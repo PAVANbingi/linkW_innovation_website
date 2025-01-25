@@ -49,7 +49,7 @@ const ProductUseCases = () => {
   return (
     <section className="bg-white py-10 px-6 lg:px-20">
       {/* Title */}
-      <h2 className="text-4xl sm:text-6xl font-bold text-center mb-10 text-black hover:text-rose-600 animate-fade-in">
+      <h2 className="text-4xl sm:text-6xl font-bold text-center mb-10 text-black hover:text-yellow-700 animate-fade-in">
         Uses of Kisan Mithraa Mobile Starter
       </h2>
 
@@ -58,11 +58,11 @@ const ProductUseCases = () => {
         {useCases.map((useCase, index) => (
           <div
             key={index}
-            className="group flex flex-col items-center p-6 bg-white shadow-lg rounded-lg transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:bg-gray-700"
+            className="group flex flex-col items-center p-6 bg-white shadow-lg rounded-lg transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:bg-yellow-700"
           >
             {/* Icon */}
             <div className="relative w-16 h-16 mb-4">
-              <div className="absolute inset-0 bg-rose-600 rounded-full opacity-0 blur-lg transition-opacity duration-500 group-hover:opacity-70"></div>
+              <div className="absolute inset-0 bg-yellow-400 rounded-full opacity-0 blur-lg transition-opacity duration-500 group-hover:opacity-70"></div>
               <Image
                 src={useCase.icon}
                 alt={useCase.title}
@@ -73,7 +73,7 @@ const ProductUseCases = () => {
             </div>
 
             {/* Title */}
-            <h3 className="text-lg font-semibold text-black mb-2 text-center transition-all duration-500 group-hover:text-rose-600 group-hover:translate-y-1">
+            <h3 className="text-lg font-semibold text-black mb-2 text-center transition-all duration-500 group-hover:text-white group-hover:translate-y-1">
               {useCase.title}
             </h3>
 
