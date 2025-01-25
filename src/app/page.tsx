@@ -30,7 +30,7 @@ export default function Home() {
         {/* <OurPartners/> */}
        
 
-        <ProductFeatures/>
+        {/* <ProductFeatures/> */}
         <Usecases />
 
         
