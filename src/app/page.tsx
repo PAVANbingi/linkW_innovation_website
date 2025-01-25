@@ -7,12 +7,12 @@ import AboutLinW from './components/AboutLinW';
 import OurIdentity from './components/OurIdentity';
 // import MeetTheTeam from './components/MeetTheTeam';
 // import OurPartners from './components/OurPartners';
-import ProductFeatures from './components/ProductFeatures';
+//import ProductFeatures from './components/ProductFeatures';
 import ProductBenefits from './components/ProductBenefits';
 import ProductSoled from './components/ProductSoled';
 import ProductUseCases from './components/ProductUseCases';
 import Order from './order/page';
-import ProductFAQs from './components/ProductFAQs';
+//import ProductFAQs from './components/ProductFAQs';
 
 
 export default function Home() {
