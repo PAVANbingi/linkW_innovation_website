@@ -2,43 +2,43 @@ import Image from "next/image";
 
 const useCases = [
   {
-    icon: "/mobileTrack.png",
+    icon: "/output-onlinepngtools (15).png",
     title: "Track Utilization of motor & Access Detailed Reports via Mobile Phone",
   },
   {
-    icon: "/msg_alert.png",
+    icon: "/output-onlinepngtools (16).png",
     title: "Real-Time Theft Alerts for Enhanced Security",
   },
   {
-    icon: "/verified_Icon.png",
+    icon: "/output-onlinepngtools (17).png",
     title: "Protects Motors from Voltage Fluctuations & Dry Runs",
   },
   {
-    icon: "/serviceIcon.png",
+    icon: "/output-onlinepngtools (18).png",
     title: "Available in Multiple Indian Languages",
   },
+  // {
+  //   icon: "/output-onlinepngtools (8).png",
+  //   title: "Control Lighting Easily Through the Mobile Phone",
+  // },
   {
-    icon: "/lightIcon.png",
-    title: "Control Lighting Easily Through the Mobile Phone",
-  },
-  {
-    icon: "/safetyIcon.png",
+    icon: "/output-onlinepngtools (9).png",
     title: "Ensures Safety by Preventing Electric Shocks",
   },
   {
-    icon: "/coinCost.png",
+    icon: "/output-onlinepngtools (10).png",
     title: "Cost-efficient and delivers exceptional value for money.",
   },
   {
-    icon: "/saveTime.png",
+    icon: "/output-onlinepngtools (11).png",
     title: "Optimized to Save Time and Effort",
   },
   {
-    icon: "/mobileControl.png",
+    icon: "/output-onlinepngtools (12).png",
     title: "Control Motor via Call, SMS, or Mobile Phone",
   },
   {
-    icon: "/warrentyIcon.png",
+    icon: "/output-onlinepngtools (13).png",
     title: "1-Year Warranty with Comprehensive Support Services",
   },
 ];
@@ -52,11 +52,11 @@ export default function UseCases() {
           {useCases.map((useCase, index) => (
             <div
               key={index}
-              className="group flex items-start gap-4 p-5 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 hover:bg-gray-700"
+              className="group flex items-start gap-4 p-5 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 hover: bg-opacity-20 backdrop-blur-md hover:bg-yellow-700"
             >
               <div className="w-12 h-12 flex-shrink-0 relative">
                 {/* Icon Animation */}
-                <div className="absolute inset-0 bg-rose-600 rounded-full opacity-0 blur-lg group-hover:opacity-100 group-hover:scale-110 transition-all duration-300"></div>
+                <div className="absolute inset-0 bg-yellow-300 rounded-full opacity-0 blur-lg group-hover:opacity-100 group-hover:scale-110 transition-all duration-300"></div>
                 <Image
                   src={useCase.icon}
                   alt={useCase.title}
@@ -68,7 +68,7 @@ export default function UseCases() {
 
               {/* Title with Animation */}
               <div className="flex flex-col justify-center">
-                <p className="text-black text-base font-medium leading-relaxed group-hover:text-rose-600 group-hover:translate-x-1 group-hover:transition-all group-hover:duration-300">
+                <p className="text-black text-base font-medium leading-relaxed group-hover:text-white group-hover:translate-x-1 group-hover:transition-all group-hover:duration-300">
                   {useCase.title}
                 </p>
               </div>
@@ -79,7 +79,7 @@ export default function UseCases() {
         {/* Right Side: GIF Image */}
         <div className="lg:w-1/2 flex justify-center">
           <Image
-            src="/FEATURES.gif" // Replace with the correct GIF path
+            src="/fea.gif" // Replace with the correct GIF path
             alt="Product Demo"
             width={500}
             height={500}

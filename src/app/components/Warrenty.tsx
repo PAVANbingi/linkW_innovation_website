@@ -2,11 +2,11 @@ import Image from "next/image";
 
 const warrantyItems = [
   {
-    icon: "/w1.png", // Replace with the path to your "2 Years Warranty" icon
+    icon: "/output-onlinepngtools (20).png", // Replace with the path to your "2 Years Warranty" icon
     title: "1 Year Guarantee ",
   },
   {
-    icon: "/w2.png", // Replace with the path to your "Assurance of Safety" icon
+    icon: "/output-onlinepngtools (22).png", // Replace with the path to your "Assurance of Safety" icon
     title: "Assurance of Safety",
   },
   // {
@@ -14,7 +14,7 @@ const warrantyItems = [
   //   title: "Free Home Service",
   // },
   {
-    icon: "/indian.png", // Replace with the path to your "Free Home Service" icon
+    icon: "/output-onlinepngtools (21).png", // Replace with the path to your "Free Home Service" icon
     title: "Made in india",
   },
 ];
@@ -27,11 +27,11 @@ export default function Warranty() {
           {warrantyItems.map((item, index) => (
             <div
               key={index}
-              className="group flex flex-col items-center justify-center text-rose-600"
+              className="group flex flex-col items-center justify-center text-yellow-600"
             >
               {/* Icon */}
               <div className="relative w-20 h-20 mb-4 flex items-center justify-center">
-                <div className="absolute inset-0 rounded-full bg-rose-600 blur-md opacity-0 transition-opacity duration-300 group-hover:opacity-70"></div>
+                <div className="absolute inset-0 rounded-full bg-yellow-600 blur-lg opacity-0 transition-opacity duration-300 group-hover:opacity-70"></div>
                 <Image
                   src={item.icon}
                   alt={item.title}
@@ -42,7 +42,7 @@ export default function Warranty() {
               </div>
 
               {/* Title */}
-              <h3 className="text-lg font-semibold text-black transition-colors duration-300 group-hover:text-rose-600">
+              <h3 className="text-lg font-semibold text-black transition-colors duration-300 group-hover:text-yellow-700">
                 {item.title}
               </h3>
             </div>

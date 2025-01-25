@@ -84,7 +84,7 @@ export default function Testimonials() {
   return (
     <section className="bg-white py-12">
       <div className="container mx-auto px-6 lg:px-16 flex flex-col items-center">
-        <h2 className="text-4xl sm:text-6xl font-bold mb-6 text-black hover:text-rose-600">
+        <h2 className="text-4xl sm:text-6xl font-bold mb-6 text-black hover:text-yellow-700">
           Testimonials
         </h2>
 

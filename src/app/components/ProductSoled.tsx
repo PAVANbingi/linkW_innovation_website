@@ -4,7 +4,7 @@ import CountUp from "react-countup";
 import { useEffect, useState } from "react";
 
 const salesData = [
-  { title: "Sold Products", end: 126 },
+  { title: "Sold Products", end: 926 },
   { title: "Months of Product Journey", end: 28 },
   { title: "Team Strength", end: 18 },
   { title: "Version of Updates", end: 2 },
@@ -38,13 +38,13 @@ export default function ProductSoled() {
       className="bg-white py-12 text-black text-center"
     >
       <div className="container mx-auto px-6 lg:px-16">
-        <h2 className="text-4xl sm:text-6xl font-bold mb-12 hover:text-rose-600">
+        <h2 className="text-4xl sm:text-6xl font-bold mb-12 hover:text-yellow-700">
           Numbers Speak
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {salesData.map((data, index) => (
             <div key={index} className="space-y-4">
-              <div className="text-6xl font-bold text-blue-600">
+              <div className="text-6xl font-bold text-yellow-600 hover:text-yellow-700">
                 {view && (
                   <CountUp
                     start={0}
@@ -54,7 +54,7 @@ export default function ProductSoled() {
                   />
                 )}
               </div>
-              <p className="text-lg font-medium">{data.title}</p>
+              <p className="text-lg font-medium hover:text-yellow-600">{data.title}</p>
             </div>
           ))}
         </div>
