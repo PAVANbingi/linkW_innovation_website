@@ -4,35 +4,41 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const benefits = [
   {
-    title: "Operate Your Motor in 3 Modes",
+    title: "Dry Run Protection: A Guardian for Your Motor",
     description:
-      "The Kisan Mithraa Mobile Auto Starter offers three distinct control modes: App, SMS, and IVRS. This versatility ensures you can manage your motor operations in the way that suits you best. Whether you’re in the field with no internet connection, or at home with access to your smartphone, the control options are designed for flexibility and convenience. The App gives you a visual interface for easy control, while SMS provides a quick, no-frills way to manage your motors, and IVRS ensures that even those with limited tech experience can operate the system with voice commands. With this level of control, you can manage your farm's operations efficiently, saving time and ensuring that no task is left behind, regardless of location or circumstances.",
-    image: "/pcart2.png",
+      "Dry run protection is a game-changing feature of Kisan Mithraa, designed to safeguard your motor and enhance its longevity. This intelligent system detects when your motor is running without sufficient water flow, a common issue that can lead to overheating, damage, and costly repairs. By automatically stopping the motor during such instances, it prevents unnecessary wear and tear, ensuring smooth and uninterrupted farming operations. Whether you're irrigating fields or managing water resources, this feature minimizes downtime and maximizes efficiency. It’s especially crucial in areas prone to irregular water supply, providing farmers with peace of mind and reducing the need for constant supervision. With dry run protection, you save not only your equipment but also valuable time and money. It’s a reliable safety net that supports sustainable farming practices, making Kisan Mithraa an essential tool for modern agriculture.",
+    image: "/prb1.png",
   },
   {
-    title: "Instant Motor Status Updates",
+    title: "Mobile Starter: Effortless Motor Control at Your Fingertips",
     description:
-      "Stay in complete control with real-time motor status updates. Kisan Mithraa keeps you informed about every ON/OFF action of your motor, providing instant notifications on your mobile app, via SMS, or through IVRS. Whether you're on-site or far away from your farm, you’ll know exactly what's happening with your motor in real time. This feature eliminates the uncertainty that comes with traditional motor management, giving you peace of mind that your operations are running smoothly. With these instant updates, you no longer need to physically check on motors, saving you time and allowing you to focus on more important tasks. Accurate and immediate updates help you make better, quicker decisions that keep your farm running efficiently.",
-    image: "/pcart2.png",
+      "The Mobile Starter feature of Kisan Mithraa redefines convenience, enabling you to operate your motor effortlessly using an app, SMS, or IVRS. Whether you're at home, in the field, or miles away, you have the flexibility to manage your farm operations from anywhere. This smart system eliminates the need for manual intervention, saving you time and effort while ensuring your motor functions seamlessly. With real-time control and updates, you can monitor motor status and power conditions, enhancing efficiency and productivity. It’s a user-friendly solution designed to empower farmers with modern technology, making farm management simpler, smarter, and stress-free.",
+    image: "/prb2.png",
   },
   {
-    title: "Transformer Power Alerts",
+    title: "Save Time & Effort: Focus on What Truly Matters",
     description:
-      "Never be caught off guard by power outages again. The Kisan Mithraa Mobile Auto Starter instantly notifies you when transformer power goes OFF or ON, ensuring you are always informed of your farm's power status. With real-time power alerts, you can proactively adjust operations to prevent unnecessary motor usage during power failures, thereby saving energy and reducing downtime. This feature also helps you avoid unexpected disruptions that could affect your crop management or other farm activities. With Kisan Mithraa, you can monitor your power supply from anywhere and ensure that your motors are only running when the power is stable, giving you control over potential power-related issues.",
-    image: "/pcart2.png",
+      "With Kisan Mithraa, time-consuming manual tasks become a thing of the past. This innovative system automates motor operations, freeing you from the hassle of constant monitoring and manual intervention. By simplifying and streamlining your farm management, it lets you focus on what truly matters—whether it’s improving crop yield, planning your next steps, or spending quality time with loved ones. The seamless integration of advanced technology ensures that your farming operations run smoothly and efficiently, reducing physical strain and mental stress. Kisan Mithraa isn’t just a tool; it’s a time-saver that transforms your daily routine, giving you the freedom to achieve more with less effort.",
+    image: "/prb3.png",
   },
   {
-    title: "Dry Run Protection",
+    title: "Prevents Electric Shock: Prioritizing Your Safety",
     description:
-      "Prevent unnecessary wear and damage with Kisan Mithraa's dry run protection. This advanced feature detects when the motor is running without water flow—a condition that can cause overheating and significant damage. Once detected, the system automatically halts motor operation to prevent further harm. This ensures that your equipment remains in optimal condition, extends its lifespan, and reduces maintenance costs. With dry run protection, you can focus on your farm's productivity without worrying about accidental damage to your motor, making it a smarter, more reliable solution for modern agricultural operations.",
-    image: "/pcart2.png",
+      "Safety is at the core of Kisan Mithraa’s design. Equipped with advanced safety features, it acts as a reliable shield against electrical hazards, ensuring the well-being of users and their equipment. Whether you're operating the motor through the app, SMS, or IVRS, the system safeguards you from potential risks by constantly monitoring voltage fluctuations and other electrical anomalies. This proactive protection gives you peace of mind, allowing you to focus on farming without worrying about safety concerns. With Kisan Mithraa, you can trust that every operation is carried out securely, making it a dependable companion for modern, risk-free farming.",
+    image: "/prb4.png",
   },
   {
-    title: "Voltage Safeguards",
+    title: "1-Year Guarantee: Assurance You Can Rely On",
     description:
-      "Protect your motor investment with Kisan Mithraa’s built-in voltage safeguards. This feature offers high and low voltage detection, automatically monitoring fluctuations in your farm’s power supply. If the voltage moves outside the safe range, you’ll be immediately notified, allowing you to avoid potential damage to your motors and other electrical equipment. Voltage fluctuations can cause serious long-term damage to motors, resulting in expensive repairs and downtime. With Kisan Mithraa, you can ensure smooth motor operation no matter what the power conditions are. The voltage protection keeps your equipment secure, saving you money on repairs and preventing unexpected shutdowns, so you can run your farm with confidence.",
-    image: "/pcart2.png",
+      "With Kisan Mithraa, you’re investing in more than just a smart farming solution—you’re gaining peace of mind. Backed by a solid one-year guarantee, the product ensures unmatched durability and reliability, standing by you through all your farming needs. This guarantee reflects our confidence in the quality and longevity of Kisan Mithraa, giving you the freedom to focus on productivity without worrying about unexpected issues. Whether it’s managing your motor or protecting it from damage, you can trust Kisan Mithraa to deliver consistent performance every time.",
+    image: "/prb5.png",
   },
+  {
+    title: "Cost-Efficient: Smart Savings for a Smarter Future",
+    description:
+      "Kisan Mithraa combines advanced technology with cost-saving benefits, making it a truly smart investment for farmers. By optimizing motor operations and reducing the risk of damage, it minimizes maintenance costs and maximizes productivity. Its energy-efficient features not only help you cut electricity expenses but also promote sustainable farming practices. With Kisan Mithraa, you’re not just saving money—you’re investing in a reliable solution that boosts efficiency and ensures long-term returns. Experience the perfect balance of innovation and affordability, empowering your farm like never before.",
+    image: "/prb6.png",
+  }
 ];
 
 
@@ -43,7 +49,7 @@ export default function ProductBenefits() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % benefits.length);
-    }, 5000);
+    }, 12000);
 
     return () => clearInterval(timer);
   }, []);
