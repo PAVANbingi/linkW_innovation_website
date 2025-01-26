@@ -35,7 +35,7 @@ export default function ProductIntro() {
         <div className="lg:w-1/2 flex justify-center">
         <Link href="/order">
           <Image
-            src="/FEATURES (4).gif" // Replace with your actual image path
+            src="/FEATURES (6).gif" // Replace with your actual image path
             alt="Our Platform"
             width={500}
             height={500}
