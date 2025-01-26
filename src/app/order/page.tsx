@@ -10,7 +10,7 @@ import { useSwipeable } from "react-swipeable";
 export default function Order() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const images = ["/pcart2.png", "/pcart2.png", "/pcart2.png", "/pcart2.png","/pcart2.png"];
+  const images = ["/ct1.png", "/ct2.png", "/ct3.png", "/ct4.png"];
 
   const handleNext = () => {
     setCurrentImageIndex((prevIndex) =>
@@ -30,7 +30,7 @@ export default function Order() {
   });
 
   useEffect(() => {
-    const interval = setInterval(handleNext, 4000);
+    const interval = setInterval(handleNext, 10000);
     return () => clearInterval(interval);
   }, []);
 
@@ -102,7 +102,7 @@ export default function Order() {
 
         {/* Product Details Section */}
         <div className="lg:w-1/2 mt-10 lg:mt-0 lg:pl-10 text-left">
-          <h1 className="text-4xl sm:text-6xl font-bold mb-4 text-black hover:text-rose-600 transition-all duration-300">
+          <h1 className="text-4xl sm:text-6xl font-bold mb-4 text-black hover:text-yellow-700 transition-all duration-300">
             Kisan Mithraa Mobile Starter
           </h1>
           <ul className="list-disc list-inside text-lg mb-4 space-y-2">
@@ -117,7 +117,7 @@ export default function Order() {
             <li>Battery backup for power outages</li>
             <li>1-year replacement guarantee</li>
           </ul>
-          <p className="text-xl font-semibold mb-6 text-white hover:text-rose-600 transition-all duration-300">
+          <p className="text-xl font-semibold mb-6 text-black hover:text-yellow-600 transition-all duration-300">
             MRP: ₹5,499.00 (INCL. OF ALL TAXES)
           </p>
           <div className="flex items-center gap-4 mb-6">
