@@ -39,7 +39,7 @@ const useCases = [
       "Adopt water-efficient farming for lowland rice with less water.",
   },
   {
-    icon: "/coinCost.png",
+    icon: "/output-onlinepngtools (26).png",
     title: "Cost-Efficient Farming",
     description: "Save time, labor, and resources with automated operations.",
   },

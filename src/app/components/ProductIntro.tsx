@@ -33,13 +33,15 @@ export default function ProductIntro() {
 
         {/* Right Side: Content */}
         <div className="lg:w-1/2 flex justify-center">
+        <Link href="/order">
           <Image
-            src="/FEATURES (3).gif" // Replace with your actual image path
+            src="/FEATURES (4).gif" // Replace with your actual image path
             alt="Our Platform"
             width={500}
             height={500}
             className=" transform hover:scale-105 transition-transform duration-300"
           />
+          </Link>
         </div>
       </div>
     </section>

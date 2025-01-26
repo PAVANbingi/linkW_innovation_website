@@ -113,8 +113,8 @@ export default function Testimonials() {
               onClick={() => setCurrentIndex(index)}
               className={`w-3 h-3 rounded-full transition-all duration-300 ${
                 index === currentIndex
-                  ? "bg-gradient-to-r from-rose-700 to-rose-600 scale-125"
-                  : "bg-gray-400"
+                  ? "bg-gradient-to-r from-yellow-400 to-yellow-700 scale-125"
+                  : "bg-yellow-900"
               }`}
             ></button>
           ))}

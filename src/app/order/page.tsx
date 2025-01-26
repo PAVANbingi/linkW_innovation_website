@@ -10,7 +10,7 @@ import { useSwipeable } from "react-swipeable";
 export default function Order() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const images = ["/20.png", "/pcart2.png", "/21.png", "/22.png"];
+  const images = ["/pcart2.png", "/pcart2.png", "/pcart2.png", "/pcart2.png","/pcart2.png"];
 
   const handleNext = () => {
     setCurrentImageIndex((prevIndex) =>
@@ -44,7 +44,7 @@ export default function Order() {
         <div className="lg:w-1/2 flex flex-col items-center">
           <div className="relative w-full max-w-lg">
             <div
-              className="overflow-hidden rounded-lg shadow-lg transform transition-transform duration-500 hover:scale-105"
+              className="overflow-hidden  transform transition-transform duration-500 hover:scale-105"
             >
               <Image
                 src={images[currentImageIndex]}
@@ -60,14 +60,14 @@ export default function Order() {
 <button
   onClick={handlePrevious}
   aria-label="Previous Slide"
-  className="absolute left-2 top-1/2 transform -translate-y-1/2 rounded-lg hover:bg-rose-600 hover:text-white bg-transparent text-rose-600 border border-rose-600 p-3 shadow-md hover:scale-110 transition-all duration-300 focus:outline-none"
+  className="absolute left-2 top-1/2 transform -translate-y-1/2 rounded-lg hover:bg-black hover:text-white bg-transparent text-black border border-black p-3 shadow-md hover:scale-110 transition-all duration-300 focus:outline-none"
 >
   <FaChevronLeft className="text-xl" />
 </button>
 <button
   onClick={handleNext}
   aria-label="Next Slide"
-  className="absolute right-2 top-1/2 transform -translate-y-1/2 rounded-lg hover:bg-rose-600 hover:text-white bg-transparent text-rose-600 border border-rose-600 p-3 shadow-md hover:scale-110 transition-all duration-300 focus:outline-none"
+  className="absolute right-2 top-1/2 transform -translate-y-1/2 rounded-lg hover:bg-black hover:text-white bg-transparent text-black border border-black p-3 shadow-md hover:scale-110 transition-all duration-300 focus:outline-none"
 >
   <FaChevronRight className="text-xl" />
 </button>
@@ -84,8 +84,8 @@ export default function Order() {
                 aria-label={`Select image ${index + 1}`}
                 className={`w-16 h-16 border-2 rounded-lg overflow-hidden cursor-pointer transition transform hover:scale-105 ${
                   currentImageIndex === index
-                    ? "border-rose-500"
-                    : "border-gray-300"
+                    ? "border-yellow-500"
+                    : "border-yellow-700"
                 }`}
               >
                 <Image
