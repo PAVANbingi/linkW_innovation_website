@@ -1,4 +1,4 @@
-import ProductBannerSlider from '../components/ProductBannerSlider';
+//import ProductBannerSlider from '../components/ProductBannerSlider';
 import ProductCart from '../components/ProductCart';
 import ProductUseCases from '../components/ProductUseCases';
 import ProductBenefits from '../components/ProductBenefits';
@@ -12,9 +12,10 @@ export default function features() {
   return (
     
     <div className="pt-10"> {/* Padding top to prevent content overlap */}
-        <ProductBannerSlider />
-        <UseCases/>
+        {/* <ProductBannerSlider /> */}
         <ProductFeatures />
+        <UseCases/>
+       
         <ProductFeaturesIntro/>
         <ProductBenefits />
         <ProductCart/>

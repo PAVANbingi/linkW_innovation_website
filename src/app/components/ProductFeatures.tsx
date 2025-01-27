@@ -1,36 +1,49 @@
 "use client";
-//import Link from "next/link";
+
+import { useState } from "react";
 
 const productFeatures = [
   {
-    title: "Functionality of Kisan Mithraa Mobile Starter: ",
-    description: `The Kisan Mithraa Mobile  Starter revolutionizes farm operations with its seamless functionality. Farmers can operate motors through multiple modes—App, SMS, or IVRS—offering unmatched convenience and flexibility. Advanced features like motor status confirmation, transformer power alerts, and fuse protection ensure that you stay informed about your farm’s operations in real-time. The device also incorporates voltage safeguards and dry run detection to protect your motor from potential damage, making it a reliable partner for sustainable and efficient farming.`,
-    youtubeUrl: "https://www.youtube.com/embed/iqHtS7Z1zEk?si=RIsK3fGgbLZVOHs7",
+    title: "Functionality of Kisan Mithraa Mobile Starter:",
+    description: `The Kisan Mithraa Mobile Starter revolutionizes farm operations with its seamless functionality. Farmers can operate motors through multiple modes—App, SMS, or IVRS—offering unmatched convenience and flexibility. Advanced features like motor status confirmation, transformer power alerts, and fuse protection ensure that you stay informed about your farm’s operations in real-time.`,
+    extendedDescription: `With its real-time monitoring capabilities, you can also schedule motor operations to optimize water usage. The app interface provides detailed insights into power consumption and system health, making it a comprehensive tool for smart farming.`,
+    youtubeUrl: "https://www.youtube.com/embed/juZ_daqwq1U?si=xmhrxp8FqeDtG1fw",
   },
   {
-    title: "Installation of Kisan Mithraa Mobile Starter: ",
-    description: `Installing the Kisan Mithraa Mobile  Starter is quick and straightforward, requiring minimal technical expertise. The compact device is designed for easy integration with existing motor systems, whether for a single motor or multiple motors and valves in the field. The included user manual and customer support ensure smooth setup and operation, allowing farmers to get started without delays. Within a few simple steps, the system will be operational, empowering you to take control of your farm with ease.`,
-    youtubeUrl: "https://www.youtube.com/embed/fnHj-Nd_ORI?si=Uf5UCf1_St9jpWif",
+    title: "Installation of Kisan Mithraa Mobile Starter:",
+    description: `Installing the Kisan Mithraa Mobile Starter is quick and straightforward, requiring minimal technical expertise. The compact device is designed for easy integration with existing motor systems. The included user manual and customer support ensure smooth setup and operation.`,
+    extendedDescription: `The installation process includes step-by-step guidance through the app, ensuring no guesswork. Additional support for troubleshooting and video tutorials are also available to make setup hassle-free.`,
+    youtubeUrl: "https://www.youtube.com/embed/Z-aCnoBTlRY?si=yJHqkT6cxHsV5u9K",
   },
   {
     title: "Features of Kisan Mithraa Mobile Starter:",
-    description: `Built to withstand harsh farming conditions, the Kisan Mithraa Mobile  Starter is engineered for durability and long life. Its robust design and advanced components ensure consistent performance over years of use. The product’s lifecycle is further enhanced by automatic software updates delivered over the internet, keeping the system up-to-date with the latest features and improvements. With minimal maintenance requirements, this device offers a cost-effective and reliable solution for modern farming needs.`,
-    youtubeUrl: "https://www.youtube.com/embed/N9mOgxyFVzY?si=eJclczI5WGO2TL12",
+    description: `Built to withstand harsh farming conditions, the Kisan Mithraa Mobile Starter is engineered for durability and long life. Its robust design and advanced components ensure consistent performance over years of use.`,
+    extendedDescription: `Key features include weather-resistant housing, energy-efficient components, and a fail-safe design that automatically shuts down the motor in case of faults, preventing potential damage.`,
+    youtubeUrl: "https://www.youtube.com/embed/juZ_daqwq1U?si=xmhrxp8FqeDtG1fw",
   },
   {
     title: "Durability and Lifecycle of Kisan Mithraa Mobile Starter:",
-    description: `The Kisan Mithraa Mobile Starter combines advanced features to deliver exceptional motor management, ensuring durability and a prolonged lifecycle. Its overload protection safeguards motors from excessive current, reducing maintenance costs and extending lifespan. High/low voltage detection continuously monitors power levels, automatically halting operation during unsafe fluctuations to protect motors and connected devices. Dry run prevention stops the motor during water flow interruptions, preventing overheating and damage. Additionally, a wire cut alert ensures timely intervention to avoid downtime or further issues. Together, these intelligent features guarantee seamless operation, enhanced safety, and optimal efficiency, making it a reliable choice for modern agricultural and industrial applications.`,
-    youtubeUrl: "https://www.youtube.com/embed/qDwPcJSiRPU?si=U0L9H8DjZtFCQTc3",
+    description: `The Kisan Mithraa Mobile Starter combines advanced features to deliver exceptional motor management, ensuring durability and a prolonged lifecycle. Its intelligent features guarantee seamless operation, enhanced safety, and optimal efficiency.`,
+    extendedDescription: `The device undergoes rigorous quality checks and is built with premium materials, ensuring it can endure continuous operation in challenging environments. The lifecycle is extended with regular software updates and maintenance alerts.`,
+    youtubeUrl: "https://www.youtube.com/embed/juZ_daqwq1U?si=xmhrxp8FqeDtG1fw",
   },
 ];
 
 export default function ProductFeatures() {
+  const [expandedIndex, setExpandedIndex] = useState(null);
+
+  const toggleExpand = (index) => {
+    setExpandedIndex(expandedIndex === index ? null : index);
+  };
+
   return (
-    <section className="bg-white py-8">
-      <div className="container mx-auto px-6 lg:px-16 space-y-12">
-        <h2 className="text-4xl sm:text-6xl hover:text-rose-600 font-bold mb-6 text-black text-center">
-        Unlock Smarter Farming with Kisan Mithraa
+    <section className="bg-white py-12">
+      <div className="container mx-auto px-6 lg:px-12 space-y-16">
+        <h2 className="text-4xl sm:text-5xl font-extrabold text-center text-black mb-12">
+          Unlock Smarter Farming with {" "}
+          <span className="text-yellow-700">Kisan Mithraa</span>
         </h2>
+
         {productFeatures.map((feature, index) => (
           <div
             key={index}
@@ -38,31 +51,36 @@ export default function ProductFeatures() {
               index % 2 === 0 ? "lg:flex-row-reverse" : ""
             }`}
           >
-            {/* Left Side - Text Content */}
-            <div className="lg:w-1/2 text-center lg:text-left">
-              <h3 className="text-3xl font-semibold text-black mb-4 hover:text-rose-600 ">
+            {/* Text Section */}
+            <div className="lg:w-1/2 space-y-4">
+              <h3 className="text-3xl font-semibold text-gray-800 hover:text-yellow-600 transition duration-300">
                 {feature.title}
               </h3>
-              <p className="text-black leading-relaxed mb-6">
-                {feature.description}
-              </p>
-              {/* <Link href="/contact">
-                <button className="px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-500 transition-all">
-                  Connect with Us
-                </button>
-              </Link> */}
+              <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+
+              {expandedIndex === index && (
+                <p className="text-gray-600 leading-relaxed mt-4">
+                  {feature.extendedDescription}
+                </p>
+              )}
+
+              <button
+                onClick={() => toggleExpand(index)}
+                className="px-6 py-2 text-black border-2 border-black rounded-lg bg-transparent hover:bg-black hover:text-white font-semibold shadow-lg transform hover:-translate-y-1 transition-all duration-300" >
+                {expandedIndex === index ? "Show Less" : "Learn More"}
+              </button>
             </div>
 
-            {/* Right Side - YouTube Video */}
+            {/* Video Section */}
             <div className="lg:w-1/2">
-              <div className="relative w-full max-w-md h-64 mx-auto lg:mx-0">
+              <div className="relative w-full max-w-lg mx-auto lg:mx-0 h-64 rounded-lg shadow-lg overflow-hidden">
                 <iframe
                   src={feature.youtubeUrl}
                   title={`Feature Video - ${index + 1}`}
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
-                  className="w-full h-full rounded-lg shadow-lg"
+                  className="w-full h-full"
                 ></iframe>
               </div>
             </div>
