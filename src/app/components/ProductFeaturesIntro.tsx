@@ -34,7 +34,7 @@ export default function ProductFeaturesIntro() {
         {/* Right Side: Content */}
         <div className="lg:w-1/2 flex justify-center">
           <Image
-            src="/FEATURES (6).gif" // Replace with your actual image path
+            src="/FEATURES (7).gif" // Replace with your actual image path
             alt="Our Platform"
             width={500}
             height={500}

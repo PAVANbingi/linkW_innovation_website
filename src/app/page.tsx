@@ -25,6 +25,7 @@ export default function Home() {
         <div className="pt-8"> {/* Padding top to prevent content overlap */}
           <AboutLinW/>
           <OurIdentity/>
+          <ProductIntro/>
 
           {/* <MeetTheTeam/> */}
 
@@ -43,7 +44,7 @@ export default function Home() {
           <ProductSoled/>
 
           <ProductUseCases/>
-          <ProductIntro/>
+         
           <section id="Testimonials">
             <Testimonials />
           </section>
