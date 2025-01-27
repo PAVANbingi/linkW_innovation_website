@@ -5,6 +5,7 @@ import Warrenty from './components/Warrenty';
 import Testimonials from './components/Testimonials';
 import AboutLinW from './components/AboutLinW';
 import OurIdentity from './components/OurIdentity';
+import ContactUs from './contactUs/page';
 // import MeetTheTeam from './components/MeetTheTeam';
 // import OurPartners from './components/OurPartners';
 //import ProductFeatures from './components/ProductFeatures';
@@ -43,10 +44,14 @@ export default function Home() {
 
           <ProductUseCases/>
           <ProductIntro/>
+          <section id="Testimonials">
+            <Testimonials />
+          </section>
 
 
           <Order/>
             <Warrenty />
+           
 
 
           {/* <ProductFAQs/> */}
@@ -57,9 +62,8 @@ export default function Home() {
           
           
           {/* Add an id for the About Us section */}
-          <section id="Testimonials">
-            <Testimonials />
-          </section>
+         
+          <ContactUs/>
         </div>
       </div>
     </>

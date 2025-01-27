@@ -38,10 +38,10 @@ export default function MeetTheTeam() {
   ];
 
   return (
-    <section className="bg-slate-950 text-gray-300 py-16">
+    <section className="bg-white text-black py-16">
       <div className="container mx-auto px-6 lg:px-20">
-        <h2 className="text-4xl sm:text-6xl font-bold mb-6 text-center text-white hover:text-rose-600">Meet Our Team</h2>
-        <p className="text-center text-lg mb-12 text-gray-400">
+        <h2 className="text-4xl sm:text-6xl font-bold mb-6 text-center text-black hover:text-yellow-600">Meet Our Team</h2>
+        <p className="text-center text-lg mb-12 text-black">
           Meet the extraordinary individuals driving LinkW Innovations forward. 
           Our team is committed to revolutionizing the agricultural and industrial 
           sectors with passion, innovation, and expertise.
@@ -52,7 +52,7 @@ export default function MeetTheTeam() {
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-lg shadow-lg bg-gray-800"
+              className="group relative overflow-hidden rounded-lg shadow-lg bg-gradient-to-r from-yellow-700 via-yellow-600 to-yellow-700"
             >
               {/* Team Member Image */}
               <Image
@@ -94,7 +94,7 @@ export default function MeetTheTeam() {
               {/* Team Member Info */}
               <div className="text-center mt-4">
                 <h3 className="text-xl font-semibold text-white">{member.name}</h3>
-                <p className="text-gray-400">{member.role}</p>
+                <p className="text-white">{member.role}</p>
               </div>
             </div>
           ))}

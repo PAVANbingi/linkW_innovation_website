@@ -162,6 +162,37 @@ export default function Order() {
               />
             </a>
           </div> */}
+          
+          <div className="flex items-center gap-4 ">
+                      <a
+                        href="https://www.amazon.in"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="border-2 border-yellow-900 rounded-md overflow-hidden shadow-md transform hover:scale-105 transition-all duration-300"
+                      >
+                        <Image
+                          src="/amazon.jpg"
+                          alt="Amazon"
+                          width={120}
+                          height={40}
+                          className="object-contain"
+                        />
+                      </a>
+                      <a
+                        href="https://www.flipkart.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="border-2 border-yellow-900 rounded-md overflow-hidden shadow-md transform hover:scale-105 transition-all duration-300"
+                      >
+                        <Image
+                          src="/flipkart.jpg"
+                          alt="Flipkart"
+                          width={120}
+                          height={40}
+                          className="object-contain"
+                        />
+                      </a>
+                    </div>
         </div>
       </div>
     </section>

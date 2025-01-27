@@ -1,9 +1,9 @@
 import React from "react";
 
 const images = [
-  "/pr1.svg",
-  "/pr2.svg",
-  "/pr3.svg",
+  "/ony.png",
+  "/sit.png",
+  "/qlin.png",
   
   "/pr6.svg",
   "/pr7.svg",
@@ -12,15 +12,14 @@ const images = [
 
 const OurPartners: React.FC = () => {
   return (
-    <div className="w-full bg-slate-950 py-8 text-gray-400">
-      <h2 className="text-center text-4xl sm:text-6xl hover:text-rose-600  font-bold text-white mb-8">
-      What We’ve Achieved
+    <div className="w-full bg-white py-8 text-black">
+      <h2 className="text-center text-4xl sm:text-6xl hover:text-yellow-600  font-bold text-black mb-8">
+      Pioneering Brands Behind Us
       </h2>
        {/* Optional CTA or Message */}
        <div className="mt-8 text-center">
-        <p className="text-lg text-gray-400">
-        Driving innovation and fostering growth through impactful solutions—together, we achieve greatness.
-        </p>
+       <p className="text-center text-lg  mb-12 text-black">
+      These pioneering brands provide the essential parts that ensure reliability, precision, and cutting-edge functionality for Kisan Mithra Mobile Starter. </p>
       </div>
       <section className="relative overflow-hidden">
         {/* Scrolling Row */}
@@ -29,7 +28,7 @@ const OurPartners: React.FC = () => {
           {images.map((image, index) => (
             <div
               key={`partner-${index}`}
-              className="flex-shrink-0 w-36 sm:w-48 h-36 sm:h-48 bg-slate-950 hover:bg-slate-950 flex items-center justify-center rounded-lg shadow-lg transform hover:scale-110 transition-transform duration-300"
+              className="flex-shrink-0 w-36 sm:w-48 h-36 sm:h-48 bg-white hover:bg-white flex items-center justify-center  transform hover:scale-110 transition-transform duration-300"
             >
               <img
                 src={image}
@@ -42,7 +41,7 @@ const OurPartners: React.FC = () => {
           {images.map((image, index) => (
             <div
               key={`partner-duplicate-${index}`}
-              className="flex-shrink-0 w-36 sm:w-48 h-36 sm:h-48 bg-slate-950 hover:bg-slate-950 flex items-center justify-center rounded-lg shadow-lg transform hover:scale-110 transition-transform duration-300"
+              className="flex-shrink-0 w-36 sm:w-48 h-36 sm:h-48 bg-white hover:bg-white flex items-center justify-center transform hover:scale-110 transition-transform duration-300"
             >
               <img
                 src={image}

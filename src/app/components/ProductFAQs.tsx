@@ -98,7 +98,7 @@ export default function ProductFAQs() {
     <section className="bg-white text-black py-16">
       <div className="container mx-auto px-6 lg:px-20">
         {/* Heading */}
-        <h2 className="text-4xl sm:text-6xl hover:text-rose-600 font-bold text-center text-black mb-8 transition-all duration-300">
+        <h2 className="text-4xl sm:text-6xl hover:text-yellow-600 font-bold text-center text-black mb-8 transition-all duration-300">
           Explore Kisan Mithraa: FAQs & Insights
         </h2>
 
@@ -113,12 +113,12 @@ export default function ProductFAQs() {
                 className="flex justify-between items-center cursor-pointer"
                 onClick={() => toggleAnswer(index)}
               >
-                <span className="text-lg font-semibold text-black transition-all hover:text-rose-600">
+                <span className="text-lg font-semibold text-black transition-all hover:text-yellow-600">
                   {faq.question}
                 </span>
                 <span
                   className={`text-xl transition-transform duration-300 ${
-                    activeIndex === index ? "rotate-180 text-rose-600" : "rotate-0 text-gray-400"
+                    activeIndex === index ? "rotate-180 text-yellow-600" : "rotate-0 text-gray-400"
                   }`}
                 >
                   {activeIndex === index ? "-" : "+"}
@@ -135,11 +135,11 @@ export default function ProductFAQs() {
 
         {/* Footer Section */}
         <div className="mt-16 flex flex-col lg:flex-row items-center justify-between bg-white  rounded-lg shadow-lg py-6 px-8">
-          <p className="text-lg text-black">
+          <p className="text-lg text-black hover:text-yellow-600">
             Still having questions? We’re here to help you! Reach out to us anytime.
           </p>
           <Link href="/contactUs">
-            <button className="px-6 py-2 text-black border-2 border-black rounded-lg bg-transparent hover:bg-rose-600 hover:text-white font-semibold shadow-lg transform hover:-translate-y-1 transition-all duration-300">
+            <button className="px-6 py-2 text-black border-2 border-black rounded-lg bg-transparent hover:bg-black hover:text-white font-semibold shadow-lg transform hover:-translate-y-1 transition-all duration-300">
               Ask Now
             </button>
           </Link>
