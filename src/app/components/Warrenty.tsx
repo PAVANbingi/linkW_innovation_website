@@ -2,11 +2,11 @@ import Image from "next/image";
 
 const warrantyItems = [
   {
-    icon: "/output-onlinepngtools (20).png", // Replace with the path to your "2 Years Warranty" icon
+    icon: "/bestp.png", // Replace with the path to your "2 Years Warranty" icon
     title: "1 Year Guarantee ",
   },
   {
-    icon: "/output-onlinepngtools (22).png", // Replace with the path to your "Assurance of Safety" icon
+    icon: "/dguat.png", // Replace with the path to your "Assurance of Safety" icon
     title: "Assurance of Safety",
   },
   // {
@@ -14,7 +14,7 @@ const warrantyItems = [
   //   title: "Free Home Service",
   // },
   {
-    icon: "/output-onlinepngtools (21).png", // Replace with the path to your "Free Home Service" icon
+    icon: "/madein.png", // Replace with the path to your "Free Home Service" icon
     title: "Made in india",
   },
 ];
@@ -35,8 +35,8 @@ export default function Warranty() {
                 <Image
                   src={item.icon}
                   alt={item.title}
-                  width={64}
-                  height={64}
+                  width={450}
+                  height={450}
                   className="object-contain transition-transform duration-300 group-hover:scale-110"
                 />
               </div>

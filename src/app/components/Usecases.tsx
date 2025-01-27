@@ -2,19 +2,19 @@ import Image from "next/image";
 
 const useCases = [
   {
-    icon: "/output-onlinepngtools (15).png",
+    icon: "/motorwed.png",
     title: "Track Utilization of motor & Access Detailed Reports via Mobile Phone",
   },
   {
-    icon: "/output-onlinepngtools (16).png",
+    icon: "/fphone.png",
     title: "Real-Time Theft Alerts for Enhanced Security",
   },
   {
-    icon: "/output-onlinepngtools (17).png",
+    icon: "/fmsg.png",
     title: "Protects Motors from Voltage Fluctuations & Dry Runs",
   },
   {
-    icon: "/output-onlinepngtools (18).png",
+    icon: "/elepol.png",
     title: "Available in Multiple Indian Languages",
   },
   // {
@@ -22,23 +22,27 @@ const useCases = [
   //   title: "Control Lighting Easily Through the Mobile Phone",
   // },
   {
-    icon: "/output-onlinepngtools (9).png",
+    icon: "/guat.png",
     title: "Ensures Safety by Preventing Electric Shocks",
   },
   {
-    icon: "/output-onlinepngtools (10).png",
+    icon: "/servicegirl.png",
     title: "Cost-efficient and delivers exceptional value for money.",
   },
   {
-    icon: "/output-onlinepngtools (11).png",
+    icon: "/coste.png",
     title: "Optimized to Save Time and Effort",
   },
   {
-    icon: "/output-onlinepngtools (12).png",
+    icon: "/timee.png",
     title: "Control Motor via Call, SMS, or Mobile Phone",
   },
   {
-    icon: "/output-onlinepngtools (13).png",
+    icon: "/agwa.png",
+    title: "1-Year Warranty with Comprehensive Support Services",
+  },
+  {
+    icon: "/bestp.png",
     title: "1-Year Warranty with Comprehensive Support Services",
   },
 ];
@@ -54,14 +58,14 @@ export default function UseCases() {
               key={index}
               className="group flex items-start gap-4 p-5 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 hover: bg-opacity-20 backdrop-blur-md hover:bg-yellow-700"
             >
-              <div className="w-12 h-12 flex-shrink-0 relative">
+              <div className="w-20 h-20 flex-shrink-0 relative">
                 {/* Icon Animation */}
                 <div className="absolute inset-0 bg-yellow-300 rounded-full opacity-0 blur-lg group-hover:opacity-100 group-hover:scale-110 transition-all duration-300"></div>
                 <Image
                   src={useCase.icon}
                   alt={useCase.title}
-                  width={48}
-                  height={48}
+                  width={120}
+                  height={120}
                   className="object-contain transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110"
                 />
               </div>
