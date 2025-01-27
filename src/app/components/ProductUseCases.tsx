@@ -3,45 +3,45 @@ import Image from "next/image";
 
 const useCases = [
   {
-    icon: "/motor_icon.png",
-    title: "Smart Motor Control",
-    description: "Remotely operate your motor via (IVRS, SMS & Mobile App.)",
+    icon: "/pmotor.png",
+    title: "Dry Run Protection",
+    description: "Prevents the motor from running without water, safeguarding it from damage and ensuring reliable performance.",
   },
   {
-    icon: "/motors_icon.png",
-    title: "Multi-Motor Management",
-    description: "Easily control multiple motors nearby in your field.",
+    icon: "/fphone.png",
+    title: "Mobile Starter",
+    description: "Easily control your motor from anywhere with mobile connectivity, adding convenience and flexibility to your farming tasks.",
   },
   {
-    icon: "/valve.png",
-    title: "Efficient Valve Control",
-    description: "Manage multiple valves seamlessly using the same device.",
+    icon: "/fmsg.png",
+    title: "Message Alert",
+    description: "Stay informed with real-time message alerts directly on your mobile device, notifying you about the motor's status, power issues, or any operational updates. This feature ensures you’re always in control, no matter where you are.",
   },
   {
-    icon: "/lightIcon.png",
-    title: "Farm Lighting Control",
-    description: "Turn farm bulbs on/off remotely for better visibility.",
+    icon: "/elces.png",
+    title: "Prevents Electric Shock",
+    description: "Built-in safety measures protect users from electric shocks, ensuring a safe and secure farming environment.",
   },
   {
-    icon: "/sensor_log.png",
-    title: "Advanced Sensor Data",
-    description: "Monitor critical farm metrics like soil moisture, pH, and salinity.",
+    icon: "/motorwed.png",
+    title: "Winding Failure Prevention",
+    description: "Advanced safeguards prevent motor winding failures, enhancing durability and minimizing maintenance costs with ensuring long-term reliability.",
   },
   {
-    icon: "/speakerIcon.png",
-    title: "Animal Protection",
-    description: "Deter animals with customized sounds to safeguard your crops.",
+    icon: "/agwa.png",
+    title: "Timer Setup",
+    description: "Easily program the timer to control water flow in your farm, ensuring optimal irrigation for up to your desired duration. Set precise watering times to avoid over-irrigation or water wastage, enhancing efficiency and crop health.",
   },
   {
-    icon: "/water.png",
-    title: "AWLC Technique",
+    icon: "/coste.png",
+    title: "Save Money & Effort",
     description:
-      "Adopt water-efficient farming for lowland rice with less water.",
+      "Efficient design reduces energy consumption and manual work, offering significant savings and ease of use for farmers.",
   },
   {
-    icon: "/output-onlinepngtools (26).png",
-    title: "Cost-Efficient Farming",
-    description: "Save time, labor, and resources with automated operations.",
+    icon: "/timee.png",
+    title: "Save Time & Effort",
+    description: "Automated operations reduce manual intervention, helping you focus on other important tasks while saving time.",
   },
 ];
 
@@ -66,8 +66,8 @@ const ProductUseCases = () => {
               <Image
                 src={useCase.icon}
                 alt={useCase.title}
-                width={64}
-                height={64}
+                width={150}
+                height={150}
                 className="object-contain transition-transform duration-500 group-hover:rotate-12 group-hover:scale-110"
               />
             </div>

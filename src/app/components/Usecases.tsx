@@ -3,19 +3,19 @@ import Image from "next/image";
 const useCases = [
   {
     icon: "/motorwed.png",
-    title: "Track Utilization of motor & Access Detailed Reports via Mobile Phone",
+    title: "Advanced safeguards prevent motor winding failures, enhancing durability and minimizing maintenance costs.",
   },
   {
     icon: "/fphone.png",
-    title: "Real-Time Theft Alerts for Enhanced Security",
+    title: "Easily control your motor from anywhere with mobile connectivity, adding convenience and flexibility to your farming tasks.",
   },
   {
     icon: "/fmsg.png",
-    title: "Protects Motors from Voltage Fluctuations & Dry Runs",
+    title: "Stay informed with real-time message alerts directly on your mobile device, notifying you about the motor's status, power issues, or any operational updates.",
   },
   {
     icon: "/elepol.png",
-    title: "Available in Multiple Indian Languages",
+    title: "Built-in safety measures protect users from electric shocks, ensuring a safe and secure farming environment.",
   },
   // {
   //   icon: "/output-onlinepngtools (8).png",
@@ -23,27 +23,27 @@ const useCases = [
   // },
   {
     icon: "/guat.png",
-    title: "Ensures Safety by Preventing Electric Shocks",
+    title: "Enjoy worry-free usage with a 1-year guarantee, ensuring quality, reliability, and customer satisfaction.",
   },
   {
     icon: "/servicegirl.png",
-    title: "Cost-efficient and delivers exceptional value for money.",
+    title: "24/7 Service support ensures your calls are never missed, and any issues are resolved promptly, keeping your farming uninterrupted.",
   },
   {
     icon: "/coste.png",
-    title: "Optimized to Save Time and Effort",
+    title: "Effectively reduces energy consumption and manual work, offering significant savings and ease of use for farmers.",
   },
   {
     icon: "/timee.png",
-    title: "Control Motor via Call, SMS, or Mobile Phone",
+    title: "Automated operations reduce manual intervention, helping you focus on other important tasks while saving time.",
   },
   {
     icon: "/agwa.png",
-    title: "1-Year Warranty with Comprehensive Support Services",
+    title: "Easily program the timer to control water flow in your farm, ensuring optimal irrigation for up to your desired duration.",
   },
   {
     icon: "/bestp.png",
-    title: "1-Year Warranty with Comprehensive Support Services",
+    title: "Get exceptional value with a product designed to deliver top-notch performance at an affordable price, perfect for every farmer.",
   },
 ];
 

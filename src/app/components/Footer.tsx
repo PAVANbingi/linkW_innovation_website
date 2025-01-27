@@ -3,14 +3,14 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-white  text-black py-12 px-6">
+    <footer className="bg-gradient-to-r from-yellow-700 via-yellow-600 to-yellow-700 text-black py-12 px-6">
       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
         {/* About Us Section */}
         <div>
 
       <Link href="/">
         <Image
-              src="/nav1.png"
+              src="/blackI.png"
               alt="Company Logo"
               height={20}
               width={120}
@@ -18,7 +18,7 @@ export default function Footer() {
               
             /></Link>
           
-          <h2 className="text-rose-600 font-semibold text-lg mb-4">About Us</h2>
+          <h2 className="text-black  hover:text-yellow-800 font-semibold text-lg mb-4">About Us</h2>
           {/* Logo */}
           
           
@@ -32,7 +32,7 @@ export default function Footer() {
 
         {/* Corporate Office Section */}
         <div>
-          <h2 className="text-rose-600 font-semibold text-lg mb-4">
+          <h2 className="text-black hover:text-yellow-800 font-semibold text-lg mb-4">
             Corporate Office and R&D
           </h2>
           <p className="text-sm leading-6">
@@ -41,7 +41,7 @@ H No: 17-112, Road No-3,
 Kamalanagar, Dilsuknagar,
 Hyderabad,  Telangana-500060, India.
           </p>
-          <h2 className="text-rose-600 font-semibold text-lg mt-6 mb-4">
+          <h2 className="text-black hover:text-yellow-800 font-semibold text-lg mt-6 mb-4">
             Manufacturing Facility
           </h2>
           <p className="text-sm leading-6">
@@ -53,12 +53,12 @@ Hyderabad,  Telangana-500060, India.
 
         {/* Learn More Section */}
         <div>
-          <h2 className="text-rose-600 font-semibold text-lg mb-4">Learn More</h2>
+          <h2 className="text-black hover:text-yellow-800 font-semibold text-lg mb-4">Learn More</h2>
           <ul className="space-y-2">
           <li>
               <Link
                 href="/"
-                className="hover:text-rose-600 transition duration-200"
+                className="text-black hover:text-yellow-400 transition duration-200"
               >
                 Home
               </Link>
@@ -66,7 +66,7 @@ Hyderabad,  Telangana-500060, India.
             <li>
               <Link
                 href="/aboutUs"
-                className="hover:text-rose-600 transition duration-200"
+                className="text-black hover:text-yellow-400 transition duration-200"
               >
                 About Us
               </Link>
@@ -74,7 +74,7 @@ Hyderabad,  Telangana-500060, India.
             <li>
               <Link
                 href="/features"
-                className="hover:text-rose-600 transition duration-200"
+                className="hover:text-yellow-400 transition duration-200"
               >
                 Features
               </Link>
@@ -82,7 +82,7 @@ Hyderabad,  Telangana-500060, India.
             <li>
               <Link
                 href="/gallery"
-                className="hover:text-rose-600 transition duration-200"
+                className="text-black hover:text-yellow-400 transition duration-200"
               >
                 Gallery
               </Link>
@@ -90,7 +90,7 @@ Hyderabad,  Telangana-500060, India.
             <li>
               <Link
                 href="/contactUs"
-                className="hover:text-rose-600 transition duration-200"
+                className="text-black hover:text-yellow-400 transition duration-200"
               >
                 Contact Us
               </Link>
@@ -98,7 +98,7 @@ Hyderabad,  Telangana-500060, India.
             <li>
               <Link
                 href="/order"
-                className="hover:text-rose-600 transition duration-200"
+                className="text-black hover:text-yellow-400 transition duration-200"
               >
                 Order Now
               </Link>
@@ -106,7 +106,7 @@ Hyderabad,  Telangana-500060, India.
             <li>
               <Link
                 href="/privacy"
-                className="hover:text-rose-600 transition duration-200"
+                className="text-black hover:text-yellow-400 transition duration-200"
               >
                 Privacy Policy
               </Link>
@@ -114,7 +114,7 @@ Hyderabad,  Telangana-500060, India.
             <li>
               <Link
                 href="/conditions"
-                className="hover:text-rose-600 transition duration-200"
+                className="text-black hover:text-yellow-400 transition duration-200"
               >
                 Terms and Conditions
               </Link>
@@ -124,7 +124,7 @@ Hyderabad,  Telangana-500060, India.
 
         {/* Contact Section */}
         <div>
-          <h2 className="text-rose-600 font-semibold text-lg mb-4">Contact</h2>
+          <h2 className="text-black hover:text-yellow-800 font-semibold text-lg mb-4">Contact</h2>
           <p className="text-sm leading-6 mt-4">
             <strong>Contact Number:</strong>{" "}
             <a
@@ -191,7 +191,7 @@ Hyderabad,  Telangana-500060, India.
 
       {/* Hover Effect */}
       <span
-        className="absolute inset-0 rounded-lg bg-rose-600 opacity-0 transition-opacity duration-100 group-hover:opacity-100 group-hover:blur-lg"
+        className="absolute inset-0 rounded-lg bg-yellow-600 opacity-10 scale-125 transition-opacity duration-100 group-hover:opacity-100 group-hover:blur-lg"
       />
     </a>
   ))}
@@ -201,11 +201,11 @@ Hyderabad,  Telangana-500060, India.
       </div>
 
       {/* Divider */}
-      <div className="border-t border-gray-700 mt-12 pt-6 text-center text-sm">
+      <div className="border-t border-yellow-900 mt-12 pt-6 text-center text-sm">
         <p>
           2025 &copy;{" "}
         <Link href="/contactUs">
-          <span className="text-rose-600">LinkW Innovation</span></Link> - All Rights Reserved
+          <span className="text-yellow-900 hover:text-yellow-500 ">LinkW Innovation</span></Link> - All Rights Reserved
         </p>
       </div>
     </footer>
