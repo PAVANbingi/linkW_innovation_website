@@ -79,7 +79,7 @@ export default function UseCases() {
         {/* Right Side: GIF Image */}
         <div className="lg:w-1/2 flex justify-center">
           <Image
-            src="/fea.gif" // Replace with the correct GIF path
+            src="/FEATURES (7).gif" // Replace with the correct GIF path
             alt="Product Demo"
             width={500}
             height={500}
